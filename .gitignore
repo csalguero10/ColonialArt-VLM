@@ -205,3 +205,21 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+
+
+# --- SvelteKit / Frontend (Agregado para el proyecto) ---
+frontend/node_modules/
+frontend/.svelte-kit/
+frontend/build/
+frontend/.env
+
+# --- Carpeta de Datos e IA (Agregado para el proyecto) ---
+# Ignoramos las imágenes y recortes para no saturar GitHub
+backend/data/input/
+backend/data/crops/
+*.pt
+*.weights
+
+# --- Sistema y Varios ---
+.DS_Store
+.gdrive/
