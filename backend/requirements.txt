@@ -1,0 +1,28 @@
+# --- Web Framework & Server ---
+fastapi==0.110.0
+uvicorn[standard]==0.27.1
+python-dotenv==1.0.1
+
+# --- Procesamiento de Imágenes ---
+Pillow==10.2.0           # Para el script metadata_pil.py
+opencv-python-headless  # Para los recortes (crops) de YOLO
+
+# --- Inteligencia Artificial (Vision & VLM) ---
+ultralytics==8.1.0      # YOLOv8 para detección de sujetos
+transformers==4.38.1    # Conexión con DeepSeek-VL
+torch                   # Motor de IA
+torchvision
+accelerate              # Optimización de carga de modelos
+
+# --- Manejo de Datos (Inventario) ---
+pandas                  # Para crear y leer el CSV/Excel
+openpyxl    
+
+# --- Metadata ---
+pandas
+requests            # Soporte para archivos .xlsx
+
+# --- Scapping ---
+playwright>=1.44
+gspread>=6.0
+google-auth>=2.30

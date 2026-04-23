@@ -1,0 +1,29 @@
+version: '3.8'
+
+services:
+  backend:
+    build: ./backend
+    container_name: colonial-art-backend
+    volumes:
+      - ./backend:/app
+      # Usamos la variable que ahora sí Docker va a leer del .env en la raíz
+      - "${DRIVE_PATH}:/app/data/corpus"
+    env_file:
+      - .env  # <--- Cambiado de ./backend/.env a .env
+    ports:
+      - "8000:8000"
+    restart: always
+
+  # --- Frontend: SvelteKit ---
+  #frontend:
+    #build: ./frontend
+    #container_name: colonial-art-frontend
+    #volumes:
+      #- ./frontend:/app
+      #- /app/node_modules # Evita que Docker sobreescriba tus librerías locales
+    #ports:
+      #- "5173:5173"
+    #environment:
+    #  - VITE_API_URL=http://localhost:8000
+    #depends_on:
+    #  - backend
