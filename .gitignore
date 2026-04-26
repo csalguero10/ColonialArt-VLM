@@ -223,7 +223,8 @@ backend/data/crops/
 # --- Sistema y Varios ---
 .DS_Store
 .gdrive/
-backend/credentials.json
+backend/data/credentials.json
 .env
 debug/
 backup.csv
+backend/data/*.json
