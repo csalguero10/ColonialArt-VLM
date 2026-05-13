@@ -13,16 +13,29 @@ Flujo:
        de columnas (Dimensions, Afro_Presence, etc.) se deja intacto.
 
 Mapeo de campos:
-    Image_ID     ← id numérico del URL (/obras/8548 → "8548")
-    Title        ← titulo (h1)
-    Author       ← autor(es) en #autores
-    Medium       ← tecnicas
-    Date         ← fecha               (string; año "1826", rango
-                                        "1700–1799" o texto libre)
-    Location     ← ubicacion actual    (pipes "|" → ", ")
-    Theme        ← personaje central o tema
-    Category     ← relato visual o clasificacion
-    Descriptors  ← descriptores
+    Image_ID            ← id numérico del URL (/obras/8548 → "8548")
+    Title               ← titulo (h1)
+    Author              ← autor(es) en #autores
+    Medium              ← tecnicas
+    Date                ← fecha               (string; año "1826", rango
+                                               "1700–1799" o texto libre)
+    Location            ← ubicacion actual    (pipes "|" → ", ")
+    Provenance          ← lugar de procedencia
+    Theme               ← personaje central o tema
+    Category            ← relato visual
+    Classification      ← clasificación
+    Descriptors         ← descriptores
+    Symbols             ← símbolos
+    Features            ← característica particular
+    Scene               ← escenarios
+    Donor               ← donante
+    Objects             ← objetos
+    Inscription         ← cartela - filacteria
+    Gestures            ← gestos
+    Physiognomy         ← fisiognómica
+    Physiognomy_image   ← fisiognómica imagen
+    Face_position       ← rostro
+    Image_source        ← fuente de la imagen
 """
 
 from __future__ import annotations
@@ -63,7 +76,12 @@ DEBUG_DIR = Path("debug")
 # las deja intactas.
 FILLED_COLUMNS = [
     "Image_ID", "Title", "Author", "Medium", "Date",
-    "Location", "Theme", "Category", "Descriptors",
+    "Location", "Provenance",
+    "Theme", "Category", "Classification",
+    "Descriptors", "Symbols", "Features", "Scene",
+    "Donor", "Objects", "Inscription", "Gestures",
+    "Physiognomy", "Physiognomy_image", "Face_position",
+    "Image_source",
 ]
 
 # Mapeo de campos → columna de salida en el sheet.
@@ -71,22 +89,53 @@ FILLED_COLUMNS = [
 # visibles en el DOM (h3 de cada sección), normalizados con norm_label()
 # (minúsculas, sin acentos, espacios colapsados).
 FIELD_MAP = {
-    # --- nombres internos del API ---
-    "titulo":                    "Title",
-    "autor":                     "Author",
-    "autores":                   "Author",
-    "tecnicas":                  "Medium",
-    "fecha":                     "Date",
-    "ubicacion":                 "Location",
-    "personajes":                "Theme",
-    "relato_visual":             "Category",
-    "categorias":                "Category",
-    "descriptores":              "Descriptors",
-    # --- labels del DOM (tal como aparecen en los <h3>) ---
-    "ubicacion actual":          "Location",
-    "personaje central o tema":  "Theme",
-    "relato visual":             "Category",
-    "clasificacion":             "Category",
+    # --- nombres internos del API (Directus) ---
+    "titulo":         "Title",
+    "autor":          "Author",
+    "autores":        "Author",
+    "tecnicas":       "Medium",
+    "fecha":          "Date",
+    "ubicacion":      "Location",
+    "ciudad_origen":  "Provenance",
+    "personajes":     "Theme",
+    "relato_visual":  "Category",
+    "categorias":     "Classification",
+    "descriptores":   "Descriptors",
+    "simbolos":       "Symbols",
+    "caracteristicas_particulares": "Features",
+    "escenarios":     "Scene",
+    "donantes":       "Donor",
+    "donante":        "Donor",
+    "objetos":        "Objects",
+    "cartelas_filacterias": "Inscription",
+    "gestos":         "Gestures",
+    "fisiognomicas":  "Physiognomy",
+    "fisiognomica":   "Physiognomy",
+    "fisiognomicas_imagen": "Physiognomy_image",
+    "rostros":        "Face_position",
+    "rostro":         "Face_position",
+    "fuente_imagen":  "Image_source",
+    "fuente_de_la_imagen": "Image_source",
+
+    # --- labels del DOM (texto del <h3>, normalizado por norm_label) ---
+    "ubicacion actual":         "Location",
+    "lugar de procedencia":     "Provenance",
+    "personaje central o tema": "Theme",
+    "relato visual":            "Category",
+    "clasificacion":            "Classification",
+    "simbolos":                 "Symbols",
+    "caracteristica particular": "Features",
+    "caracteristicas particulares": "Features",
+    "escenarios":               "Scene",
+    "donante":                  "Donor",
+    "objetos":                  "Objects",
+    "cartela - filacteria":     "Inscription",
+    "cartela filacteria":       "Inscription",
+    "gestos":                   "Gestures",
+    "fisiognomica":             "Physiognomy",
+    "fisiognomica imagen":      "Physiognomy_image",
+    "rostro":                   "Face_position",
+    "fuente de la imagen":      "Image_source",
 }
 
 # ────────────────────────────────────────────────────────────────────────────
@@ -121,7 +170,9 @@ def norm_label(s: str) -> str:
 def join_list(value: Any) -> str:
     """
     Convierte un valor (str | list | dict) en un string "a, b, c".
-    Sirve para descriptores, técnicas, etc. que pueden llegar como lista.
+    Si los ítems de la lista ya contienen comas (ej. "Personaje principal:
+    Señalar con dedo, mando, orden"), usa "; " como separador externo para
+    no confundir los valores con el separador.
     """
     if value is None:
         return ""
@@ -129,7 +180,7 @@ def join_list(value: Any) -> str:
         parts = [p.strip() for p in re.split(r"[;,\n]+", value) if p.strip()]
         return ", ".join(parts)
     if isinstance(value, (list, tuple)):
-        out = []
+        out: list[str] = []
         for item in value:
             if isinstance(item, dict):
                 # busca la clave textual más probable
@@ -139,7 +190,10 @@ def join_list(value: Any) -> str:
                         break
             else:
                 out.append(str(item).strip())
-        return ", ".join(p for p in out if p)
+        out = [p for p in out if p]
+        # Si algún item ya tiene coma, usar "; " para no romper el formato
+        sep = "; " if any("," in s for s in out) else ", "
+        return sep.join(out)
     if isinstance(value, dict):
         for k in ("nombre", "titulo", "valor", "name", "label", "text"):
             if k in value and value[k]:
@@ -208,28 +262,36 @@ def read_links_and_layout(ws) -> tuple[list[dict], list[str]]:
               o OVERWRITE_EXISTING=True). Cada dict tiene: row_number, url,
               existing (dict header→valor actual)
       - headers: lista de los headers tal como están en la fila 1
+    Match contra LINK_COLUMN se hace case-insensitive.
     """
     rows = ws.get_all_values()
     if not rows:
         raise RuntimeError("El sheet está vacío — falta la fila de headers.")
 
     headers = rows[0]
-    if LINK_COLUMN not in headers:
+    headers_ci = {h.lower().strip(): h for h in headers}
+    if LINK_COLUMN.lower() not in headers_ci:
         raise RuntimeError(
-            f"No encontré la columna '{LINK_COLUMN}' en los headers. "
-            f"Headers actuales: {headers}"
+            f"No encontré la columna '{LINK_COLUMN}' (case-insensitive) en los "
+            f"headers. Headers actuales: {headers}"
         )
-    link_idx = headers.index(LINK_COLUMN)
+    actual_link_header = headers_ci[LINK_COLUMN.lower()]
+    link_idx = headers.index(actual_link_header)
+
+    # Detectar el header real de Title (case-insensitive) para el skip
+    title_header = headers_ci.get("title")
 
     jobs: list[dict] = []
-    for i, row in enumerate(rows[1:], start=2):  # fila 2 es la primera de datos
+    for i, row in enumerate(rows[1:], start=2):
         url = row[link_idx].strip() if link_idx < len(row) else ""
         if not url.lower().startswith("http"):
             continue
 
         existing = {h: (row[j] if j < len(row) else "")
                     for j, h in enumerate(headers)}
-        already_filled = bool(existing.get("Title", "").strip())
+        already_filled = bool(
+            title_header and existing.get(title_header, "").strip()
+        )
         if already_filled and not OVERWRITE_EXISTING:
             log.info("  · fila %d ya tiene Title, se salta (OVERWRITE_EXISTING=False)", i)
             continue
@@ -242,18 +304,21 @@ def read_links_and_layout(ws) -> tuple[list[dict], list[str]]:
 
 def write_back(ws, headers: list[str], job: dict, scraped: dict[str, str]) -> None:
     """
-    Escribe solo las FILLED_COLUMNS en la fila correspondiente, respetando
-    el resto de columnas (Dimensions, Afro_Presence, etc.) que quedan intactas.
-    Usa batch_update con una sola llamada por fila.
+    Escribe solo las FILLED_COLUMNS en la fila correspondiente. Match de
+    columnas es case-insensitive, así que da igual si el header del sheet
+    es "Physiognomy_image" o "Physiognomy_Image".
     """
+    headers_ci = {h.lower().strip(): h for h in headers}
+
     updates = []
     for col_name in FILLED_COLUMNS:
-        if col_name not in headers:
+        actual_header = headers_ci.get(col_name.lower().strip())
+        if actual_header is None:
             continue
         value = scraped.get(col_name, "")
         if value == "":
             continue
-        col_idx = headers.index(col_name) + 1  # gspread usa índices 1-based
+        col_idx = headers.index(actual_header) + 1  # gspread es 1-based
         a1 = gspread.utils.rowcol_to_a1(job["row_number"], col_idx)
         updates.append({"range": a1, "values": [[value]]})
 
@@ -317,11 +382,15 @@ def _map_to_row(raw: dict[str, Any], url: str) -> dict[str, str]:
         if col and not row[col]:
             row[col] = join_list(raw_val)
 
-    # Location: ARCA a veces devuelve "Iglesia|Ciudad|País" → "Iglesia, Ciudad, País"
-    if row["Location"]:
-        parts = [p.strip() for p in row["Location"].split("|") if p.strip()]
-        if len(parts) > 1:
-            row["Location"] = ", ".join(parts)
+    # ARCA a veces concatena con "|" (separador del DOM). Convertirlo a coma
+    # en todos los campos string para uniformidad.
+    # Ej. "Iglesia|Ciudad|País" → "Iglesia, Ciudad, País"
+    #     "Lima|Perú"          → "Lima, Perú"
+    for col in FILLED_COLUMNS:
+        val = row.get(col, "")
+        if isinstance(val, str) and "|" in val:
+            parts = [p.strip() for p in val.split("|") if p.strip()]
+            row[col] = ", ".join(parts)
 
     # Limpia el string de fecha (año o rango), pero se queda como string
     if row["Date"]:
@@ -365,25 +434,28 @@ _DOM_EXTRACT_JS = r"""
         .filter(Boolean);
     if (autores.length) out['autor'] = autores;
 
-    // Todas las <section> con un <h3> hijo directo y contenido
+    // Cada <section> que tenga un <h3> con label + contenido
     document.querySelectorAll('section').forEach(sec => {
-        // buscar h3 como primer nivel dentro de la sección
         const h3 = sec.querySelector(':scope > h3, :scope > div > h3');
         if (!h3) return;
         const label = (h3.textContent || '').trim();
         if (!label || label === '--') return;
 
-        // Caso 1: <p class="contenido singular">valor</p>  (valor único)
-        const p = sec.querySelector(
-            ':scope > p.singular, :scope > p.contenido, :scope p.singular'
-        );
-        if (p && (p.textContent || '').trim()) {
-            out[label] = (p.textContent || '').trim();
-            return;
+        // Caso 1: hijo directo con clase "singular"
+        // (puede ser <p class="singular">, <a class="contenido singular">, etc.)
+        const singular = sec.querySelector(':scope > .singular');
+        if (singular) {
+            const txt = (singular.textContent || '').trim();
+            if (txt) {
+                out[label] = txt;
+                return;
+            }
         }
 
-        // Caso 2: <ul class="lista contenido"><li>...<li></ul>  (varios valores)
-        const lis = sec.querySelectorAll(':scope ul.lista li, :scope ul.contenido li');
+        // Caso 2: <ul class="lista contenido"><li>…</li></ul>  (varios valores)
+        const lis = sec.querySelectorAll(
+            ':scope > ul.lista > li, :scope > ul.contenido > li, :scope ul.lista > li'
+        );
         if (lis.length) {
             const items = Array.from(lis)
                 .map(li => (li.textContent || '').trim())
@@ -394,10 +466,36 @@ _DOM_EXTRACT_JS = r"""
             }
         }
 
-        // Fallback: cualquier <p> o <ul><li> dentro
-        const fp = sec.querySelector(':scope p');
-        if (fp && (fp.textContent || '').trim()) {
-            out[label] = (fp.textContent || '').trim();
+        // Caso 3: sub-secciones (ej. Gestos: Personaje principal/secundario/...)
+        //   <section>
+        //     <h3>Gestos</h3>
+        //     <div class="subSeccion">
+        //       <h4>Personaje principal</h4>
+        //       <a class="contenido singular">Señalar con dedo</a>
+        //     </div>
+        //     <div class="subSeccion">...</div>
+        //   </section>
+        const subs = sec.querySelectorAll(':scope > .subSeccion, :scope > div.subSeccion');
+        if (subs.length) {
+            const items = Array.from(subs).map(sub => {
+                const h4 = sub.querySelector('h4');
+                const val = sub.querySelector('.singular') || sub.querySelector('a, p');
+                const subLabel = h4 ? (h4.textContent || '').trim() : '';
+                const subValue = val ? (val.textContent || '').trim() : '';
+                if (subLabel && subValue) return subLabel + ': ' + subValue;
+                return subValue;
+            }).filter(Boolean);
+            if (items.length) {
+                out[label] = items;
+                return;
+            }
+        }
+
+        // Fallback: primer <p> o <a> hijo directo con texto
+        const fp = sec.querySelector(':scope > p, :scope > a');
+        if (fp) {
+            const txt = (fp.textContent || '').trim();
+            if (txt) out[label] = txt;
         }
     });
 
@@ -443,8 +541,8 @@ async def scrape_one(page: Page, url: str, debug: bool) -> dict[str, str]:
         except Exception:
             log.warning("  (timeout esperando secciones; se continúa)")
 
-        # Un pequeño margen para listas que tardan un pelín más
-        await page.wait_for_timeout(1500)
+        # Un margen extra para campos que cargan tarde (ej. Fisiognómica Imagen)
+        await page.wait_for_timeout(3000)
 
         # Extracción desde el DOM
         raw: dict[str, Any] = await page.evaluate(_DOM_EXTRACT_JS)
