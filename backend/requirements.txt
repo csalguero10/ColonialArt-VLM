@@ -26,3 +26,4 @@ requests            # Soporte para archivos .xlsx
 playwright>=1.44
 gspread>=6.0
 google-auth>=2.30
+
