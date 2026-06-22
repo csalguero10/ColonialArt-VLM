@@ -1,0 +1,122 @@
+{
+    "csv_metadata": {
+        "image_id": null,
+        "title": null,
+        "author": null,
+        "medium": null,
+        "date": null,
+        "location": null,
+        "provenance": null,
+        "theme_csv": null,
+        "category_csv": null,
+        "classification_csv": null,
+        "descriptors_csv": null,
+        "symbols_csv": null,
+        "features_csv": null,
+        "scene_csv": null,
+        "face_position_csv": null,
+        "objects_csv": null,
+        "gestures_csv": "NOTA: corresponde a Etapa 4a (corporalidad); confirmar si se incluye aquí como referencia",
+        "physiognomy_csv": null,
+        "physiognomy_image_csv": "NOTA: confirmar qué representa este campo exactamente",
+        "donor_csv": null,
+        "inscription_csv": null
+    },
+    "stage_1_pre_iconographic": {
+        "people_present": true,
+        "total_figures": 5,
+        "afrodescendant_present": true,
+        "number_of_afrodescendants": 2,
+        "figures": [
+            {
+                "figure_id": "fig_01",
+                "perceived_as_afrodescendant": true,
+                "position_in_space": "esquina inferior derecha, en el fondo",
+                "relative_scale": "más pequeño que las figuras centrales",
+                "pose_state_basic": "de pie, ligeramente inclinado",
+                "physiognomy_description": "descripción del modelo, sin interpretar aún"
+            }
+        ],
+        "technical_resources": {
+            "lighting": "luz dirigida hacia el grupo central; el fondo permanece en penumbra",
+            "color_palette": "ocres y dorados predominantes",
+            "composition_notes": "formato triangular, propio de pechina"
+        },
+        "csv_conflicts": [
+            {
+                "field": "face_position | physiognomy",
+                "csv_value": "valor original del CSV",
+                "model_value": "lectura del modelo",
+                "note": "este objeto solo aparece si hay una contradicción real; si no, el array queda vacío"
+            }
+        ]
+    },
+    "stage_2_iconographic_material_culture": {
+        "theme": [
+            "santos dominicos",
+            "santos fundadores"
+        ],
+        "category": null,
+        "classification": null,
+        "descriptors": [],
+        "symbols": [],
+        "features": [],
+        "afrodescendant_attributes": [
+            {
+                "figure_id": "fig_01",
+                "clothing_materials": [
+                    "seda",
+                    "algodón"
+                ],
+                "clothing_style": "casaca de corte europeo",
+                "accessories": [
+                    "sombrero de paja",
+                    "collar de cuentas"
+                ]
+            }
+        ],
+        "objects_in_scene": [
+            {
+                "object": "frutas (pitaya, zapote)",
+                "associated_figure_id": null,
+                "location_detail": "sobre una mesa o canasto"
+            },
+            {
+                "object": "sombrero",
+                "associated_figure_id": "fig_01",
+                "location_detail": "sostenido en la mano"
+            }
+        ],
+        "inscription_present": true,
+        "inscriptions": [
+            {
+                "type": "filacteria",
+                "text": "De Negro y Español, Mulato"
+            }
+        ],
+        "support": {
+            "format": "pechina (formato triangular)",
+            "medium": "óleo sobre tela"
+        },
+        "csv_conflicts": [
+            {
+                "field": "objects | symbols | theme | category | classification | descriptors | features | inscription",
+                "csv_value": "valor original del CSV",
+                "model_value": "lectura del modelo",
+                "note": "solo aparece si hay contradicción real"
+            }
+        ]
+    },
+    "stage_3_narrative": {
+        "description": "descripción narrativa completa de la obra, integrando el reconocimiento del tipo de escena y del sujeto representado",
+        "donor_present": false,
+        "csv_conflicts": [
+            {
+                "field": "scene | donor",
+                "csv_value": "valor original del CSV",
+                "model_value": "lectura del modelo",
+                "note": "solo aparece si hay contradicción real"
+            }
+        ]
+    }
+}
