@@ -1,7 +1,7 @@
 """
 Fetches web articles (not PDFs) and saves their main text content into
-data/corpus/, so ingest_corpus.py can pick them up exactly like any other
-document — no changes needed there.
+data/articles/, so ingest_corpus.py can pick them up exactly like any
+other document — no changes needed there.
 
 Add one URL per line to data/web_sources.txt (blank lines and lines
 starting with # are ignored), then run:
@@ -20,9 +20,9 @@ import time
 import requests
 import trafilatura
 
-from config import CORPUS_DIR
+from config import ARTICLES_DIR
 
-SOURCES_FILE = "backend/data/web_sources.txt"
+SOURCES_FILE = "data/web_sources.txt"
 REQUEST_DELAY_SECONDS = 1.0  # be polite to the servers you're fetching from
 HEADERS = {"User-Agent": "Mozilla/5.0 (research corpus builder; personal academic use)"}
 
@@ -50,7 +50,7 @@ def main():
         print(f"{SOURCES_FILE} not found. Create it with one URL per line and re-run.")
         return
 
-    os.makedirs(CORPUS_DIR, exist_ok=True)
+    os.makedirs(ARTICLES_DIR, exist_ok=True)
 
     with open(SOURCES_FILE, "r", encoding="utf-8") as f:
         urls = [line.strip() for line in f if line.strip() and not line.strip().startswith("#")]
@@ -61,7 +61,7 @@ def main():
 
     for url in urls:
         slug = slugify(url)
-        out_path = os.path.join(CORPUS_DIR, f"{slug}.txt")
+        out_path = os.path.join(ARTICLES_DIR, f"{slug}.txt")
         if os.path.exists(out_path):
             print(f"[SKIP] {slug}.txt already exists.")
             continue
