@@ -1,19 +1,25 @@
 """
-Configuration for VLMs served through vLLM (OpenAI-compatible API).
+Configuration for VLMs served through vLLM (OpenAI-compatible API), plus
+one entry for quick local testing on a Mac via Ollama.
 
-Each entry corresponds to a vLLM server running one model. If you only run
-one model at a time on your server (typical for a single-GPU node), you
-only need the entry that matches whatever you currently have served on
-that port; the others are kept as reference for when you switch models.
-
-To check structured-output (JSON schema) support for a given model/vLLM
-version, see: https://docs.vllm.ai/en/latest/features/structured_outputs/
-If a model raises a 400 error mentioning unsupported schema features when
-you run the experiment, set its "supports_structured_output" to False —
-the pipeline will fall back to plain prompting + automatic JSON repair.
+Each entry corresponds to a server running one model. Pick which one to
+use by passing its key as the argument to run_experiment.py — you don't
+need to remove or comment out entries you're not using right now; they
+just sit here as options.
 """
 
 MODEL_REGISTRY = {
+    # --- Local Mac testing (Ollama, no Docker GPU needed) ---
+    # Ollama runs directly on the Mac host (Metal GPU access isn't passed
+    # through to Docker containers), so from inside the container this is
+    # reached via host.docker.internal, not localhost.
+    "llama3.2-vision-local": {
+        "base_url": "http://host.docker.internal:11434/v1",
+        "model_id": "llama3.2-vision",
+        "supports_structured_output": False,  # not confirmed for Ollama's OpenAI-compat layer; falls back to JSON repair
+    },
+
+    # --- Server / GPU deployment (vLLM) ---
     # Port 8000 ("GPU slot 0"): pick ONE of these two Llama checkpoints to serve there.
     "llama3.2-vision-11b": {
         "base_url": "http://localhost:8000/v1",
