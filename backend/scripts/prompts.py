@@ -379,8 +379,9 @@ Analyze the posture, gaze, and gestures of figure {figure_id} in this \
 artwork. In what way does this bodily posture communicate submission, religious piety, or \
 acceptance of their place within the scene's hierarchy? Specifically consider: is their \
 musculature and posture rigid or tense, suggesting imposed restraint or discipline? Is their gaze \
-directed downward or toward another figure in a deferential manner? Answer based only on \
-concrete visual evidence, in 3-5 sentences."""
+directed downward or toward another figure in a deferential manner? Drawing on the reference \
+material above, offer an interpretation — not just a \
+literal description of what is visible. Answer in 5-8 sentences"""
 
 STAGE4A_CALL2_TEMPLATE = """Reference material retrieved from the scholarly corpus:
 
@@ -391,8 +392,9 @@ artwork. In what way does this same bodily posture communicate self-control, sel
 position of intellectual or moral authority within the scene? Specifically consider: is the \
 posture upright, relaxed, or commanding despite the figure's placement at the margin or \
 background of the canvas? Is their gaze directed straight at the viewer, or do they share an \
-affectionate gaze with another figure? Answer based only on concrete visual evidence, in 3-5 \
-sentences."""
+affectionate gaze with another figure? Drawing on the reference material above, \
+offer an interpretation — not just a \
+literal description of what is visible. Answer in 5-8 sentences."""
 
 STAGE4A_CALL3_TEMPLATE = """Below are two different readings of the same bodily posture of figure \
 {figure_id}:
@@ -429,24 +431,27 @@ STAGE4B_BRANCH_A_CALL1 = """Reference material retrieved from the scholarly corp
 
 How does the domestic or commercial environment depicted in this \
 scene reflect a condition of marginality or social destitution for the family or figure \
-represented? Answer based only on concrete visual evidence (quality of objects, clothing, \
-environment), in 3-5 sentences."""
+represented? Consider the reference material above, \
+offer an interpretation — not just a \
+literal description of what is visible. Answer in 5-8 sentences"""
 
 STAGE4B_BRANCH_A_CALL2 = """Reference material retrieved from the scholarly corpus:
 
 {reference_material}
 
 How does that same domestic or commercial environment reflect social \
-mobility, prosperity, or economic stability for the family or figure represented? Answer based \
-only on concrete visual evidence, in 3-5 sentences."""
+mobility, prosperity, or economic stability for the family or figure represented? Consider the reference material above, \
+offer an interpretation — not just a \
+literal description of what is visible. Answer in 5-8 sentences"""
 
 STAGE4B_BRANCH_B_CALL1 = """Reference material retrieved from the scholarly corpus:
 
 {reference_material}
 
 In what way does this canvas reinforce the racial and social \
-hierarchies of the colonial era? Answer based only on concrete visual evidence, in 3-5 \
-sentences."""
+hierarchies of the colonial era? Consider the reference material above, \
+offer an interpretation — not just a \
+literal description of what is visible. Answer in 5-8 sentences."""
 
 STAGE4B_BRANCH_B_CALL2 = """Reference material retrieved from the scholarly corpus:
 
@@ -454,8 +459,9 @@ STAGE4B_BRANCH_B_CALL2 = """Reference material retrieved from the scholarly corp
 
 In what way does this canvas subvert those same racial and social \
 hierarchies? For example, does an Afro-descendant figure appear in a position of spiritual or \
-social elevation above other figures in the scene? Answer based only on concrete visual \
-evidence, in 3-5 sentences."""
+social elevation above other figures in the scene? Consider the reference material above, \
+offer an interpretation — not just a \
+literal description of what is visible. Answer in 5-8 sentences."""
 
 STAGE4B_CALL3_TEMPLATE = """Below are two different readings of the degree of fixity or fluidity \
 in the social role of figure {figure_id}:

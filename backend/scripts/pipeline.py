@@ -9,8 +9,13 @@ closing metacognition, for a given served VLM.
   corpus, and any successfully identified term is appended to a growing
   OUTPUT glossary (data/discovered_glossary.json) — built automatically as
   a byproduct, never hand-curated.
-- Stages 3 and 4 retrieve supporting material from the document corpus
-  for interpretive grounding, now informed by Stage 2b's specific terms.
+- Stages 3 and 4 retrieve supporting material from the document corpus,
+  informed by Stage 2b's specific terms. Stage 4's two opposing-reading
+  calls (4a and 4b) are grounded in that material but are NOT restricted
+  to "visual evidence only" — the model is asked to interpret, combining
+  the retrieved material with its own historical/iconographic judgment,
+  so that whatever bias or default reading it carries becomes visible
+  instead of staying hidden behind a literalness requirement.
 """
 
 import json
@@ -113,10 +118,12 @@ def _run_stage4a(model_config: dict, image_path: str, figure_id: str, theme_hint
     reading_a = call_vlm_text(
         model_config, image_path, GENERAL_INSTRUCTIONS,
         STAGE4A_CALL1_TEMPLATE.format(figure_id=figure_id, reference_material=reference_material),
+        max_tokens=800,
     )
     reading_b = call_vlm_text(
         model_config, image_path, GENERAL_INSTRUCTIONS,
         STAGE4A_CALL2_TEMPLATE.format(figure_id=figure_id, reference_material=reference_material),
+        max_tokens=800,
     )
     friction = call_vlm_json(
         model_config, image_path, GENERAL_INSTRUCTIONS,
@@ -147,10 +154,12 @@ def _run_stage4b(model_config: dict, image_path: str, figure_id: str, genre_bran
     reading_1 = call_vlm_text(
         model_config, image_path, GENERAL_INSTRUCTIONS,
         call1_prompt.format(reference_material=reference_material),
+        max_tokens=800,
     )
     reading_2 = call_vlm_text(
         model_config, image_path, GENERAL_INSTRUCTIONS,
         call2_prompt.format(reference_material=reference_material),
+        max_tokens=800,
     )
     friction = call_vlm_json(
         model_config, image_path, GENERAL_INSTRUCTIONS,
