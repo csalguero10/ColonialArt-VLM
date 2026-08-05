@@ -104,8 +104,23 @@ CHUNK_OVERLAP = 150
 # Runs in an ISOLATED virtual environment (see requirements-grounding.txt),
 # never the main one — needs transformers>=4.44, which conflicts with the
 # transformers==4.38.1 pinned above for DeepSeek-VL.
-GROUNDING_MODEL_NAME = "IDEA-Research/grounding-dino-tiny"
-GROUNDING_BOX_THRESHOLD = 0.30
-GROUNDING_TEXT_THRESHOLD = 0.25
+#
+# Two detectors are configured so both can be run and compared directly on
+# this corpus, rather than relying on external benchmarks (general-purpose
+# benchmarks like COCO/ODinW favor Grounding DINO; one narrower 2026 study
+# on painted/artistic imagery favored OWLv2 — evidence pointed different
+# ways depending on domain, so testing on your own 120 images settles it
+# for this specific use case instead of guessing from outside numbers).
+GROUNDING_DETECTORS = {
+    "grounding_dino": {
+        "model_id": "IDEA-Research/grounding-dino-tiny",
+        "box_threshold": 0.30,
+        "text_threshold": 0.25,
+    },
+    "owlv2": {
+        "model_id": "google/owlv2-base-patch16-ensemble",
+        "threshold": 0.1,  # OWLv2's own documented default
+    },
+}
 SCENE_GRAPH_DIR = "data/scene_graphs"
 SCENE_GRAPH_VIZ_DIR = "data/scene_graphs_viz"
