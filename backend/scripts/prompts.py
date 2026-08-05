@@ -25,6 +25,15 @@ emotional states, intentions, or social roles unless explicitly asked to in a la
 vocabulary that already presupposes an interpretation (e.g., "slave", "servant") unless the task \
 explicitly calls for that level of analysis.
 
+Exception — Stage 4 (mayeutics): this is the later stage the rule above refers to. When a Stage 4 \
+prompt asks you to interpret a figure's posture or a scene's setting (in terms of submission, \
+agency, marginality, social mobility, etc.), that instruction is the explicit request this project \
+is asking of you for that call — answer it directly, grounded in the image and any reference \
+material provided, rather than declining or qualifying it as outside your role. Producing two \
+opposing interpretive readings on purpose is the actual method here (an art historian resolves the \
+tension afterward); it is not a deviation from the "describe, don't interpret" default that governs \
+the other stages.
+
 The field "perceived_as_afrodescendant" reflects your visual perception, not an objective racial \
 classification. Base it on pictorial conventions (skin tone as painted, physical features as \
 rendered by the artist), not on assumptions external to the image.
@@ -171,9 +180,7 @@ clothing) using plain, generic terms — do not guess at specific historical or 
 that happens in Stage 2b. Identify every object in the scene and its exact location relative to a \
 figure (held in hand, worn at the belt, on a nearby table, etc.) when applicable. If any textual \
 inscription is visible, extract it literally, in its original language. Identify the theme, \
-category, classification, descriptors, and symbols of the artwork. Compare your findings against \
-the CSV's Objects, Symbols, Theme, Category, Classification, Descriptors, Features, and \
-Inscription fields, recording any real contradiction in csv_conflicts."""
+category, classification, descriptors, and symbols of the artwork."""
 
 STAGE2_SCHEMA = {
     "type": "object",
@@ -232,28 +239,64 @@ STAGE2_SCHEMA = {
                     },
                     "required": ["format", "medium"],
                 },
-                "csv_conflicts": {
-                    "type": "array",
-                    "items": {
-                        "type": "object",
-                        "properties": {
-                            "field": {"type": "string"},
-                            "csv_value": {"type": "string"},
-                            "model_value": {"type": "string"},
-                            "note": {"type": "string"},
-                        },
-                        "required": ["field", "csv_value", "model_value", "note"],
-                    },
-                },
             },
             "required": [
                 "theme", "category", "classification", "descriptors", "symbols", "features",
                 "afrodescendant_attributes", "objects_in_scene", "inscription_present",
-                "inscriptions", "support", "csv_conflicts",
+                "inscriptions", "support",
             ],
         },
     },
     "required": ["stage_2_iconographic_material_culture"],
+}
+
+
+# ---------------------------------------------------------------------------
+# Stage 2 CSV cross-reference — split out from Stage 2 into its own call.
+# Stage 2's schema (theme/descriptors/afrodescendant_attributes/
+# objects_in_scene/inscriptions/support, several of them arrays of objects)
+# was, on its own, already the largest nested schema in the pipeline; adding
+# csv_conflicts on top of it — usually the most verbose field, since each
+# entry needs a full explanatory note — pushed content-dense images (many
+# figures/objects, e.g. crowded genre scenes) into a response long and
+# complex enough that Claude's tool-use sometimes serialized part of the
+# argument as a raw string instead of true nested JSON. Isolating the
+# free-text-heavy conflict check into its own small call keeps both calls
+# well clear of that failure mode.
+# ---------------------------------------------------------------------------
+
+STAGE2_CSV_CONFLICTS_PROMPT_TEMPLATE = """Here is the result of Stage 1 and Stage 2 for this \
+artwork:
+
+{previous}
+
+Here is the CSV record for this artwork:
+
+{csv_row}
+
+Task: compare the Stage 2 findings above against the CSV's Objects, Symbols, Theme, Category, \
+Classification, Descriptors, Features, and Inscription fields. Record any real contradiction in \
+csv_conflicts. If your reading matches the CSV, or the CSV has no data for a field, do NOT \
+generate an entry."""
+
+STAGE2_CSV_CONFLICTS_SCHEMA = {
+    "type": "object",
+    "properties": {
+        "csv_conflicts": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "field": {"type": "string"},
+                    "csv_value": {"type": "string"},
+                    "model_value": {"type": "string"},
+                    "note": {"type": "string"},
+                },
+                "required": ["field", "csv_value", "model_value", "note"],
+            },
+        },
+    },
+    "required": ["csv_conflicts"],
 }
 
 
@@ -379,9 +422,7 @@ Analyze the posture, gaze, and gestures of figure {figure_id} in this \
 artwork. In what way does this bodily posture communicate submission, religious piety, or \
 acceptance of their place within the scene's hierarchy? Specifically consider: is their \
 musculature and posture rigid or tense, suggesting imposed restraint or discipline? Is their gaze \
-directed downward or toward another figure in a deferential manner? Drawing on the reference \
-material above, offer an interpretation — not just a \
-literal description of what is visible. Answer in 5-8 sentences"""
+directed downward or toward another figure in a deferential manner? Answer in 5-8 sentences"""
 
 STAGE4A_CALL2_TEMPLATE = """Reference material retrieved from the scholarly corpus:
 

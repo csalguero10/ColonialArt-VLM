@@ -99,3 +99,13 @@ INDEX_DIR = "data/index"
 EMBEDDING_MODEL_NAME = "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2"
 CHUNK_SIZE = 1000
 CHUNK_OVERLAP = 150
+
+# --- Grounding (Stage 2 phrase -> bounding box) ---
+# Runs in an ISOLATED virtual environment (see requirements-grounding.txt),
+# never the main one — needs transformers>=4.44, which conflicts with the
+# transformers==4.38.1 pinned above for DeepSeek-VL.
+GROUNDING_MODEL_NAME = "IDEA-Research/grounding-dino-tiny"
+GROUNDING_BOX_THRESHOLD = 0.30
+GROUNDING_TEXT_THRESHOLD = 0.25
+SCENE_GRAPH_DIR = "data/scene_graphs"
+SCENE_GRAPH_VIZ_DIR = "data/scene_graphs_viz"

@@ -24,6 +24,7 @@ from prompts import (
     GENERAL_INSTRUCTIONS,
     STAGE1_PROMPT_TEMPLATE, STAGE1_SCHEMA,
     STAGE2_PROMPT_TEMPLATE, STAGE2_SCHEMA,
+    STAGE2_CSV_CONFLICTS_PROMPT_TEMPLATE, STAGE2_CSV_CONFLICTS_SCHEMA,
     STAGE2B_PROMPT_TEMPLATE, STAGE2B_SCHEMA,
     STAGE3_PROMPT_TEMPLATE, STAGE3_SCHEMA,
     STAGE4A_CALL1_TEMPLATE, STAGE4A_CALL2_TEMPLATE, STAGE4A_CALL3_TEMPLATE,
@@ -194,6 +195,21 @@ def analyze_artwork(model_config: dict, image_path: str, csv_row: dict) -> dict:
         STAGE2_SCHEMA, "stage2", max_tokens=4000,
     )
     result.update(stage2)
+
+    # Stage 2 CSV cross-reference — split into its own call (see prompts.py):
+    # the free-text conflict notes were the main driver pushing Stage 2's
+    # already-large nested schema past the point where Claude's tool-use
+    # reliably holds its structure on content-dense images.
+    stage2_conflicts = call_vlm_json(
+        model_config, image_path, GENERAL_INSTRUCTIONS,
+        STAGE2_CSV_CONFLICTS_PROMPT_TEMPLATE.format(
+            previous=json.dumps(result, ensure_ascii=False),
+            csv_row=json.dumps(csv_row, ensure_ascii=False),
+        ),
+        STAGE2_CSV_CONFLICTS_SCHEMA, "stage2_csv_conflicts", max_tokens=2000,
+    )
+    stage2["stage_2_iconographic_material_culture"]["csv_conflicts"] = \
+        stage2_conflicts["csv_conflicts"]
 
     # Stage 2b — corpus-assisted identification of Stage 2's generic descriptions
     stage2b = _run_stage2b(model_config, image_path, stage2)
