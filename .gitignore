@@ -228,3 +228,6 @@ backend/data/credentials.json
 debug/
 backup.csv
 backend/data/*.json
+
+backend/data/articles/
+backend/data/index/

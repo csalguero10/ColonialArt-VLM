@@ -88,6 +88,14 @@ RAG_ENABLED = True
 RAG_TOP_K = 4
 ARTICLES_DIR = "data/articles"   # your PDFs and scraped web texts
 INDEX_DIR = "data/index"
-EMBEDDING_MODEL_NAME = "BAAI/bge-m3"
+# Lighter multilingual embedding model (~470MB vs. BGE-M3's ~2.27GB).
+# Switched from BAAI/bge-m3 after it caused an OOM kill on an 8GB MacBook Air
+# running inside Docker Desktop's 4GB VM. Still solidly multilingual (covers
+# Spanish/English/Portuguese) and a well-established default for this kind
+# of corpus size. If you later run this on a server with real RAM/GPU
+# headroom, feel free to switch back to "BAAI/bge-m3" for marginally better
+# retrieval quality — just re-run ingest_corpus.py after changing it, since
+# the index is tied to whichever model built it.
+EMBEDDING_MODEL_NAME = "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2"
 CHUNK_SIZE = 1000
 CHUNK_OVERLAP = 150

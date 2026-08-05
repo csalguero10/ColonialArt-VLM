@@ -100,7 +100,7 @@ def _run_stage2b(model_config: dict, image_path: str, stage2_json: dict) -> dict
             previous=json.dumps(stage2_json, ensure_ascii=False),
             reference_material=reference_material,
         ),
-        STAGE2B_SCHEMA, "stage2b",
+        STAGE2B_SCHEMA, "stage2b", max_tokens=4000,
     )
     return stage2b
 
@@ -121,7 +121,7 @@ def _run_stage4a(model_config: dict, image_path: str, figure_id: str, theme_hint
     friction = call_vlm_json(
         model_config, image_path, GENERAL_INSTRUCTIONS,
         STAGE4A_CALL3_TEMPLATE.format(figure_id=figure_id, reading_a=reading_a, reading_b=reading_b),
-        STAGE4_FRICTION_SCHEMA, "stage4a_friction",
+        STAGE4_FRICTION_SCHEMA, "stage4a_friction", max_tokens=1000,
     )
     return {
         "figure_id": figure_id,
@@ -155,7 +155,7 @@ def _run_stage4b(model_config: dict, image_path: str, figure_id: str, genre_bran
     friction = call_vlm_json(
         model_config, image_path, GENERAL_INSTRUCTIONS,
         STAGE4B_CALL3_TEMPLATE.format(figure_id=figure_id, reading_a=reading_1, reading_b=reading_2),
-        STAGE4_FRICTION_SCHEMA, "stage4b_friction",
+        STAGE4_FRICTION_SCHEMA, "stage4b_friction", max_tokens=1000,
     )
     return {
         "figure_id": figure_id,
@@ -174,7 +174,7 @@ def analyze_artwork(model_config: dict, image_path: str, csv_row: dict) -> dict:
     stage1 = call_vlm_json(
         model_config, image_path, GENERAL_INSTRUCTIONS,
         STAGE1_PROMPT_TEMPLATE.format(csv_row=json.dumps(csv_row, ensure_ascii=False)),
-        STAGE1_SCHEMA, "stage1",
+        STAGE1_SCHEMA, "stage1", max_tokens=4000,
     )
     result.update(stage1)
 
@@ -182,7 +182,7 @@ def analyze_artwork(model_config: dict, image_path: str, csv_row: dict) -> dict:
     stage2 = call_vlm_json(
         model_config, image_path, GENERAL_INSTRUCTIONS,
         STAGE2_PROMPT_TEMPLATE.format(previous=json.dumps(result, ensure_ascii=False)),
-        STAGE2_SCHEMA, "stage2",
+        STAGE2_SCHEMA, "stage2", max_tokens=4000,
     )
     result.update(stage2)
 
@@ -225,7 +225,7 @@ def analyze_artwork(model_config: dict, image_path: str, csv_row: dict) -> dict:
             previous=json.dumps(result, ensure_ascii=False),
             reference_material=stage3_reference,
         ),
-        STAGE3_SCHEMA, "stage3",
+        STAGE3_SCHEMA, "stage3", max_tokens=2000,
     )
     stage3["stage_3_narrative"]["consulted_sources"] = [c["source"] for c in stage3_chunks]
     result.update(stage3)
@@ -257,7 +257,7 @@ def analyze_artwork(model_config: dict, image_path: str, csv_row: dict) -> dict:
     closing = call_vlm_json(
         model_config, image_path, GENERAL_INSTRUCTIONS,
         CLOSING_TEMPLATE.format(frictions=json.dumps(all_frictions, ensure_ascii=False)),
-        CLOSING_SCHEMA, "closing",
+        CLOSING_SCHEMA, "closing", max_tokens=1000,
     )
     result.update(closing)
 

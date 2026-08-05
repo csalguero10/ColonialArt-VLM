@@ -24,6 +24,18 @@ from tqdm import tqdm
 from config import MODEL_REGISTRY, CSV_PATH, IMAGES_DIR, RESULTS_DIR
 from pipeline import analyze_artwork
 
+# Images in this corpus were scraped as .webp; some may be .jpg/.png too.
+# Try each known extension rather than assuming one.
+IMAGE_EXTENSIONS = (".webp", ".jpg", ".jpeg", ".png")
+
+
+def find_image_path(image_id: str) -> str | None:
+    for ext in IMAGE_EXTENSIONS:
+        candidate = os.path.join(IMAGES_DIR, f"{image_id}{ext}")
+        if os.path.exists(candidate):
+            return candidate
+    return None
+
 
 def main(model_name: str, csv_path: str = None):
     if model_name not in MODEL_REGISTRY:
@@ -42,9 +54,9 @@ def main(model_name: str, csv_path: str = None):
         if os.path.exists(out_path):
             continue  # checkpoint: already processed
 
-        image_path = os.path.join(IMAGES_DIR, f"{image_id}.jpg")
-        if not os.path.exists(image_path):
-            print(f"[WARN] Image not found for {image_id}, skipping.")
+        image_path = find_image_path(image_id)
+        if image_path is None:
+            print(f"[WARN] Image not found for {image_id} (checked .webp, .jpg, .jpeg, .png), skipping.")
             continue
 
         csv_row = row.fillna("").to_dict()

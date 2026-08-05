@@ -42,7 +42,10 @@ Output: respond with ONLY a valid JSON object matching the provided schema. No e
 before or after, no markdown code blocks, no comments inside the JSON. Text values must be in \
 English, except literal inscriptions transcribed from the artwork and any historically specific \
 terminology identified via corpus lookup (e.g., "huipil"), which must stay in its original \
-language/spelling rather than being translated.
+language/spelling rather than being translated. If you need to quote a title, phrase, or \
+inscription inside a text value, use single quotes ('like this') rather than double quotes — \
+double quotes inside a JSON string must otherwise be escaped and are a common source of \
+formatting errors.
 
 When reference material from the scholarly corpus is provided alongside a question, treat it as \
 supporting context that may help you identify iconographic types, historical conventions, or \
@@ -203,7 +206,7 @@ STAGE2_SCHEMA = {
                         "type": "object",
                         "properties": {
                             "object": {"type": "string"},
-                            "associated_figure_id": {"type": ["string", "null"]},
+                            "associated_figure_id": {"type": "string"},  # use "" if the object isn't tied to a specific figure
                             "location_detail": {"type": "string"},
                         },
                         "required": ["object", "associated_figure_id", "location_detail"],
@@ -408,7 +411,7 @@ STAGE4_FRICTION_SCHEMA = {
     "type": "object",
     "properties": {
         "contested_element": {"type": "string"},
-        "resolvable": {"type": ["boolean", "null"]},
+        "resolvable": {"type": "boolean"},
         "resolution_note": {"type": "string"},
     },
     "required": ["contested_element", "resolvable", "resolution_note"],

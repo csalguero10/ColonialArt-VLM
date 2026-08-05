@@ -6,6 +6,8 @@ services:
       - ./backend:/app
       # DRIVE_PATH viene del .env en la raíz del proyecto
       - "${DRIVE_PATH}:/app/data/corpus"
+      # ARTICLES_PATH: carpeta de Drive con los PDFs/artículos para el RAG
+      - "${ARTICLES_PATH}:/app/data/articles"
     env_file:
       - .env
     ports:

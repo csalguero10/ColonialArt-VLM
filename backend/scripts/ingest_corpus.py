@@ -75,10 +75,17 @@ def main():
 
     print(f"Extracted {len(all_chunks)} chunks from {len(files)} files.")
 
+    # batch_size kept small deliberately: on a memory-constrained Docker
+    # Desktop VM (shared with other containers), the default batch_size=32
+    # can push peak RAM high enough that the OS kills the process silently
+    # (no Python traceback — just the shell prompt returning). 8 is much
+    # gentler; raise it later once you've confirmed how much headroom your
+    # machine actually has.
     embeddings = model.encode(
         [c["text"] for c in all_chunks],
         normalize_embeddings=True,
         show_progress_bar=True,
+        batch_size=8,
     )
     embeddings = np.asarray(embeddings, dtype="float32")
 
