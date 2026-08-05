@@ -44,6 +44,15 @@ def _format_phrases(phrases: list) -> str:
     return " ".join(cleaned)
 
 
+# Grounding DINO's tokenizer is BERT-style (512-token limit), but the
+# model's own text branch is fixed at config.max_text_len = 256 (the fusion
+# module's text-feature buffer is sized to it). A single phrase from Stage
+# 2 is never remotely close to that, so this is just a defensive guard
+# against a pathological one, not something expected to trigger in
+# practice.
+_MAX_TEXT_TOKENS = 220
+
+
 def ground_phrases(
     image_path: str,
     phrases: list,
@@ -52,14 +61,32 @@ def ground_phrases(
 ) -> list:
     """Detects each phrase in the image. Returns a list of
     {"phrase": str, "box": [x0, y0, x1, y1], "score": float}, box in pixel
-    coordinates of the original image.
+    coordinates of the original image — "phrase" is always the exact input
+    string (not whatever Grounding DINO's decoder reconstructs), so callers
+    can match detections back to their source data with a plain lookup.
 
-    A phrase can come back zero, one, or multiple times (e.g. an accessory
-    worn by several figures in the same scene returns multiple boxes for
-    the same phrase). This function does not attempt to decide which box
-    belongs to which figure — see run_grounding.py for how detections are
-    associated with figure_ids, and its docstring for the honest limits
-    of that association."""
+    Queries ONE phrase per model call rather than batching several into a
+    single text prompt. Batching seems like the obvious way to cut down
+    forward passes, but Grounding DINO's phrase decoder maps detections
+    back to text by *position* in the combined prompt, and it noticeably
+    confuses that mapping whenever two phrases in the same query share
+    words — not just exact duplicates, but anything with overlapping
+    vocabulary (e.g. "Silk or silk-like fabric (teal/blue-green tunic)"
+    next to "...(tan/brown tunic)" came back merged as garbled labels like
+    "silk silk" in testing). Since Stage 2 phrases for the same image
+    routinely share words (the same garment/material vocabulary across
+    figures), one-phrase-per-call is the only way to get a clean,
+    unambiguous label back for each one. It costs one forward pass per
+    phrase instead of one per chunk, but each pass is cheap (a handful of
+    tokens), and smaller inputs also mean less peak memory per pass — a
+    plus on an 8GB machine.
+
+    A phrase can still come back zero, one, or multiple times (e.g. an
+    accessory worn by several figures in the same scene returns multiple
+    boxes for the same phrase). This function does not attempt to decide
+    which box belongs to which figure — see run_grounding.py for how
+    detections are associated with figure_ids, and its docstring for the
+    honest limits of that association."""
     if not phrases:
         return []
 
@@ -68,25 +95,31 @@ def ground_phrases(
     text_threshold = GROUNDING_TEXT_THRESHOLD if text_threshold is None else text_threshold
 
     image = Image.open(image_path).convert("RGB")
-    text = _format_phrases(phrases)
-
-    inputs = _processor(images=image, text=text, return_tensors="pt").to(_device)
-    with torch.no_grad():
-        outputs = _model(**inputs)
-
-    results = _processor.post_process_grounded_object_detection(
-        outputs,
-        inputs.input_ids,
-        threshold=box_threshold,
-        text_threshold=text_threshold,
-        target_sizes=[image.size[::-1]],  # PIL gives (width, height); API wants (height, width)
-    )[0]
 
     detections = []
-    for box, score, label in zip(results["boxes"], results["scores"], results["text_labels"]):
-        detections.append({
-            "phrase": label,
-            "box": [round(float(v), 1) for v in box.tolist()],
-            "score": round(float(score), 3),
-        })
+    for phrase in phrases:
+        text = _format_phrases([phrase])
+        n_tokens = len(_processor.tokenizer(text)["input_ids"])
+        if n_tokens > _MAX_TEXT_TOKENS:
+            print(f"[WARN] Skipping ungroundable phrase ({n_tokens} tokens): {phrase!r}")
+            continue
+
+        inputs = _processor(images=image, text=text, return_tensors="pt").to(_device)
+        with torch.no_grad():
+            outputs = _model(**inputs)
+
+        results = _processor.post_process_grounded_object_detection(
+            outputs,
+            inputs.input_ids,
+            box_threshold=box_threshold,
+            text_threshold=text_threshold,
+            target_sizes=[image.size[::-1]],  # PIL gives (width, height); API wants (height, width)
+        )[0]
+
+        for box, score in zip(results["boxes"], results["scores"]):
+            detections.append({
+                "phrase": phrase,
+                "box": [round(float(v), 1) for v in box.tolist()],
+                "score": round(float(score), 3),
+            })
     return detections
