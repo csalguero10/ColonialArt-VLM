@@ -35,7 +35,7 @@ from prompts import (
     CLOSING_TEMPLATE, CLOSING_SCHEMA,
 )
 from vlm_client import call_vlm_json, call_vlm_text
-from retrieval import retrieve, format_for_prompt
+from retrieval import retrieve, find_title_matches, format_for_prompt
 from glossary import append_discovered_terms
 
 # Fixed bilingual hints for Stage 4 retrieval queries. Bilingual because the
@@ -59,6 +59,24 @@ _STAGE4B_RELIGIOUS_TOPIC_HINT = (
 
 def _build_query(*parts) -> str:
     return " ".join(p for p in parts if p)
+
+
+def _retrieve_with_title_match(query: str, title: str, author: str = "") -> list:
+    """Combines ordinary semantic retrieval with a guaranteed lookup for
+    any article whose filename names the same subject as this artwork's
+    title/author (see retrieval.find_title_matches) — a proper noun (a
+    specific person's or saint's name) can be exactly what an article is
+    about without dominating a thematic semantic query enough to rank in
+    the top-k, so this checks by name directly rather than relying on
+    embedding similarity alone. Title-match chunks are listed first;
+    duplicates (same source + text turning up in both lists) are
+    collapsed to one entry."""
+    title_chunks = find_title_matches(title, author)
+    semantic_chunks = retrieve(query)
+    seen = {}
+    for c in title_chunks + semantic_chunks:
+        seen[(c["source"], c["text"])] = c
+    return list(seen.values())
 
 
 def _detect_genre_branch(stage2: dict) -> str:
@@ -111,24 +129,48 @@ def _run_stage2b(model_config: dict, image_path: str, stage2_json: dict) -> dict
     return stage2b
 
 
-def _run_stage4a(model_config: dict, image_path: str, figure_id: str, theme_hint: str) -> dict:
+def _run_stage4a(model_config: dict, image_path: str, fig: dict, theme_hint: str,
+                 title: str, author: str) -> dict:
+    # Each call_vlm_text/call_vlm_json call below is an independent API
+    # request with no memory of Stage 1's figure numbering — passing only
+    # figure_id (e.g. "fig_08") left the model to re-derive which figure
+    # that was from scratch on every single call, purely by re-scanning
+    # the image in reading order. On busy scenes (many figures) this
+    # silently drifted: a later call could land on a completely different
+    # person than Stage 1 actually meant. position_in_space and
+    # physiognomy_description are Stage 1's own identifying description of
+    # this exact figure, passed through so every call is anchored to the
+    # same individual instead of re-identifying them independently.
+    figure_id = fig["figure_id"]
+    position_in_space = fig.get("position_in_space", "")
+    physiognomy_description = fig.get("physiognomy_description", "")
+
     query = _build_query(_STAGE4A_TOPIC_HINT, theme_hint)
-    chunks = retrieve(query)
+    chunks = _retrieve_with_title_match(query, title, author)
     reference_material = format_for_prompt(chunks)
 
     reading_a = call_vlm_text(
         model_config, image_path, GENERAL_INSTRUCTIONS,
-        STAGE4A_CALL1_TEMPLATE.format(figure_id=figure_id, reference_material=reference_material),
+        STAGE4A_CALL1_TEMPLATE.format(
+            figure_id=figure_id, position_in_space=position_in_space,
+            physiognomy_description=physiognomy_description, reference_material=reference_material,
+        ),
         max_tokens=800,
     )
     reading_b = call_vlm_text(
         model_config, image_path, GENERAL_INSTRUCTIONS,
-        STAGE4A_CALL2_TEMPLATE.format(figure_id=figure_id, reference_material=reference_material),
+        STAGE4A_CALL2_TEMPLATE.format(
+            figure_id=figure_id, position_in_space=position_in_space,
+            physiognomy_description=physiognomy_description, reference_material=reference_material,
+        ),
         max_tokens=800,
     )
     friction = call_vlm_json(
         model_config, image_path, GENERAL_INSTRUCTIONS,
-        STAGE4A_CALL3_TEMPLATE.format(figure_id=figure_id, reading_a=reading_a, reading_b=reading_b),
+        STAGE4A_CALL3_TEMPLATE.format(
+            figure_id=figure_id, position_in_space=position_in_space,
+            physiognomy_description=physiognomy_description, reading_a=reading_a, reading_b=reading_b,
+        ),
         STAGE4_FRICTION_SCHEMA, "stage4a_friction", max_tokens=1000,
     )
     return {
@@ -140,7 +182,14 @@ def _run_stage4a(model_config: dict, image_path: str, figure_id: str, theme_hint
     }
 
 
-def _run_stage4b(model_config: dict, image_path: str, figure_id: str, genre_branch: str, theme_hint: str) -> dict:
+def _run_stage4b(model_config: dict, image_path: str, fig: dict, genre_branch: str, theme_hint: str,
+                 title: str, author: str) -> dict:
+    # See _run_stage4a's comment: figure_id alone isn't enough to keep an
+    # independent API call anchored to the same figure Stage 1 identified.
+    figure_id = fig["figure_id"]
+    position_in_space = fig.get("position_in_space", "")
+    physiognomy_description = fig.get("physiognomy_description", "")
+
     if genre_branch == "casta":
         call1_prompt, call2_prompt = STAGE4B_BRANCH_A_CALL1, STAGE4B_BRANCH_A_CALL2
         topic_hint = _STAGE4B_CASTA_TOPIC_HINT
@@ -149,7 +198,7 @@ def _run_stage4b(model_config: dict, image_path: str, figure_id: str, genre_bran
         topic_hint = _STAGE4B_RELIGIOUS_TOPIC_HINT
 
     query = _build_query(topic_hint, theme_hint)
-    chunks = retrieve(query)
+    chunks = _retrieve_with_title_match(query, title, author)
     reference_material = format_for_prompt(chunks)
 
     reading_1 = call_vlm_text(
@@ -164,7 +213,10 @@ def _run_stage4b(model_config: dict, image_path: str, figure_id: str, genre_bran
     )
     friction = call_vlm_json(
         model_config, image_path, GENERAL_INSTRUCTIONS,
-        STAGE4B_CALL3_TEMPLATE.format(figure_id=figure_id, reading_a=reading_1, reading_b=reading_2),
+        STAGE4B_CALL3_TEMPLATE.format(
+            figure_id=figure_id, position_in_space=position_in_space,
+            physiognomy_description=physiognomy_description, reading_a=reading_1, reading_b=reading_2,
+        ),
         STAGE4_FRICTION_SCHEMA, "stage4b_friction", max_tokens=1000,
     )
     return {
@@ -241,7 +293,9 @@ def analyze_artwork(model_config: dict, image_path: str, csv_row: dict) -> dict:
     )
 
     # Stage 3 — narrative, with retrieval from the article corpus
-    stage3_chunks = retrieve(_build_query(theme_hint, str(csv_row.get("Title", ""))))
+    title = str(csv_row.get("Title", ""))
+    author = str(csv_row.get("Author", ""))
+    stage3_chunks = _retrieve_with_title_match(_build_query(theme_hint, title), title, author)
     stage3_reference = format_for_prompt(stage3_chunks)
 
     stage3 = call_vlm_json(
@@ -266,12 +320,11 @@ def analyze_artwork(model_config: dict, image_path: str, csv_row: dict) -> dict:
     result["stage_4b_results"] = []
 
     for fig in figures:
-        figure_id = fig["figure_id"]
         result["stage_4a_results"].append(
-            _run_stage4a(model_config, image_path, figure_id, theme_hint)
+            _run_stage4a(model_config, image_path, fig, theme_hint, title, author)
         )
         result["stage_4b_results"].append(
-            _run_stage4b(model_config, image_path, figure_id, genre_branch, theme_hint)
+            _run_stage4b(model_config, image_path, fig, genre_branch, theme_hint, title, author)
         )
 
     # Closing — visual metacognition, once per artwork

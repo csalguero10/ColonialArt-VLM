@@ -32,36 +32,42 @@
         "position_in_space": "Left foreground, held in the arms of fig_02",
         "relative_scale": "Smallest figure; child-scale relative to adults",
         "pose_state_basic": "Held upright in arms; body supported by fig_02",
-        "physiognomy_description": "Dark skin tone; rounded facial features; short dark hair; appears to be an infant or very young child; mouth slightly open"
+        "physiognomy_description": "Dark skin tone; rounded facial features; short dark hair; appears to be an infant or very young child; wearing a white garment on upper body and patterned skirt with blue and white floral or geometric design"
       },
       {
         "figure_id": "fig_02",
         "perceived_as_afrodescendant": true,
         "position_in_space": "Center-left foreground, standing; positioned between fig_01 and fig_03",
-        "relative_scale": "Adult scale; taller than fig_01, comparable height to fig_03",
-        "pose_state_basic": "Standing upright; left arm supporting fig_01; right arm at side; body angled slightly toward fig_03",
-        "physiognomy_description": "Dark skin tone; rounded facial features; dark hair; wears a wide-brimmed straw hat; facial expression appears neutral or contemplative; three-quarter face view"
+        "relative_scale": "Adult male figure; medium scale relative to fig_03",
+        "pose_state_basic": "Standing upright; left arm supporting fig_01; right arm at side; head turned slightly toward fig_03",
+        "physiognomy_description": "Dark skin tone; rounded facial features; dark hair; wearing a wide-brimmed straw or light-colored hat with white band; wearing a white collar or neck cloth; wearing a reddish-brown or rust-colored garment with visible buttons or fastenings"
       },
       {
         "figure_id": "fig_03",
         "perceived_as_afrodescendant": false,
-        "position_in_space": "Right foreground, standing; positioned adjacent to fig_02",
-        "relative_scale": "Adult scale; comparable height to fig_02",
-        "pose_state_basic": "Standing upright; body angled toward fig_02; right arm extended downward; left arm at side or resting on hip",
-        "physiognomy_description": "Light to medium skin tone; refined facial features; long dark hair with elaborate curled styling and gold ornamental details; three-quarter face view; downward gaze"
+        "position_in_space": "Right foreground, standing; positioned to the right of fig_02",
+        "relative_scale": "Adult female figure; largest figure in composition",
+        "pose_state_basic": "Standing upright; left arm resting on or near fig_02's shoulder; right arm extended downward toward objects on ground; head turned slightly downward and toward fig_02",
+        "physiognomy_description": "Light to medium skin tone; refined facial features; long dark hair with reddish-brown tones, elaborately styled and adorned; wearing a white linen or lace garment on upper body; wearing a richly decorated shawl or rebozo with gold embroidery and reddish-brown coloring; wearing jewelry including earrings and a pendant"
       }
     ],
     "technical_resources": {
-      "lighting": "Soft, diffused natural light from the upper left; creates gentle modeling on faces and fabrics; shadows are warm and transparent rather than harsh; overall luminosity is even across the composition",
-      "color_palette": "Dominated by warm earth tones and jewel tones: ochres, terracottas, and browns in garments and background; rich blues in the sky; gold and copper tones in ornamental details and hair; white linen accents; dark charcoal and black in skin tones and shadows; overall palette is warm and saturated",
-      "composition_notes": "Triangular grouping of three figures in the foreground; fig_02 and fig_03 form the base, with fig_01 elevated in the center-left; background shows a landscape with trees and sky receding to the right; architectural element (dark wall or building) visible in upper right; still life arrangement of fruits and vegetables in the lower right foreground; figures occupy the left two-thirds of the composition; spatial depth created through atmospheric perspective in the background"
+      "lighting": "Soft, diffused natural light from upper left; creates gentle modeling on faces and fabrics; shadows are warm and transparent rather than harsh; light emphasizes the pale blue sky background and illuminates the foreground figures evenly",
+      "color_palette": "Dominated by warm earth tones (rust, ochre, brown) in garments and skin tones; cool pale blue sky occupies upper portion; white and cream linens provide bright accents; rich reddish-brown and gold in the woman's shawl; dark browns and blacks in hair and shadows; muted greens and blues in the patterned skirt and background foliage",
+      "composition_notes": "Three-figure group arranged in a pyramidal composition with fig_03 at apex; figures occupy left-center foreground against a landscape background with trees and sky; architectural element (dark wall or building) visible at upper right; still-life arrangement of fruits and vegetables at lower right foreground; figures are tightly grouped with physical contact (fig_02 holding fig_01, fig_03's arm on fig_02); reading order proceeds left to right across the foreground plane"
     },
     "csv_conflicts": [
       {
         "field": "physiognomy_csv",
         "csv_value": "De pie",
-        "model_value": "Mixed: fig_01 is held in arms (not standing); fig_02 and fig_03 are standing upright",
-        "note": "CSV lists only 'De pie' (standing), but fig_01 is an infant held in the arms of fig_02 and is not standing independently. The CSV value is incomplete or oversimplified for a three-figure composition with mixed physical states."
+        "model_value": "Mixed: fig_01 is held in arms (not standing independently); fig_02 and fig_03 are standing upright",
+        "note": "CSV lists only 'De pie' (standing), but fig_01 is an infant being held and is not standing independently. The CSV value is incomplete as it does not account for the child's dependent posture."
+      },
+      {
+        "field": "face_position_csv",
+        "csv_value": "Rostro 3/4",
+        "model_value": "Mixed: fig_01 faces forward/slightly left; fig_02 faces forward with slight turn toward fig_03; fig_03 faces downward and toward fig_02 (more than 3/4 turn)",
+        "note": "CSV lists only one face position, but three figures are present with varying head orientations. Fig_03's head is turned more than 3/4 view, approaching profile. The CSV value does not capture the diversity of facial orientations in the composition."
       }
     ]
   },
@@ -77,138 +83,107 @@
     "descriptors": [
       "Family",
       "Children",
-      "Indigenous",
-      "African descent",
-      "Food",
-      "Clothing",
-      "Jewelry",
+      "Indigenous peoples",
+      "Afrodescendant figures",
+      "Clothing and dress",
+      "Food and sustenance",
       "Headwear",
-      "Landscape setting"
+      "Jewelry and adornment"
     ],
     "symbols": [
-      "Fruit and vegetables",
       "Straw hat",
-      "Ornate mantle",
-      "Gold jewelry",
-      "Linen",
-      "Landscape background",
-      "Architectural element"
+      "Elaborate shawl/rebozo",
+      "Patterned skirt",
+      "Fruits and vegetables",
+      "Jewelry",
+      "Architectural background",
+      "Landscape setting",
+      "Physical proximity and contact"
     ],
     "features": [
       "Adult figures",
       "Child figure",
-      "Standing poses",
+      "Standing postures",
+      "Held child",
       "Physical contact between figures",
-      "Three-quarter face views",
-      "Secular subject matter",
-      "Outdoor/landscape setting"
+      "Three-quarter facial views",
+      "Foreground grouping",
+      "Landscape background"
     ],
     "afrodescendant_attributes": [
       {
         "figure_id": "fig_01",
         "clothing_materials": [
           "Linen or cotton",
-          "Embroidered fabric"
+          "Patterned cotton or linen fabric"
         ],
-        "clothing_style": "Short-sleeved or sleeveless garment; white or cream-colored linen undergarment; patterned or embroidered overgown in blue and white with floral or geometric motifs",
-        "accessories": [
-          "None visible"
-        ]
+        "clothing_style": "Upper body: white sleeveless or short-sleeved garment; lower body: skirt with blue and white floral or geometric pattern",
+        "accessories": []
       },
       {
         "figure_id": "fig_02",
         "clothing_materials": [
-          "Linen",
-          "Cotton",
-          "Straw or palm fiber"
+          "Straw or woven plant fiber",
+          "Linen or cotton",
+          "Wool or linen blend"
         ],
-        "clothing_style": "White linen shirt or tunic; reddish-brown or terracotta-colored outer garment or cloak; wide-brimmed straw hat with light-colored band or trim",
+        "clothing_style": "Wide-brimmed hat with light tan or natural fiber color and white band; white collar or neck cloth; reddish-brown or rust-colored garment with visible button or fastening details",
         "accessories": [
-          "Wide-brimmed straw hat",
-          "Possibly a cord or tie at the neck"
+          "Wide-brimmed straw hat with white band",
+          "White collar or neck cloth"
         ]
       }
     ],
     "objects_in_scene": [
       {
-        "object": "Straw hat",
+        "object": "Straw or woven hat",
         "associated_figure_id": "fig_02",
-        "location_detail": "Worn on the head of fig_02"
+        "location_detail": "Worn on head of fig_02"
       },
       {
-        "object": "White linen garment",
+        "object": "White collar or neck cloth",
         "associated_figure_id": "fig_02",
-        "location_detail": "Worn as undergarment or shirt on fig_02"
+        "location_detail": "Worn at neck of fig_02"
       },
       {
-        "object": "Reddish-brown cloak or outer garment",
-        "associated_figure_id": "fig_02",
-        "location_detail": "Worn over the linen garment on fig_02"
-      },
-      {
-        "object": "Patterned or embroidered overgown",
+        "object": "Patterned skirt with blue and white design",
         "associated_figure_id": "fig_01",
-        "location_detail": "Worn by fig_01; blue and white with floral or geometric patterns"
+        "location_detail": "Worn on lower body of fig_01, held by fig_02"
       },
       {
-        "object": "White linen undergarment",
-        "associated_figure_id": "fig_01",
-        "location_detail": "Worn beneath the patterned overgown on fig_01"
-      },
-      {
-        "object": "Ornate mantle or shawl",
+        "object": "White linen or lace garment",
         "associated_figure_id": "fig_03",
-        "location_detail": "Draped over the shoulders and back of fig_03; brown or rust-colored with gold embroidered or brocaded patterns"
+        "location_detail": "Worn on upper body of fig_03"
       },
       {
-        "object": "White linen garment",
+        "object": "Elaborately decorated shawl or rebozo",
         "associated_figure_id": "fig_03",
-        "location_detail": "Worn as undergarment or bodice on fig_03; visible at the neckline and chest"
+        "location_detail": "Worn draped over shoulders and back of fig_03; gold embroidery and reddish-brown coloring visible"
       },
       {
-        "object": "Gold earrings or ear ornaments",
+        "object": "Earrings",
         "associated_figure_id": "fig_03",
-        "location_detail": "Worn at the ears of fig_03"
-      },
-      {
-        "object": "Gold ornamental details",
-        "associated_figure_id": "fig_03",
-        "location_detail": "Woven into or attached to the hair of fig_03; visible as gold threads or decorative elements in the elaborate curled hairstyle"
+        "location_detail": "Worn on ears of fig_03"
       },
       {
         "object": "Pendant or necklace",
         "associated_figure_id": "fig_03",
-        "location_detail": "Worn at the neck or chest of fig_03; appears to be a white or pale-colored ornament"
+        "location_detail": "Worn at neck/chest of fig_03"
       },
       {
-        "object": "Fruits",
-        "associated_figure_id": "fig_01",
-        "location_detail": "Scattered on the ground in the lower right foreground; includes what appear to be melons, gourds, and other produce"
+        "object": "Fruits and vegetables",
+        "associated_figure_id": "fig_03",
+        "location_detail": "Arranged on ground at lower right foreground, near fig_03's feet; includes what appear to be melons, gourds, and other produce"
       },
       {
-        "object": "Vegetables",
-        "associated_figure_id": "fig_01",
-        "location_detail": "Scattered on the ground in the lower right foreground; includes what appear to be squash, gourds, and other produce"
-      },
-      {
-        "object": "Ceramic or earthenware vessels",
-        "associated_figure_id": "fig_01",
-        "location_detail": "Visible among the fruits and vegetables in the lower right foreground; appear to be bowls or containers"
-      },
-      {
-        "object": "Tree",
+        "object": "Architectural structure",
         "associated_figure_id": null,
-        "location_detail": "Visible in the background landscape to the left and center; provides depth and natural setting"
+        "location_detail": "Dark wall or building visible at upper right background"
       },
       {
-        "object": "Architectural element",
+        "object": "Trees and foliage",
         "associated_figure_id": null,
-        "location_detail": "Dark wall or building structure visible in the upper right background"
-      },
-      {
-        "object": "Sky",
-        "associated_figure_id": null,
-        "location_detail": "Light blue sky occupying the upper portion of the composition; provides atmospheric background"
+        "location_detail": "Visible in middle ground and background at left and center"
       }
     ],
     "inscription_present": true,
@@ -226,179 +201,145 @@
       {
         "field": "Objects",
         "csv_value": "No",
-        "model_value": "Yes - multiple objects present including straw hat, linen garments, ornate mantle, gold jewelry, fruits, vegetables, ceramic vessels, tree, architectural element, sky",
-        "note": "CSV states 'No' for objects, but Stage 2 identifies numerous material objects throughout the composition: clothing, accessories, produce, vessels, and landscape elements. This is a clear contradiction."
+        "model_value": "Yes - multiple objects present including straw hat, white collar/neck cloth, patterned skirt, white linen garment, elaborately decorated shawl/rebozo, earrings, pendant/necklace, fruits and vegetables, architectural structure, trees and foliage",
+        "note": "CSV states 'No' for objects, but Stage 2 analysis identifies numerous material objects integral to the composition: clothing items, accessories, produce, and architectural/landscape elements. This is a direct contradiction."
       },
       {
         "field": "Category",
         "csv_value": "Paisaje",
-        "model_value": "Secular portrait / Casta painting",
-        "note": "CSV categorizes as 'Paisaje' (landscape), but the primary subject is a family group portrait with landscape background. The composition is dominated by three human figures in the foreground; the landscape is secondary. The work is better classified as a casta painting or secular portrait with landscape setting."
+        "model_value": "Secular portrait / Casta painting (figure-centered composition)",
+        "note": "CSV categorizes as 'Paisaje' (landscape), but the composition is fundamentally a portrait of three figures in foreground with landscape as secondary background element. The primary subject is the human figures and their relationships, not the landscape itself."
       },
       {
-        "field": "Physiognomy",
-        "csv_value": "De pie",
-        "model_value": "Mixed: fig_01 held in arms (not standing); fig_02 and fig_03 standing upright",
-        "note": "CSV lists only 'De pie' (standing), but fig_01 is an infant held in the arms of fig_02 and is not standing independently. The CSV value is incomplete for a three-figure composition with mixed physical states."
+        "field": "Symbols",
+        "csv_value": "Árbol, Capa, Cielo / paraíso, Frutas / verduras, Joyas, Manto",
+        "model_value": "Straw hat, Elaborate shawl/rebozo, Patterned skirt, Fruits and vegetables, Jewelry, Architectural background, Landscape setting, Physical proximity and contact",
+        "note": "CSV omits 'Straw hat' and 'Patterned skirt' which are visually prominent and iconographically significant in casta painting conventions. CSV includes 'Capa' (cape) which is not clearly visible; the garment is a 'rebozo' (shawl). CSV lists 'Cielo / paraíso' (sky/paradise) which is background element, not a symbol with iconographic meaning in this context."
       }
     ]
   },
   "stage_2b_material_identification": {
     "identified_elements": [
       {
-        "generic_description": "Patterned or embroidered overgown worn by fig_01; blue and white with floral or geometric patterns",
+        "generic_description": "Wide-brimmed straw hat with white band worn on head of fig_02",
+        "specific_term": "sombrero",
+        "term_language": "Spanish",
+        "supporting_source": "Dialnet-NuevasAportacionesEnTornoAlLienzoTituladoLosMulato-4378968.pdf; los-mulatos-de-esmeraldas.txt",
+        "confidence_note": "The reference material discusses sombreros fabricated in colonial obrajes (workshops) in Quito and Latacunga, with adornments such as plumes, braids, and bands (cintillos, toquillas, trencelines). The painted hat on fig_02 displays a wide brim, natural tan/straw color, and a white band consistent with colonial-era sombrero construction and decoration. Visual evidence matches the historical description of late 16th–18th century colonial headwear."
+      },
+      {
+        "generic_description": "White collar or neck cloth worn at neck of fig_02",
+        "specific_term": "cuello",
+        "term_language": "Spanish",
+        "supporting_source": "los-mulatos-de-esmeraldas.txt",
+        "confidence_note": "Reference material describes Spanish fashion elements including 'cuellos' (collars) as part of European dress worn by colonial figures of status. The white linen collar visible on fig_02 matches the description of Spanish-style neckwear that was part of the redingote or formal coat ensemble worn by Afro-descended men in colonial Mexico City."
+      },
+      {
+        "generic_description": "Reddish-brown or rust-colored garment with visible button or fastening details worn by fig_02",
+        "specific_term": "redingote",
+        "term_language": "French (adopted into Spanish colonial usage)",
+        "supporting_source": "Artwork descriptions.pdf",
+        "confidence_note": "The reference material explicitly identifies a 'redingote' (riding coat) as worn by the father figure in a casta painting, noting it comes from the English 'riding coat.' The garment on fig_02 displays the characteristic long-coat silhouette with visible fastenings (buttons or hooks) and rust/reddish-brown coloring consistent with the redingote style. This garment was often associated with servants, coachmen, or military uniforms in colonial Mexico."
+      },
+      {
+        "generic_description": "Patterned skirt with blue and white floral or geometric design worn on lower body of fig_01",
         "specific_term": "saya",
         "term_language": "Spanish",
-        "supporting_source": "Mujeres_de_origen_africano_en_la_capital.pdf; Dialnet-NuevasAportacionesEnTornoAlLienzoTituladoLosMulato-4378968.pdf",
-        "confidence_note": "The garment visible on fig_01 is a full-length skirt with decorative patterning in blue and white. The reference material describes sayas as skirts worn by women of African descent and mixed-race women in colonial contexts, often with embroidered or patterned decoration. The visual evidence—a full-length patterned skirt—matches the saya description. However, the term 'saya' typically refers to the skirt portion specifically, and fig_01 appears to wear both a skirt and a separate upper garment, so 'saya' identifies the lower garment component."
+        "supporting_source": "Mujeres_de_origen_africano_en_la_capital.pdf; Pinturas de castas, una interpretación.pdf",
+        "confidence_note": "Reference material extensively documents the 'saya' as a distinctive garment worn by women of African descent in colonial Mexico, often featuring floral or geometric patterns and worn with visible fastenings (broches). The painted skirt on fig_01 displays the characteristic wide cut, decorative patterning in blue and white, and positioning consistent with colonial-era saya construction. The saya was a marker of social and economic status."
       },
       {
-        "generic_description": "White linen undergarment worn beneath the patterned overgown on fig_01",
-        "specific_term": "camisa",
+        "generic_description": "White linen or lace garment worn on upper body of fig_03",
+        "specific_term": "blusa",
         "term_language": "Spanish",
-        "supporting_source": "Dialnet-NuevasAportacionesEnTornoAlLienzoTituladoLosMulato-4378968.pdf; Mujeres_de_origen_africano_en_la_capital.pdf",
-        "confidence_note": "The white linen garment visible at the neckline and upper body of fig_01 matches descriptions of the camisa (shirt/chemise) worn as an undergarment by women in colonial Latin America. The reference material confirms that camisas were made of linen and worn as foundational garments beneath outer skirts and overgowns. The visual evidence shows white linen fabric at the chest and neckline consistent with this identification."
+        "supporting_source": "Pinturas de castas, una interpretación.pdf",
+        "confidence_note": "Reference material describes a 'blusa' (blouse) as part of women's dress in casta paintings, often made of fine linen or lace. The white upper garment on fig_03 displays the fine, delicate texture and lace detailing consistent with a colonial-era blusa worn by women of mixed or higher social status."
       },
       {
-        "generic_description": "Wide-brimmed straw hat worn on the head of fig_02",
-        "specific_term": "sombrero de paja",
+        "generic_description": "Elaborately decorated shawl or rebozo with gold embroidery and reddish-brown coloring draped over shoulders and back of fig_03",
+        "specific_term": "rebozo",
         "term_language": "Spanish",
-        "supporting_source": "Dialnet-NuevasAportacionesEnTornoAlLienzoTituladoLosMulato-4378968.pdf",
-        "confidence_note": "The hat visible on fig_02 is wide-brimmed and appears to be made of straw or palm fiber with a light-colored band or trim. The reference material discusses sombreros (hats) made of felt or straw, with various decorative trimmings. The visual evidence—a wide-brimmed hat in natural straw color with a band—supports identification as a sombrero de paja (straw hat), a common form of headwear for working-class and indigenous populations in colonial contexts."
+        "supporting_source": "Mujeres_de_origen_africano_en_la_capital.pdf; Pinturas de castas, una interpretación.pdf",
+        "confidence_note": "Reference material extensively documents the 'rebozo' as a distinctive garment worn by women in colonial Mexico, often elaborately decorated with embroidery and worn draped over the shoulders. The painted garment on fig_03 displays the characteristic draping style, gold embroidered decoration, and reddish-brown coloring consistent with luxury rebozos worn by women of higher economic status. The rebozo was a key marker of social position and wealth."
       },
       {
-        "generic_description": "White linen shirt or tunic worn as undergarment on fig_02",
-        "specific_term": "camisa",
-        "term_language": "Spanish",
-        "supporting_source": "Dialnet-NuevasAportacionesEnTornoAlLienzoTituladoLosMulato-4378968.pdf",
-        "confidence_note": "The white linen garment visible on fig_02 beneath the outer reddish-brown garment matches descriptions of the camisa worn by men in colonial contexts. The reference material confirms camisas were made of linen and worn as foundational garments. The visual evidence shows white linen fabric on the upper body consistent with this identification."
-      },
-      {
-        "generic_description": "Reddish-brown or terracotta-colored outer garment or cloak worn over the linen garment on fig_02",
-        "specific_term": "manta",
-        "term_language": "Spanish",
-        "supporting_source": "Dialnet-NuevasAportacionesEnTornoAlLienzoTituladoLosMulato-4378968.pdf",
-        "confidence_note": "The reddish-brown outer garment draped over fig_02's shoulders and body is consistent with descriptions of the manta—a rectangular cloth garment worn by indigenous and mixed-race populations in the Andes and colonial Latin America. The reference material explicitly distinguishes mantas from Spanish capes and notes they were worn by mulatos and indigenous peoples, often in luxurious imported fabrics. The visual evidence shows a draped, rectangular outer garment in a warm terracotta tone consistent with manta descriptions."
-      },
-      {
-        "generic_description": "Ornate mantle or shawl draped over the shoulders and back of fig_03; brown or rust-colored with gold embroidered or brocaded patterns",
-        "specific_term": "manto",
-        "term_language": "Spanish",
-        "supporting_source": "Mujeres_de_origen_africano_en_la_capital.pdf",
-        "confidence_note": "The elaborate draped garment visible on fig_03's shoulders and back, with visible gold embroidery or brocading, matches descriptions of the manto—a decorative mantle worn by women of higher social status in colonial contexts. The reference material describes mantos as ornate outer garments with rich embellishment. The visual evidence shows a luxuriously decorated draped garment in brown/rust tones with gold patterning, consistent with manto identification."
-      },
-      {
-        "generic_description": "White linen garment worn as undergarment or bodice on fig_03; visible at the neckline and chest",
-        "specific_term": "camisa",
-        "term_language": "Spanish",
-        "supporting_source": "Mujeres_de_origen_africano_en_la_capital.pdf; Dialnet-NuevasAportacionesEnTornoAlLienzoTituladoLosMulato-4378968.pdf",
-        "confidence_note": "The white linen garment visible at the neckline and upper chest of fig_03 matches descriptions of the camisa worn as a foundational undergarment by women in colonial contexts. The reference material confirms camisas were made of fine linen and worn beneath outer garments. The visual evidence shows white linen fabric at the chest and neckline consistent with this identification."
-      },
-      {
-        "generic_description": "Gold earrings or ear ornaments worn at the ears of fig_03",
+        "generic_description": "Earrings worn on ears of fig_03",
         "specific_term": "zarcillos",
         "term_language": "Spanish",
-        "supporting_source": "Dialnet-NuevasAportacionesEnTornoAlLienzoTituladoLosMulato-4378968.pdf; Mujeres_de_origen_africano_en_la_capital.pdf",
-        "confidence_note": "The gold ornaments visible at the ears of fig_03 match descriptions of zarcillos (earrings) worn by women of African descent and mixed-race women in colonial contexts. The reference material notes that free women of color were permitted to wear gold zarcillos, particularly if married to Spaniards. The visual evidence shows gold ornaments at the ears consistent with zarcillo identification."
-      },
-      {
-        "generic_description": "Gold ornamental details woven into or attached to the hair of fig_03; visible as gold threads or decorative elements in the elaborate curled hairstyle",
-        "specific_term": "cintas de oro",
-        "term_language": "Spanish",
         "supporting_source": "Mujeres_de_origen_africano_en_la_capital.pdf",
-        "confidence_note": "The gold threads or ribbons visible woven through the elaborate curled hairstyle of fig_03 match descriptions of cintas de oro (gold ribbons/bands) used as hair ornaments by women of higher social status in colonial contexts. The reference material describes gold ribbons worn in the hair, sometimes with embroidered verses. The visual evidence shows gold-colored decorative elements integrated into the hairstyle consistent with this identification."
+        "confidence_note": "Reference material documents 'zarcillos' (earrings) as jewelry worn by women of African descent in colonial Mexico, often made of gold or pearls and restricted by law to free women married to Spaniards. The painted earrings on fig_03 are visible and consistent with the colonial-era zarcillos described in legal and pictorial sources."
       },
       {
-        "generic_description": "Pendant or necklace worn at the neck or chest of fig_03; appears to be a white or pale-colored ornament",
+        "generic_description": "Pendant or necklace worn at neck/chest of fig_03",
         "specific_term": "gargantilla",
         "term_language": "Spanish",
         "supporting_source": "Mujeres_de_origen_africano_en_la_capital.pdf",
-        "confidence_note": "The pale-colored ornament visible at the neck/chest of fig_03 matches descriptions of the gargantilla—a type of necklace or neck ornament worn by women of African descent and mixed-race women in colonial contexts. The reference material notes that free women of color were permitted to wear gargantillas, particularly if married to Spaniards. The visual evidence shows a pale ornament at the neck consistent with gargantilla identification."
+        "confidence_note": "Reference material documents the 'gargantilla' (necklace or collar) as jewelry worn by women of African descent in colonial Mexico, often made of pearls or gold and restricted by law to free women married to Spaniards. The painted necklace on fig_03 is visible at the chest and consistent with the colonial-era gargantilla described in legal and pictorial sources as a marker of status and freedom."
       },
       {
-        "generic_description": "Fruits scattered on the ground in the lower right foreground; includes what appear to be melons, gourds, and other produce",
-        "specific_term": "frutas",
+        "generic_description": "Fruits and vegetables arranged on ground at lower right foreground near fig_03's feet",
+        "specific_term": "frutas y verduras",
         "term_language": "Spanish",
-        "supporting_source": "Mujeres_de_origen_africano_en_la_capital.pdf; Africanos-y-Afrodescendientes-en-La-Amer-1.pdf",
-        "confidence_note": "The various round and oblong produce items visible in the lower right foreground appear to include melons, gourds, and other fruits. The reference material discusses casta paintings that depict families engaged in fruit and vegetable commerce, with detailed identification of specific produce types. The visual evidence shows multiple round and oblong fruits consistent with melons and gourds, supporting identification as frutas (fruits) in a commercial or domestic context."
-      },
-      {
-        "generic_description": "Vegetables scattered on the ground in the lower right foreground; includes what appear to be squash, gourds, and other produce",
-        "specific_term": "hortalizas",
-        "term_language": "Spanish",
-        "supporting_source": "Mujeres_de_origen_africano_en_la_capital.pdf; Africanos-y-Afrodescendientes-en-La-Amer-1.pdf",
-        "confidence_note": "The produce items visible in the lower right foreground include what appear to be squash and gourds. The reference material discusses casta paintings depicting families engaged in vegetable and produce commerce, with emphasis on the variety of hortalizas (vegetables/produce) available in colonial markets. The visual evidence shows multiple produce items consistent with squash and gourds, supporting identification as hortalizas in a commercial context."
-      },
-      {
-        "generic_description": "Ceramic or earthenware vessels visible among the fruits and vegetables in the lower right foreground; appear to be bowls or containers",
-        "specific_term": "vasijas de cerámica",
-        "term_language": "Spanish",
-        "supporting_source": "Mujeres_de_origen_africano_en_la_capital.pdf",
-        "confidence_note": "The ceramic vessels visible among the produce in the lower right foreground appear to be bowls or containers, likely used for storing or displaying goods. The reference material discusses ceramic vessels in market and domestic contexts in colonial paintings. The visual evidence shows earthenware-colored rounded vessels consistent with ceramic bowls or containers used in commerce or food preparation."
+        "supporting_source": "Africanos-y-Afrodescendientes-en-La-Amer-1.pdf; Mujeres_de_origen_africano_en_la_capital.pdf",
+        "confidence_note": "Reference material documents the sale of 'frutas y verduras' (fruits and vegetables) as a common occupation for women of African descent in colonial Mexico, with detailed descriptions of market scenes and produce displays. The painted arrangement of melons, gourds, and other produce at fig_03's feet is consistent with the documented iconography of market vendors and food sellers in casta paintings."
       }
     ]
   },
   "stage_3_narrative": {
-    "description": "This is a casta painting by Miguel Cabrera dated 1763, titled 'De Negro, y de India, China Cambuja' (From Black and Indian, China Cambuja), oil on canvas, housed in the Museo de América, Madrid. The work depicts a family group of three figures in the foreground arranged in a triangular composition against a landscape background with trees and sky. The scene represents a specific racial mixture category within the colonial casta taxonomy: the offspring of a Black man (fig_02) and an Indian woman (fig_03), producing a child of mixed descent (fig_01). The composition is secular and domestic in character, showing the family in an outdoor or semi-outdoor setting with a still-life arrangement of fruits and vegetables in the lower right foreground. The painting exemplifies the dual purpose of casta paintings as documented in the reference material: to classify racial mixtures according to the colonial taxonomic system and simultaneously to display the economic products and commercial activities of colonial America. The reference material notes that such scenes often depict families 'of certain economic resources' engaged in fruit commerce, with the abundance and variety of produce serving both as evidence of colonial wealth and as an illustration of exotic American goods. The inscription at the top of the canvas functions as a cartela, identifying the specific casta category represented. The work is characteristic of Cabrera's documented practice as a casta painter active in the mid-eighteenth century, and the composition, material culture, and iconographic elements align with the established conventions of the genre as described in the scholarly corpus. The scene is entirely secular and profane, with no religious iconography, donor figures, or allegorical elements present.",
+    "description": "This is a casta painting by Miguel Cabrera dated 1763, titled 'De Negro, y de India, China Cambuja' (From Black and Indian, Chinese Cambuja). The work is oil on canvas, housed in the Museo de América, Madrid, and originates from Mexico City. The composition depicts a three-figure family group arranged in a pyramidal structure in the foreground against a landscape background with pale blue sky, trees, and an architectural element (dark wall or building) at upper right. The scene is secular and domestic in character, representing a mixed-race family unit typical of the casta painting genre that emerged in 18th-century colonial Mexico. The painting exemplifies the visual taxonomy of racial mixture and social stratification that characterized this genre, as documented in the reference material on casta painting interpretation. The composition demonstrates the hierarchical arrangement noted in scholarly analysis: the figures are positioned with physical contact and proximity, suggesting familial relationship. Fig_02 (perceived as Afrodescendant male) stands at center-left, wearing a wide-brimmed sombrero with white band, a white cuello (collar), and a rust-colored redingote with visible fastenings—garments associated with servants, coachmen, or military personnel in colonial Mexico. He holds fig_01 (perceived as Afrodescendant child, likely female) in his left arm. Fig_01 wears a white upper garment and a patterned saya (skirt) with blue and white floral or geometric design, a distinctive garment worn by women of African descent in colonial Mexico and often a marker of economic status. Fig_03 (perceived as non-Afrodescendant female, likely of mixed or Spanish descent) stands at right, wearing a fine white linen or lace blusa (blouse), an elaborately decorated rebozo (shawl) with gold embroidery and reddish-brown coloring draped over her shoulders, and jewelry including zarcillos (earrings) and a gargantilla (necklace or pendant). Her left arm rests on or near fig_02's shoulder; her right arm extends downward toward a still-life arrangement of frutas y verduras (fruits and vegetables)—melons, gourds, and other produce—positioned at the lower right foreground. This arrangement of produce is consistent with the documented iconography of market vendors and food sellers in casta paintings, and references the common occupation of women of African descent in colonial Mexico. The inscription at top reads 'De Negro, y de India, China Cambuja,' identifying the racial categories represented: the union of a Black man and an Indian woman producing a 'China Cambuja' (a specific casta category). The painting exemplifies the genre's dual function: to register visual documentation of racial mixture and economic development while simultaneously encoding social hierarchy through costume, posture, and spatial arrangement. The reference material notes that casta paintings often present an idealized vision of social harmony and integration that did not correspond to historical reality, and that the visual hierarchy encoded in such works—through color, dress, and positioning—reinforced colonial racial and economic stratification.",
     "donor_present": false,
     "csv_conflicts": [
       {
-        "field": "category_csv",
-        "csv_value": "Paisaje",
-        "model_value": "Casta painting / Secular family portrait",
-        "note": "The CSV categorizes this work as 'Paisaje' (landscape), but the primary subject and compositional focus is a family group portrait representing a specific casta category. While a landscape background is present, it is secondary to the human figures and the social/racial classification they represent. The work is better classified as a casta painting or secular family portrait, not as a landscape painting."
-      },
-      {
-        "field": "objects_csv",
-        "csv_value": "No",
-        "model_value": "Yes - extensive material culture present including clothing, accessories, produce, vessels, and landscape elements",
-        "note": "The CSV states 'No' for objects, but the painting contains numerous identifiable objects: straw hat (sombrero de paja), linen garments (camisas), ornate mantle (manto), gold jewelry (zarcillos, cintas de oro, gargantilla), fruits (frutas), vegetables (hortalizas), and ceramic vessels (vasijas de cerámica). This is a clear contradiction."
-      },
-      {
         "field": "scene_csv",
         "csv_value": "Terrestre / paisaje",
-        "model_value": "Terrestre / domestic or commercial scene with landscape background",
-        "note": "While 'Terrestre / paisaje' (terrestrial/landscape) is not incorrect, it is incomplete. The scene is more specifically a domestic or commercial family scene set in a terrestrial landscape. The primary focus is the family group and their economic activity (fruit commerce), not the landscape itself."
+        "model_value": "Secular domestic portrait / Casta painting (figure-centered composition with landscape as secondary background)",
+        "note": "CSV categorizes the scene as 'Terrestre / paisaje' (terrestrial/landscape), but the primary subject and compositional focus is the three-figure family group in the foreground. The landscape (trees, sky, architectural element) functions as background setting, not as the primary subject. The scene is fundamentally a secular family portrait within the casta painting genre, not a landscape composition."
+      },
+      {
+        "field": "donor_csv",
+        "csv_value": "Sin donante",
+        "model_value": "No donor figure present",
+        "note": "CSV correctly identifies 'Sin donante' (without donor). No kneeling, praying, or dedicatory figure is visible in the composition. This field is accurate and requires no correction."
       }
     ],
     "consulted_sources": [
       "Pinturas de castas, una interpretación.pdf",
       "Pinturas de castas, una interpretación.pdf",
-      "Mujeres_de_origen_africano_en_la_capital.pdf",
+      "Pinturas de castas, una interpretación.pdf",
       "Mujeres_de_origen_africano_en_la_capital.pdf"
     ]
   },
   "stage_4a_results": [
     {
       "figure_id": "fig_01",
-      "subordination_reading": "```json\n{\n  \"image_title\": \"De Negroydindia China cambuya\",\n  \"image_date\": \"18th century\",\n  \"image_medium\": \"Oil on canvas\",\n  \"image_dimensions\": null,\n  \"image_provenance\": \"\",\n  \"casta_painting\": true,\n  \"figures\": [\n    {\n      \"figure_id\": \"fig_01\",\n      \"position_in_composition\": \"left foreground\",\n      \"perceived_age\": \"infant/toddler\",\n      \"perceived_as_afrodescendant\": true,\n      \"skin_tone_as_painted\": \"dark brown/black\",\n      \"hair_texture_as_rendered\": \"tightly curled\",\n      \"clothing\": \"white linen garment\",\n      \"objects_held_or_worn\": [],\n      \"posture_description\": \"held in the arms of fig_02; body relaxed and leaning against the adult's torso; head turned slightly toward the viewer\",\n      \"gaze_direction\": \"toward viewer/slightly downward\",\n      \"gesture_description\": \"passive; arms at sides or resting against fig_02's body\",\n      \"facial_expression_as_painted\": \"open-mouthed, animated expression\",\n      \"perceived_social_role\": \"\"\n    },\n    {\n      \"figure_id\": \"fig_02\",\n      \"position_in_composition\": \"center-left foreground\",\n      \"perceived_age\": \"adult male\",\n      \"perceived_as_afrodescendant\": true,\n      \"skin_tone_as_painted\": \"dark brown/black\",\n      \"hair_texture_as_rendered\": \"tightly curled\",\n      \"clothing\": \"white linen shirt, decorative patterned jacket with floral motifs in blue and white, red breeches\",\n      \"objects_held_or_worn\": \"large straw or woven hat with white band; fig_01 held in left arm\",\n      \"posture_description\": \"standing upright; left arm cradling fig_01; right arm extended downward; shoulders squared; torso facing forward\",\n      \"gaze_direction\": \"downward and to the left, toward fig_01\",\n      \"gesture_description\": \"supporting and presenting fig_01; right hand gesturing or resting near the lower body\",\n      \"facial_expression_as_painted\": \"neutral, composed\",\n      \"perceived_social_role\": \"\"\n    },\n    {\n      \"figure_id\": \"fig_03\",\n      \"position_in_composition\": \"center-right foreground\",\n      \"perceived_age\": \"adult female\",\n      \"perceived_as_afrodescendant\": false,\n      \"skin_tone_as_painted\": \"light tan/olive\",\n      \"hair_texture_as_rendered\": \"long, wavy, dark brown with gold ornamental braiding\",\n      \"clothing\": \"white linen chemise with lace trim; ornate brown and gold brocaded rebozo or shawl draped over shoulders and back; red underskirt visible\",\n      \"objects_held_or_worn\": \"gold earrings; gold necklace; gold ornamental pins or brooches in hair\",\n      \"posture_description\": \"standing upright; leaning slightly toward fig_02 and fig_01; left arm extended downward; right arm resting on hip or at side\",\n      \"g",
-      "agency_reading": "```json\n{\n  \"stage\": 4,\n  \"task\": \"mayeutic interpretation of fig_01 posture, gaze, and authority\",\n  \"figure_id\": \"fig_01\",\n  \"visual_description\": \"fig_01 is positioned in the left foreground, held by fig_02. The figure displays an upright torso despite being cradled; the head is turned slightly toward the viewer with a direct, alert gaze. The facial expression appears composed and aware rather than passive or dependent.\",\n  \"interpretation\": \"fig_01's posture communicates a form of self-possession that complicates any reading of pure subordination. Despite occupying the physically dependent position of an infant held in another's arms, the figure's upright spine, direct gaze toward the viewer, and composed facial expression suggest an awareness of being observed and represented. This bodily comportment—alert rather than drowsy, frontal rather than averted—mirrors the visual strategies of authority and presence documented in casta paintings, where social position was often communicated through bearing and eye contact. The reference material emphasizes that African-descended women in viceregal Mexico were depicted as 'orgullosas y retadoras' (proud and defiant), displaying self-awareness through dress, jewelry, and comportment. fig_01's direct gaze and upright carriage, even in infancy and physical dependence, may reflect this pictorial convention of asserting presence and dignity within a hierarchical colonial frame. The posture thus operates ambivalently: it can be read as either the natural alertness of a child, or as a deliberate assertion of subjectivity within a composition designed to categorize and order colonial difference.\",\n  \"interpretive_tension\": \"The figure's upright posture and direct gaze could signify either innate dignity and self-awareness (reading agency into the representation) or could be a neutral artistic convention for depicting infants in group portraits (reading it as merely compositional). The reference material's emphasis on African-descended women's proud bearing suggests the former interpretation was culturally legible in the period, yet the figure's physical dependence on fig_02 simultaneously anchors them in a position of vulnerability.\",\n  \"csv_conflicts\": []\n}\n```",
+      "subordination_reading": "```json\n{\n  \"stage\": 4,\n  \"task\": \"mayeutic_analysis_fig_01_posture_and_hierarchy\",\n  \"figure_id\": \"fig_01\",\n  \"analysis\": \"Figure fig_01, the infant held in the arms of fig_02, displays a posture that is relaxed rather than rigid or constrained. The child's body rests naturally against the adult's torso, with limbs in a soft, unforced position typical of an infant being cradled. The musculature shows no visible tension or signs of imposed restraint; instead, the figure appears at ease within the embrace. The child's gaze is directed slightly upward and to the side, toward the viewer rather than downward in a deferential manner, which suggests an open, unguarded expression rather than one of submission or piety. The posture communicates dependency and vulnerability—natural to an infant—but not necessarily subordination or acceptance of hierarchical placement. The child's positioning within the composition, nestled against fig_02, conveys physical care and proximity rather than marginalization or disciplinary control. While the child's age and size create an inherent power differential with the adult figure, the bodily language does not register as one of enforced compliance or religious resignation, but rather as the ordinary physical relationship between caregiver and dependent.\",\n  \"csv_conflicts\": []\n}\n```",
+      "agency_reading": "# Stage 4: Mayeutic Analysis of fig_01\n\nfig_01, the young child held in the arms of fig_02, displays a posture that is neither passive nor subordinate despite occupying a physically dependent position. The child's body is held upright and forward-facing, with the torso oriented toward the viewer rather than nestled against the caregiver's body in a posture of retreat or concealment. The gaze appears direct and engaged, meeting the viewer's eye with a clarity and presence that contradicts any interpretation of the figure as merely decorative or marginal to the composition's meaning. This frontal presentation, combined with the child's alert facial expression, suggests an assertion of visibility and acknowledgment within the domestic or commercial scene—a visual claim to presence that the reference material associates with the deliberate self-presentation of African-descended women and children in casta paintings, where \"gestos, vestimentas, miradas y diversos atributos\" (gestures, garments, gazes, and various attributes) were deployed to distinguish and assert identity. Rather than communicating submission or dependency, the child's posture and direct regard communicate a form of self-awareness and social positioning: the figure is presented not as an object of care but as a participant in the scene, held prominently and displayed to the viewer with the same intentionality that governs the presentation of the adult fig_02. The patterned skirt and white garment, detailed with the same care as the adult's clothing, further reinforce this reading—the child is dressed, adorned, and presented as a social being worthy of visual attention and material investment.",
       "friction": {
-        "contested_element": "fig_01's gaze direction and facial expression: whether the upright posture, direct gaze toward viewer, and composed/alert facial expression constitute evidence of agency and self-possession (Reading B) or are neutral artistic conventions for depicting infants in group portraiture (Reading A)",
-        "resolvable": false,
-        "resolution_note": "Direct visual verification confirms both readings accurately describe what is painted: fig_01 does display an upright torso, a head turned toward the viewer, and a composed, open-mouthed expression with alert eyes. However, these same visual facts support contradictory interpretations. Reading A treats the upright posture and direct gaze as neutral compositional elements—standard ways of depicting infants in group portraiture to ensure visibility and legibility. Reading B interprets the identical posture and gaze as deliberate assertion of presence and dignity, drawing on reference material about African-descended women's 'proud and defiant' bearing in casta paintings. The visual element itself—an infant's upright spine and forward-facing gaze—is genuinely ambiguous: it could reflect either the artist's practical need to make the figure visible and recognizable within the composition, or a culturally legible pictorial convention for representing subjectivity and self-awareness. Without external evidence (artist's intent, contemporary viewer testimony, or comparative analysis of how infants are depicted across casta paintings when held versus when positioned differently), the posture cannot definitively resolve which interpretation the artist intended. The ambiguity is not a defect in either reading but inherent to the visual evidence itself."
+        "contested_element": "The direction and quality of fig_01's gaze and the orientation of the child's torso relative to fig_02's body",
+        "resolvable": true,
+        "resolution_note": "Direct visual inspection of fig_01 reveals that the child's body is held cradled against fig_02's torso in a nestled position, not held upright and forward-facing as Reading B claims. The child's gaze is directed upward and slightly to the side toward the viewer, but the torso itself is oriented inward toward the caregiver's body rather than frontally presented to the viewer. Reading B's assertion that the child is \"held upright and forward-facing\" with \"torso oriented toward the viewer rather than nestled against the caregiver's body\" contradicts the visible composition. The child is physically dependent and cradled, not independently positioned. Reading A's description of the child as \"nestled against fig_02\" and displaying \"a soft, unforced position typical of an infant being cradled\" is visually accurate. While the child's gaze does meet the viewer's eye with clarity, this does not override the fact that the body itself is in a dependent, cradled posture. Reading B conflates the directness of the gaze with an assertion of independent agency or frontal presentation that is not supported by the actual positioning of the child's body in the composition."
       },
       "consulted_sources": [
         "Mujeres_de_origen_africano_en_la_capital.pdf",
         "Mujeres_de_origen_africano_en_la_capital.pdf",
         "Mujeres_de_origen_africano_en_la_capital.pdf",
-        "Pintores criollos, pintura de castas  y colonialismo interno.pdf"
+        "Mujeres_de_origen_africano_en_la_capital.pdf"
       ]
     },
     {
       "figure_id": "fig_02",
-      "subordination_reading": "```json\n{\n  \"image_title\": \"De Negroydia China cambuya\",\n  \"image_date\": \"18th century\",\n  \"image_medium\": \"Oil on canvas\",\n  \"image_dimensions\": null,\n  \"image_provenance\": \"\",\n  \"casta_painting\": true,\n  \"figures\": [\n    {\n      \"figure_id\": \"fig_01\",\n      \"position_in_composition\": \"left foreground\",\n      \"apparent_age\": \"infant or very young child\",\n      \"perceived_as_afrodescendant\": true,\n      \"skin_tone_as_painted\": \"dark brown to black\",\n      \"hair_texture_as_rendered\": \"tightly curled or coiled\",\n      \"clothing\": \"white linen garment, decorative patterned jacket or vest with floral/geometric motifs in blue, white, and earth tones\",\n      \"objects_held_or_worn\": \"none visible\",\n      \"posture_and_gaze\": \"held in the arms of fig_02; gaze directed toward viewer or slightly upward; body relaxed and dependent\",\n      \"perceived_social_role\": \"child of mixed parentage\",\n      \"notes\": \"Depicted as an infant or toddler; the decorative jacket suggests some status or care in dress\"\n    },\n    {\n      \"figure_id\": \"fig_02\",\n      \"position_in_composition\": \"center-left to center, middle ground\",\n      \"apparent_age\": \"adult, approximately 30-40 years\",\n      \"perceived_as_afrodescendant\": true,\n      \"skin_tone_as_painted\": \"dark brown to black\",\n      \"hair_texture_as_rendered\": \"tightly curled or coiled, covered by a large white linen hat or bonnet with decorative edging\",\n      \"clothing\": \"white linen shirt or chemise; reddish-brown or rust-colored outer garment or robe; the hat is prominent and carefully rendered\",\n      \"objects_held_or_worn\": \"holds fig_01 (the child) in left arm; wears a hat; appears to hold or gesture with right hand\",\n      \"posture_and_gaze\": \"stands in three-quarter view; shoulders slightly rounded; gaze directed downward and to the side, not meeting the viewer's eye directly; body orientation is toward fig_03 but posture is inward-turning\",\n      \"perceived_social_role\": \"caregiver or mother figure\",\n      \"notes\": \"Central figure in the composition; the downward gaze and inward posture contrast with the more frontal, confident presentation of fig_03\"\n    },\n    {\n      \"figure_id\": \"fig_03\",\n      \"position_in_composition\": \"center-right, middle ground\",\n      \"apparent_age\": \"adult, approximately 25-35 years\",\n      \"perceived_as_afrodescendant\": false,\n      \"skin_tone_as_painted\": \"light tan or olive, lighter than fig_02\",\n      \"hair_texture_as_rendered\": \"long, wavy or curled hair, rendered in brown tones with gold or copper highlights; elaborate styling with decorative elements\",\n      \"clothing\": \"white linen chemise or shift with lace or fine needlework; elaborate brocaded or embroidered robe or shawl in rust, gold, and dark tones with ornate scroll",
-      "agency_reading": "```json\n{\n  \"stage\": 4,\n  \"task\": \"mayeutic interpretation of fig_02 posture, gaze, and authority\",\n  \"figure_id\": \"fig_02\",\n  \"visual_description\": \"fig_02 is positioned centrally in the composition, wearing a white linen shirt and a broad-brimmed hat. The figure's posture is upright and frontal, with shoulders squared toward the viewer. The gaze is directed slightly downward and to the side, toward fig_03, rather than meeting the viewer's eye directly. The body is relaxed but dignified, with no signs of physical strain or deference.\",\n  \"interpretation\": \"fig_02's upright, centered posture and squared shoulders communicate self-possession and bodily autonomy despite the casta painting's typical hierarchical framing. The downward gaze toward fig_03 suggests affection or familial connection rather than submission or servility—a gesture of intimate regard rather than deference to authority. This posture contrasts sharply with the conventions of colonial portraiture, where figures of African descent were often depicted in subordinate or laboring poses. The reference material emphasizes that women of African descent in viceregal Mexico were perceived as 'orgullosas y retadoras' (proud and defiant), and fig_02's dignified bearing—the straightness of the spine, the relaxed shoulders, the composed expression—visually embodies this characterization. Rather than occupying a marginal or background position despite the composition's depth, fig_02 anchors the group through centrality and stillness. The intellectual or moral authority here is not explicit (no symbols of office or learning), but rather emerges from bodily composure itself: the figure demonstrates self-awareness through restraint and presence, a form of quiet authority that resists the subordinating logic the casta genre typically imposed on Afrodescendant subjects.\",\n  \"csv_conflicts\": []\n}\n```",
+      "subordination_reading": "Figure fig_02, positioned center-left in the composition, displays a posture that is neither rigidly constrained nor overtly submissive in the conventional sense. The figure stands with shoulders relaxed and weight distributed naturally, the body angled slightly toward fig_03 (the woman on the right) in a posture of companionship or proximity rather than deference. The gaze is directed downward and inward, toward the child (fig_01) being held, which suggests attentiveness to domestic care rather than submission to an external authority—the downward look is functional and tender rather than deferential. The musculature appears supple and at ease; there is no visible tension in the shoulders, neck, or limbs that would indicate imposed restraint or disciplinary rigidity. The figure's arm position, with one arm supporting the child and the other resting naturally, conveys an active role in the scene's domestic labor rather than passive acceptance of a subordinate position. The overall bodily language communicates engagement with the immediate social unit (the child and the woman beside him) rather than hierarchical submission to an external viewer or authority figure. If anything, the posture suggests a degree of ease and agency within the domestic sphere depicted, though the downward gaze and positioning within the composition's spatial hierarchy may simultaneously encode a social marginality that the posture itself does not explicitly perform.",
+      "agency_reading": "# Analysis of Figure fig_02: Posture, Gaze, and Authority\n\nFigure fig_02 stands with an upright, composed posture that conveys self-possession rather than deference or subordination. The figure's gaze is directed downward and inward, toward the child held by fig_03, creating an intimate relational moment rather than one of servility or passive attendance. This downward gaze, combined with the squared shoulders and stable stance, suggests a form of self-awareness grounded in domestic or familial connection rather than in external validation or hierarchical positioning. The reference material emphasizes that women of African descent in casta paintings were often depicted with \"orgullo y despejo\" (pride and composure), and fig_02's bodily comportment—the controlled posture, the deliberate positioning of the body—aligns with this iconographic convention of assertive self-presentation. Rather than appearing marginal or subordinate despite the spatial arrangement, fig_02's stillness and inward focus communicate a kind of moral or emotional authority within the domestic sphere, a presence that anchors the scene through quiet dignity. The figure's gaze does not seek the viewer's approval or acknowledgment; instead, it remains absorbed in the relational space between the three figures, suggesting an agency rooted in kinship and household rather than in external social hierarchy. This visual strategy—upright bearing, composed features, and an inward-directed gaze—may thus represent a form of authority that operates within the domestic or familial domain, distinct from but not necessarily subordinate to the hierarchies implied by the casta system itself.",
       "friction": {
-        "contested_element": "The posture and gaze direction of fig_02: whether the downward, inward-turning gaze and slightly rounded shoulders indicate subordination/deference or instead indicate dignified self-possession and intimate familial regard.",
+        "contested_element": "The downward gaze and inward-directed attention of fig_02, and whether it signifies functional attentiveness to domestic care (Reading A: subordination framing) or self-possessed moral authority grounded in kinship (Reading B: agency framing)",
         "resolvable": false,
-        "resolution_note": "Both readings accurately describe the same visual facts: fig_02 stands upright and centrally positioned with squared shoulders, holds a child, wears a prominent hat, and directs the gaze downward and to the side rather than meeting the viewer's eye. The spine is straight, the posture is not collapsed or physically strained, and the body is relaxed. However, the interpretation of these elements depends on contextual frameworks external to the image itself. Reading A interprets downward gaze and inward-turning posture as markers of subordination and caregiver role within a hierarchical casta system. Reading B interprets the same downward gaze as affectionate regard toward fig_03, the upright spine as dignified self-possession, and the centered position as anchoring authority through bodily composure. The image alone does not contain visual evidence that would definitively rule out either interpretation: a downward gaze can simultaneously express deference and intimate connection; an upright posture can simultaneously indicate both subordination within a social hierarchy and personal dignity. The ambiguity is genuine and resolvable only through external historical evidence about the conventions of casta painting, the social status of Afrodescendant women in viceregal Mexico, and the artist's intentional use of posture as a signifier of social position—none of which are visually determinable from the painting itself."
+        "resolution_note": "Both readings accurately identify the same visual element: fig_02's gaze is directed downward and inward toward the child, and the posture is upright with relaxed shoulders and natural weight distribution. The visual evidence itself is unambiguous and verifiable in the image. However, the *interpretation* of what this posture and gaze *mean* — whether they encode subordination, marginality, and functional service, or instead encode self-possessed dignity, inward authority, and familial agency — cannot be resolved by visual analysis alone. The posture is compatible with both readings. A downward, inward gaze can simultaneously indicate attentiveness to domestic labor and emotional investment in kinship; an upright, composed stance can simultaneously indicate ease within a constrained social position and assertive self-presence. The ambiguity is not in the visual description but in the social and emotional valence assigned to identical bodily comportment. No additional visual element (gesture, facial expression, spatial positioning, or object) in the image provides sufficient specificity to rule out either interpretation. The friction is genuine and resolvable only through external historical evidence about casta painting conventions, the social status of women of African descent in the period, or documentary context about the specific work."
       },
       "consulted_sources": [
         "Mujeres_de_origen_africano_en_la_capital.pdf",
         "Mujeres_de_origen_africano_en_la_capital.pdf",
         "Mujeres_de_origen_africano_en_la_capital.pdf",
-        "Pintores criollos, pintura de castas  y colonialismo interno.pdf"
+        "Mujeres_de_origen_africano_en_la_capital.pdf"
       ]
     }
   ],
@@ -406,41 +347,41 @@
     {
       "figure_id": "fig_01",
       "genre_branch": "casta",
-      "reading_1": "```json\n{\n  \"stage\": 4,\n  \"task\": \"mayeutic interpretation of marginality and social condition\",\n  \"interpretation\": \"The domestic setting depicted—a modest interior with architectural simplicity (plain wall, dark doorway)—combined with the prominent display of foodstuffs (fruits, vegetables, possibly produce for sale or barter) in the foreground suggests a household engaged in subsistence commerce or market labor rather than elite domestic leisure. The woman's elaborate dress (embroidered rebozo, fine linen) contrasts sharply with this humble spatial context, creating a visual tension that the casta genre systematically exploited: the painting documents not destitution per se, but rather a condition of social marginality wherein material refinement in dress cannot elevate or stabilize the family's structural position within the colonial hierarchy. The presence of two children of visibly darker complexion, positioned physically close to the woman in a familial arrangement, illustrates the reproductive logic of casta taxonomy—the painting renders visible the 'mixture' that colonial discourse treated as inherently unstable and subject to downward social mobility regardless of economic activity or personal adornment. The reference material emphasizes that casta paintings encode 'fronteras sociales' (social boundaries) rather than merely documenting racial mixture; this scene thus visualizes not poverty but rather the colonial fixity of racialized social position, wherein the woman's labor, dress, and maternal role cannot transgress the categorical boundaries that the genre itself was designed to police and perpetuate. The juxtaposition of domestic intimacy with commercial goods suggests a liminal economic status—neither fully domestic/elite nor fully enslaved—that the casta system positioned as permanently marginal to creole national identity.\"\n}\n```",
-      "reading_2": "```json\n{\n  \"stage\": 4,\n  \"task\": \"mayeutic interpretation of social mobility and economic status\",\n  \"image_title\": \"De Negroydindia China cambuya\",\n  \"interpretation\": \"The domestic interior setting and material abundance visible in this casta painting suggest economic stability and a degree of prosperity for the household depicted. The woman's elaborate dress—featuring an ornate embroidered rebozo with gold thread work, fine white linen, and jewelry including earrings and a necklace—signals access to luxury textiles and imported goods, markers of economic means in colonial society. The still life of fruits and foodstuffs arranged in the foreground (melons, citrus, and other produce) indicates both agricultural productivity and the household's capacity to display abundance, a visual convention in casta paintings that often correlates commercial or domestic success with particular casta categories. However, the reference material emphasizes that casta paintings primarily illustrate 'social boundaries according to creole perception' rather than genuine social mobility; the visual markers of prosperity here may function more as a fixed categorical attribute than as evidence of actual upward movement. The composition's hierarchical arrangement—with the woman centrally positioned and the two darker-skinned figures positioned beside and behind her—suggests that whatever economic stability is represented operates within a rigid racial taxonomy where material comfort does not necessarily translate into social elevation or crossing of casta boundaries. The painting thus presents a paradox: material prosperity coexists with, and may even reinforce, the immobility of racial classification that the casta genre was designed to codify and perpetuate.\"\n}\n```",
+      "reading_1": "```json\n{\n  \"stage\": 4,\n  \"task\": \"mayeutic interpretation of marginality and social condition\",\n  \"image_title\": \"De Negroydindia China cambuya\",\n  \"interpretation\": \"The domestic setting depicted—a modest interior with architectural simplicity (plain wall, dark doorway)—combined with the foregrounded display of foodstuffs (fruits, vegetables, prepared dishes) suggests a household organized around subsistence commerce or market provisioning rather than elite domestic leisure. The woman's elaborate dress and jewelry, however, create a visual tension: her ornate rebozo with gold embroidery and long curled hair signal aspirational or actual wealth, yet the prominence of goods and the cramped spatial arrangement imply economic activity tied to petty trade or food vending. According to the reference material, casta paintings after mid-eighteenth century incorporated 'visual references such as background space, clothing, and the occupations of figures in association with each particular category,' suggesting that the juxtaposition of refined dress with commercial goods may intentionally encode a liminal social position—neither fully elite nor fully laboring, but rather a mestiza or mulata household engaged in market-dependent survival. The three figures (woman, man, and child) clustered together in close proximity, with the child held rather than positioned independently, reinforces a reading of domestic economic interdependence rather than hierarchical household structure. This visual grammar may represent not destitution per se, but rather the precarious social mobility and economic marginality of mixed-race families within the colonial order, where commercial activity and refined appearance coexist as markers of a specific casta identity rather than indicators of stable social rank.\",\n  \"interpretive_grounding\": [\n    \"Visual evidence: foregrounded foodstuffs, modest interior architecture, woman's ornate dress and jewelry\",\n    \"Reference material: casta paintings encode occupations and material culture as markers of specific racial-social categories\",\n    \"Tension identified: refined dress vs. commercial goods suggests liminal economic and social position\",\n    \"Colonial context: mixed-race households' relationship to petty commerce and social mobility\"\n  ]\n}\n```",
+      "reading_2": "```json\n{\n  \"stage\": 4,\n  \"task\": \"mayeutic interpretation of social mobility and economic status\",\n  \"image_title\": \"De Negroydindia China cambuya\",\n  \"interpretation\": \"The domestic interior setting and material abundance visible in this casta painting suggest economic stability and a degree of prosperity for the family unit depicted. The woman's elaborate dress—featuring an ornate embroidered rebozo with gold thread work, fine white linen undergarments, and jewelry including earrings—signals access to luxury textiles and imported goods, markers of disposable wealth in colonial society. The still life arrangement of fruits and foodstuffs in the foreground (melons, citrus, and other produce) functions simultaneously as a display of domestic provision and commercial activity, suggesting either agricultural surplus or market participation. However, the reference material indicates that casta paintings were designed to illustrate 'social boundaries' and 'frontiers' rather than genuine social mobility; the very act of categorizing and visually fixing this family within a taxonomic system ('De Negroydindia China cambuya') paradoxically denies the upward mobility that material comfort might otherwise suggest. The composition thus presents a tension: material prosperity is visible and undeniable, yet the painting's classificatory apparatus—its title, its formal arrangement—works to contain and delimit that prosperity within a rigid colonial hierarchy. The domestic scene may therefore represent not genuine social ascension but rather a carefully circumscribed economic position permitted within the colonial order, one that allows consumption and comfort while maintaining categorical subordination.\"\n}\n```",
       "friction": {
-        "contested_element": "The interpretation of the domestic interior setting and the arrangement of foodstuffs in the foreground as evidence of either economic prosperity/stability (Reading B) or social marginality/subsistence commerce (Reading A)",
+        "contested_element": "The woman's ornate dress (embroidered rebozo with gold threadwork, fine white linen, jewelry) in conjunction with the foregrounded foodstuffs (fruits, vegetables, prepared dishes) and modest interior architecture",
         "resolvable": false,
-        "resolution_note": "Both readings cite the same visual elements—the modest interior (plain wall, dark doorway), the woman's elaborate dress (embroidered rebozo, fine linen, jewelry), and the prominent display of fruits and vegetables in the foreground—but interpret them in opposite directions. Reading A treats the contrast between refined dress and humble setting as evidence of structural marginality and the impossibility of social elevation through material refinement. Reading B treats the same elements as markers of economic stability and prosperity, while acknowledging that casta taxonomy may prevent this prosperity from translating into social mobility. The ambiguity is genuine: the visual evidence does not inherently resolve whether the foodstuffs represent subsistence-level commerce or agricultural/commercial success, nor does the woman's dress unambiguously signal either stable prosperity or the futile attempt at refinement within a marginalized position. The casta genre itself was designed to encode social boundaries through visual codes that are inherently interpretive—the same arrangement of objects and dress can plausibly support both readings depending on whether one prioritizes the evidence of material abundance or the evidence of spatial/architectural simplicity. No single visual element definitively rules out either interpretation."
+        "resolution_note": "Both readings accurately identify the same visual evidence: the woman displays markers of wealth and refined taste (elaborate embroidered rebozo with gold work, fine white linen undergarments, earrings), while the composition simultaneously foregrounds foodstuffs and situates the family in a modest interior with plain walls and dark doorway. Reading A interprets this juxtaposition as evidence of liminal economic position and precarious social mobility—refined dress coexisting with commercial goods suggests a mestiza/mulata household engaged in market-dependent survival. Reading B interprets the same juxtaposition as evidence of genuine economic stability and prosperity—the woman's access to luxury textiles and jewelry signals disposable wealth, while the foodstuffs represent either agricultural surplus or successful market participation. The ambiguity is genuine: the visual evidence of material comfort (fine dress, jewelry, abundant food) can support either interpretation depending on whether one reads the modest architecture and foregrounded goods as markers of marginality or as documentation of a prosperous household's economic activity. No single visual element definitively resolves whether this represents stable prosperity or precarious liminality; the tension between refined consumption and commercial/subsistence activity is inherent to the composition itself and reflects the actual historical ambiguity of mixed-race colonial households' economic and social positions."
       },
       "consulted_sources": [
         "Pinturas de castas, una interpretación.pdf",
         "Pintores criollos, pintura de castas  y colonialismo interno.pdf",
         "Pintores criollos, pintura de castas  y colonialismo interno.pdf",
-        "Pintores criollos, pintura de castas  y colonialismo interno.pdf"
+        "narrar-a-los-habitantes-y-las-pinturas-de-castas.txt"
       ]
     },
     {
       "figure_id": "fig_02",
       "genre_branch": "casta",
-      "reading_1": "```json\n{\n  \"stage\": 4,\n  \"task\": \"mayeutic interpretation of marginality and social condition\",\n  \"interpretation\": \"The domestic setting depicted—a modest interior with architectural simplicity (plain wall, dark doorway)—combined with the prominent display of foodstuffs (fruits, vegetables) in the foreground suggests a space organized around subsistence and market activity rather than leisure or domestic refinement. The woman's elaborate dress (embroidered rebozo, jewelry, fine lace) contrasts sharply with the humble material environment, a visual tension that the casta genre systematically exploited to encode social hierarchy and racial taxonomy. According to the reference material, casta paintings after mid-eighteenth century incorporated 'references visuales tales como el espacio de fondo, la ropa, y los oficios' to associate each racial category with specific social positions; here, the juxtaposition of fine textiles with a sparse, work-oriented interior may signal a liminal social status—neither fully integrated into elite domestic space nor relegated to complete destitution, but rather positioned within the commercial or service economy. The title 'De Negroydindia China cambuya' identifies a specific mixed-race category, and the reference material notes that Afrodescendants and afromestizos occupy 'último lugar en la jerarquía' with no possibility of 'revertir los efectos negativos de la mezcla'; the domestic poverty visible here, then, may function iconographically to reinforce that irreversible social marginality through environmental depiction. The children's presence and the woman's direct engagement with the viewer suggest neither servitude nor autonomous agency, but rather a calculated representation of a family unit whose economic and social position is visually anchored to manual labor and subsistence rather than to property, education, or civic standing.\"\n}\n```",
-      "reading_2": "```json\n{\n  \"stage\": 4,\n  \"task\": \"mayeutic interpretation of social mobility and economic status\",\n  \"image_title\": \"De Negroydindia China cambuya\",\n  \"interpretation\": \"The domestic interior setting and material abundance visible in this casta painting suggest a household of considerable economic means and social aspiration. The woman's elaborate dress—featuring an ornate embroidered rebozo with gold thread work, fine white linen, and jewelry—signals wealth and access to luxury textiles, while the presence of fresh fruits and foodstuffs arranged in the foreground indicates both commercial activity and domestic prosperity. However, the reference material on casta painting reveals a critical tension: while the material environment appears to document economic stability, the hierarchical ordering of racial categories embedded in the genre itself—which places Afrodescendant and mixed-race figures at the bottom of a colonial social taxonomy—suggests that such material comfort does not translate into genuine social mobility or acceptance within the criolla-dominated social order. The painting thus simultaneously displays economic success and visually enforces the rigid racial boundaries that the reference material identifies as central to criolla colonial ideology; prosperity and 'calidad' (quality/status) remain fundamentally disconnected for figures classified outside the Spanish and mestizo (Spanish-Indigenous) categories. The domestic abundance may reflect commercial enterprise or household management, but it operates within a framework that denies these figures the social elevation their material circumstances might otherwise suggest.\",\n  \"csv_conflicts\": []\n}\n```",
+      "reading_1": "```json\n{\n  \"stage\": 4,\n  \"task\": \"mayeutic interpretation of marginality and social condition\",\n  \"image_title\": \"De Negroydindia China cambuya\",\n  \"interpretation\": \"The domestic setting depicted—a modest interior with architectural elements reduced to a dark doorway and partial wall—visually constrains the family within a confined, austere space that contrasts sharply with the ornamental wealth displayed on the woman's person (embroidered rebozo, jewelry, fine linen). This spatial compression, combined with the foregrounded display of foodstuffs (fruits, vegetables, prepared dishes) at the lower register, suggests a commercial or subsistence-oriented domestic economy rather than leisured domesticity. The reference material indicates that casta paintings encoded social boundaries and 'calidad' (quality/status) through visual markers including clothing, occupation, and spatial context; here, the juxtaposition of refined dress against a humble interior and the prominence of comestibles may signal a liminal social position—neither fully integrated into elite domestic space nor relegated to explicit servitude, but rather occupying a precarious commercial or artisanal niche within the colonial economy. The woman's downward gaze and the physical clustering of the three figures (fig_01, fig_02, fig_03) within this constrained foreground, rather than dispersed through a spacious interior, reinforces a reading of social marginality encoded through spatial and material vocabulary. Alternatively, the careful composition and the woman's dignified bearing, combined with the abundance of goods, could suggest economic agency and domestic management within a mercantile or provisioning household—a reading that would emphasize resilience and productive participation rather than destitution. The ambiguity itself reflects the casta genre's fundamental tension: these paintings simultaneously document racial mixture and attempt to fix social hierarchies, leaving the actual lived condition of such families visually underdetermined.\",\n  \"figures_referenced\": [\"fig_01\", \"fig_02\", \"fig_03\"],\n  \"interpretive_tension\": \"The scene can be read as depicting either marginality and economic precarity (confined space, subsistence focus, ambiguous social standing) or as representing commercial agency and domestic management (refined dress, abundance of goods, woman's composed posture and control of the domestic sphere).\",\n  \"reference_material_applied\": \"Carrera's framework of casta paintings as encodings of social boundaries through space, dress, and occupation; the scholarly emphasis on how these works illustrate 'fronteras sociales' (social frontiers) and the colonial preoccupation with 'raza y calidad' rather than simple racial documentation.\"\n}\n```",
+      "reading_2": "```json\n{\n  \"stage\": 4,\n  \"task\": \"interpret_social_mobility_and_prosperity\",\n  \"image_title\": \"De Negroydindia China cambuya\",\n  \"interpretation\": \"The composition presents a family group positioned within an interior domestic space marked by architectural solidity (the dark wall structure on the right) and access to cultivated goods displayed in the foreground—fruits, vegetables, and prepared foodstuffs that signal both agricultural surplus and commercial activity. The woman's elaborate dress, featuring an ornate embroidered rebozo with gold thread detailing and fine linen undergarments, along with her jewelry and carefully arranged hair, represents significant material investment and access to luxury textiles, suggesting economic resources beyond subsistence. The man's formal attire, including his hat and structured clothing, similarly indicates participation in a monetized economy rather than marginal labor. However, the reference material emphasizes that casta paintings illustrate 'social boundaries' and 'frontiers' rather than genuine mobility—the very act of categorizing and displaying this family through the taxonomic label 'De Negroydindia China cambuya' (a mixed-race designation) suggests that despite material comfort, their social position remains fixed within a colonial hierarchy defined by racial classification. The domestic setting and consumer goods visible here may thus represent economic stability within a constrained social position, rather than upward mobility; the painting documents prosperity achieved within, not transcendence of, the colonial caste system. The inclusion of children and the family grouping itself reinforce a narrative of domestic order and generational continuity, yet the very need to label and visually categorize this family indicates that their economic success does not translate into social equality or removal from the classificatory apparatus that defined colonial difference.\"\n}\n```",
       "friction": {
-        "contested_element": "The quality and material status of the domestic interior environment, specifically the contrast between the woman's elaborate dress (embroidered rebozo with gold threadwork, fine lace, jewelry) and the sparse, work-oriented setting with visible foodstuffs in the foreground",
+        "contested_element": "The material condition and spatial context of the domestic interior: whether the confined space with modest architectural elements (dark doorway, partial wall) combined with the foregrounded display of foodstuffs signals economic precarity and marginality (Reading A) or whether the same elements represent economic stability and domestic management within a constrained but materially secure position (Reading B).",
         "resolvable": false,
-        "resolution_note": "Both readings accurately identify the same visual evidence: the woman wears demonstrably fine textiles (the rebozo displays ornate embroidery with gold-colored thread, the white linen is delicate, jewelry is visible), and the foreground contains an abundance of fresh fruits and vegetables arranged prominently. The interior is depicted with architectural simplicity—a plain wall, dark doorway, minimal furnishings. However, this juxtaposition itself is genuinely ambiguous in its social meaning. Reading A interprets the sparse interior as evidence of subsistence-level economic position and irreversible social marginality, with the fine dress as a visual tension that encodes hierarchy. Reading B interprets the same abundance of foodstuffs and fine dress as evidence of economic prosperity and commercial success, while acknowledging that material comfort does not translate into social mobility within the racial taxonomy. The visual evidence does not resolve which interpretation is correct because the casta genre itself was designed to encode social position through exactly this kind of ambiguous material display. The painting shows material abundance and fine dress simultaneously; whether this represents genuine economic agency or a calculated visual enforcement of racial hierarchy despite material comfort cannot be determined from the image alone—it depends on how one reads the genre's ideological function, which is a historiographical question, not a visual one. The ambiguity is structural to the work."
+        "resolution_note": "Both readings draw support from the same visual facts: the woman's refined dress (embroidered rebozo with gold detailing, fine linen, jewelry), the man's formal attire (hat, structured clothing), the abundance of foodstuffs in the foreground, and the austere interior setting (dark wall, minimal architectural elaboration). Reading A interprets the juxtaposition of refined dress against a humble interior and the prominence of comestibles as signaling precarity and a liminal commercial niche. Reading B interprets the same elements as evidence of economic resources and domestic management, with the austere setting representing stability within a constrained social position rather than destitution. The visual evidence does not distinguish between these interpretations: material comfort and economic participation can coexist with social marginality and fixed hierarchical position in a colonial context. The ambiguity is genuine and reflects the fundamental tension in the casta genre itself—these paintings simultaneously document material conditions and attempt to fix social categories, leaving the actual lived experience of such families visually underdetermined. No single visual element (clothing quality, spatial confinement, abundance of goods, or formal posture) can definitively resolve whether the family's condition should be read as precarious or stable, marginal or agentive, because the colonial economy itself produced exactly this ambiguity: documented prosperity within a system designed to deny social mobility."
       },
       "consulted_sources": [
         "Pinturas de castas, una interpretación.pdf",
         "Pintores criollos, pintura de castas  y colonialismo interno.pdf",
         "Pintores criollos, pintura de castas  y colonialismo interno.pdf",
-        "Pintores criollos, pintura de castas  y colonialismo interno.pdf"
+        "narrar-a-los-habitantes-y-las-pinturas-de-castas.txt"
       ]
     }
   ],
-  "rigid_or_fluid_assessment": "This painting operates simultaneously in both registers, and the tension between them is constitutive rather than resolvable. The title 'De Negroydindia China cambuya' performs rigid taxonomic classification—it names a specific casta category and fixes the subjects within a racial hierarchy that the genre was designed to enforce. The composition's formal centrality, the woman's elaborate dress, the abundance of foodstuffs, and the child's composed, forward-facing posture all contain visual evidence of material prosperity, economic agency, and dignified self-presentation. Yet these same elements are framed within a genre whose entire purpose was to visualize and naturalize colonial racial boundaries. The painting does not resolve this tension; instead, it embeds it. The subjects are simultaneously displayed as prosperous and marginalized, dignified and categorized, economically active and socially fixed. The casta system itself was a technology for managing exactly this contradiction—permitting material mobility while denying social mobility, allowing Afrodescendant women to accumulate goods and wear fine textiles while insisting that their racial category remained immutable and subordinate. The painting reveals the cracks in this system not through overt resistance but through the visual excess of the woman's dress, the prominence of her commercial goods, and the composed bearing of the child. These elements strain against the taxonomic frame. However, the frame itself—the title, the genre convention, the hierarchical arrangement of figures—reasserts rigidity. The work is neither purely rigid nor purely fluid; it is a site where colonial authority attempts to contain and visualize social fluidity that it cannot fully suppress or deny.",
+  "rigid_or_fluid_assessment": "This painting operates simultaneously on both registers, creating an unresolved tension that may be constitutive rather than accidental. The title 'De Negroydindia China cambuya' performs rigid categorical fixity—it names a specific casta outcome and assigns it a place in the colonial taxonomy. The formal composition (upright postures, composed gazes, centered arrangement) and the refined material culture (embroidered rebozo with gold threadwork, jewelry, formal attire) suggest a family of documented economic resources and social presence. Yet the modest interior, the foregrounded display of foodstuffs, and the downward-inward gaze of fig_02 simultaneously encode marginality, commercial dependence, and constrained spatial position. The painting does not resolve this tension; instead, it documents it. The visual evidence supports both readings of the frictions: the family's material comfort is verifiable, but so is their spatial confinement and the prominence of subsistence goods. This is not a crack in the painting's logic—it is the painting's actual subject. The work seeks to fix identity through nomenclature and phenotype while simultaneously revealing that such fixing is impossible when material conditions, bodily comportment, and domestic practice all exceed the category. The painting is rigid in its taxonomic ambition but fluid in its visual testimony to the lived reality it attempts to classify. The rigidity belongs to the colonial system; the fluidity belongs to the family's actual position within it.",
   "critical_questions": [
-    "What does the artist's choice to depict the woman's rebozo with such ornate, gold-threaded embroidery—visually dominating the composition and signaling considerable material investment—reveal about the limits of the casta system's ability to contain economic agency? Conversely, does the prominence of this dress function as visual evidence of the woman's successful navigation of colonial commerce, or does it serve the genre's ideological purpose by displaying her refinement as a marker of her fixed racial category, making her prosperity legible as 'appropriate' to her casta position rather than as evidence of social mobility?",
-    "Why does the artist choose to foreground and label the fruits and vegetables with such specificity and abundance, rather than depicting the woman in a domestic interior without commercial goods, or in a marketplace setting that would more explicitly frame her as a vendor? Does this choice emphasize her economic independence and control over valuable commodities, or does it reinforce her association with subsistence-level commerce and manual labor, thereby visually encoding the casta system's insistence that Afrodescendant women's economic activity remains fundamentally different in kind from the commercial or professional activity of Spanish or creole women?"
+    "What foodstuffs are conspicuously absent from the foreground display, and how might their omission have shaped colonial viewers' assumptions about the family's economic niche, dietary access, and social rank? The visible fruits, vegetables, and prepared dishes suggest market participation and domestic provisioning, but the selective inclusion or exclusion of certain comestibles (luxury imports, indigenous staples, or items associated with specific labor) could have signaled either upward mobility or fixed occupational identity to contemporary viewers.",
+    "Why is the interior architectural setting rendered with such deliberate austerity—plain walls, minimal ornamentation, a dark doorway that recedes into shadow—when the family's material culture (refined textiles, jewelry, formal clothing) visibly contradicts the impression of poverty? Did the artist exaggerate the modesty of the domestic space to reinforce a narrative of social marginality despite material evidence to the contrary, or does the austere setting accurately document the spatial constraints of colonial urban housing regardless of the occupants' economic resources? The choice to emphasize architectural plainness over the family's evident prosperity may have guided viewers toward reading the scene as one of precarity rather than stability."
   ]
 }

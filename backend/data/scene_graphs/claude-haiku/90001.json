@@ -1,0 +1,953 @@
+{
+  "image_id": "90001",
+  "nodes": [
+    {
+      "id": "fig_01",
+      "type": "figure",
+      "label": "Dark skin tone, curled/textured hair, wearing white head wrap, blue garment with orange/yellow lower garment",
+      "bbox": [
+        0.8,
+        308.2,
+        204.3,
+        730.9
+      ],
+      "score": 0.6
+    },
+    {
+      "id": "fig_02",
+      "type": "figure",
+      "label": "Dark skin tone, curled/textured hair, wearing white head wrap, blue garment with orange/yellow lower garment",
+      "bbox": [
+        15.9,
+        308.9,
+        118.8,
+        496.0
+      ],
+      "score": 0.3
+    },
+    {
+      "id": "fig_03",
+      "type": "figure",
+      "label": "Dark skin tone, curled/textured hair, minimal clothing, young child",
+      "bbox": [
+        53.3,
+        200.5,
+        172.2,
+        438.6
+      ],
+      "score": 0.314
+    },
+    {
+      "id": "fig_04",
+      "type": "figure",
+      "label": "Dark skin tone, curled/textured hair, wearing white head wrap, white garment",
+      "bbox": [
+        124.2,
+        296.5,
+        234.6,
+        717.4
+      ],
+      "score": 0.348
+    },
+    {
+      "id": "fig_05",
+      "type": "figure",
+      "label": "Dark skin tone, curled/textured hair, minimal clothing, young child",
+      "bbox": [
+        149.5,
+        183.8,
+        249.8,
+        316.0
+      ],
+      "score": 0.581
+    },
+    {
+      "id": "fig_06",
+      "type": "figure",
+      "label": "Dark skin tone, curled/textured hair, wearing white head wrap, white garment, appears to be working or engaged in manual activity",
+      "bbox": [
+        163.4,
+        286.5,
+        371.9,
+        730.6
+      ],
+      "score": 0.546
+    },
+    {
+      "id": "fig_07",
+      "type": "figure",
+      "label": "Dark skin tone, curled/textured hair, wearing white head wrap, white garment, appears to be working or engaged in manual activity",
+      "bbox": [
+        253.1,
+        244.5,
+        453.4,
+        715.3
+      ],
+      "score": 0.337
+    },
+    {
+      "id": "fig_08",
+      "type": "figure",
+      "label": "Dark skin tone, curled/textured hair, wearing white head wrap, white garment, appears to be working or engaged in manual activity",
+      "bbox": [
+        312.2,
+        242.8,
+        496.3,
+        728.2
+      ],
+      "score": 0.453
+    },
+    {
+      "id": "fig_09",
+      "type": "figure",
+      "label": "Dark skin tone, curled/textured hair, wearing blue jacket, orange/red breeches, white stockings, holding staff or stick",
+      "bbox": [
+        507.7,
+        274.2,
+        826.1,
+        692.5
+      ],
+      "score": 0.766
+    },
+    {
+      "id": "fig_10",
+      "type": "figure",
+      "label": "Dark skin tone, curled/textured hair, wearing white head wrap, orange/red garment with white undergarment",
+      "bbox": [
+        712.7,
+        172.7,
+        859.5,
+        647.2
+      ],
+      "score": 0.346
+    },
+    {
+      "id": "fig_11",
+      "type": "figure",
+      "label": "Dark skin tone, curled/textured hair, wearing black hat, blue garment with yellow/green undergarment",
+      "bbox": [
+        714.4,
+        172.9,
+        858.7,
+        425.9
+      ],
+      "score": 0.387
+    },
+    {
+      "id": "fig_12",
+      "type": "figure",
+      "label": "Dark skin tone, curled/textured hair, wearing blue garment, holding banjo-like instrument",
+      "bbox": [
+        814.5,
+        299.6,
+        1018.8,
+        685.7
+      ],
+      "score": 0.734
+    },
+    {
+      "id": "fig_13",
+      "type": "figure",
+      "label": "Dark skin tone, curled/textured hair, wearing white head wrap, blue garment",
+      "bbox": [
+        823.0,
+        165.6,
+        968.4,
+        385.5
+      ],
+      "score": 0.5
+    },
+    {
+      "id": "obj_01",
+      "type": "object",
+      "label": "Banjo or gourd-bodied stringed instrument",
+      "bbox": [
+        863.8,
+        296.0,
+        1054.4,
+        543.3
+      ],
+      "score": 0.499
+    },
+    {
+      "id": "obj_02",
+      "type": "object",
+      "label": "Banjo or gourd-bodied stringed instrument",
+      "bbox": [
+        864.9,
+        297.0,
+        1054.1,
+        543.2
+      ],
+      "score": 0.412
+    },
+    {
+      "id": "obj_03",
+      "type": "object",
+      "label": "Drum or cylindrical percussion instrument",
+      "bbox": [
+        859.1,
+        551.6,
+        930.0,
+        680.4
+      ],
+      "score": 0.355
+    },
+    {
+      "id": "obj_04",
+      "type": "object",
+      "label": "Drum or cylindrical percussion instrument",
+      "bbox": [
+        865.8,
+        453.7,
+        951.7,
+        542.0
+      ],
+      "score": 0.307
+    },
+    {
+      "id": "obj_05",
+      "type": "object",
+      "label": "Drum or cylindrical percussion instrument",
+      "bbox": [
+        859.4,
+        551.8,
+        929.4,
+        680.6
+      ],
+      "score": 0.358
+    },
+    {
+      "id": "obj_06",
+      "type": "object",
+      "label": "Rattle or gourd-based shaker",
+      "bbox": [
+        859.2,
+        551.6,
+        929.7,
+        680.6
+      ],
+      "score": 0.317
+    },
+    {
+      "id": "obj_07",
+      "type": "object",
+      "label": "Rattle or gourd-based shaker",
+      "bbox": [
+        859.4,
+        551.7,
+        929.2,
+        680.8
+      ],
+      "score": 0.372
+    },
+    {
+      "id": "obj_08",
+      "type": "object",
+      "label": "Earthenware vessel or jug",
+      "bbox": [
+        858.5,
+        550.5,
+        930.7,
+        681.2
+      ],
+      "score": 0.492
+    },
+    {
+      "id": "obj_09",
+      "type": "object",
+      "label": "Earthenware vessel or jug",
+      "bbox": [
+        859.3,
+        551.5,
+        929.9,
+        681.0
+      ],
+      "score": 0.482
+    },
+    {
+      "id": "obj_10",
+      "type": "object",
+      "label": "Staff or stick",
+      "bbox": [
+        472.9,
+        363.1,
+        639.8,
+        572.5
+      ],
+      "score": 0.498
+    },
+    {
+      "id": "obj_11",
+      "type": "object",
+      "label": "Staff or stick",
+      "bbox": [
+        474.6,
+        365.0,
+        638.2,
+        572.2
+      ],
+      "score": 0.408
+    },
+    {
+      "id": "obj_12",
+      "type": "object",
+      "label": "Rectangular building structure",
+      "bbox": [
+        725.3,
+        1.9,
+        1146.7,
+        663.0
+      ],
+      "score": 0.393
+    },
+    {
+      "id": "obj_13",
+      "type": "material",
+      "label": "Linen or cotton (white head wrap)",
+      "bbox": [
+        747.6,
+        169.0,
+        821.3,
+        224.8
+      ],
+      "score": 0.315
+    },
+    {
+      "id": "obj_14",
+      "type": "material",
+      "label": "Wool or linen (blue garment)",
+      "bbox": [
+        546.0,
+        277.0,
+        823.5,
+        500.6
+      ],
+      "score": 0.435
+    },
+    {
+      "id": "obj_15",
+      "type": "material",
+      "label": "Wool or linen (blue garment)",
+      "bbox": [
+        546.8,
+        278.4,
+        823.9,
+        501.6
+      ],
+      "score": 0.394
+    },
+    {
+      "id": "obj_16",
+      "type": "material",
+      "label": "Wool or linen (orange/yellow lower garment)",
+      "bbox": [
+        2.0,
+        412.4,
+        203.2,
+        719.7
+      ],
+      "score": 0.402
+    },
+    {
+      "id": "obj_17",
+      "type": "material",
+      "label": "Wool or linen (orange/yellow lower garment)",
+      "bbox": [
+        1.7,
+        413.7,
+        203.1,
+        720.4
+      ],
+      "score": 0.372
+    },
+    {
+      "id": "obj_18",
+      "type": "accessory",
+      "label": "White cloth head wrap",
+      "bbox": [
+        748.2,
+        169.5,
+        821.0,
+        227.0
+      ],
+      "score": 0.352
+    },
+    {
+      "id": "obj_19",
+      "type": "accessory",
+      "label": "White cloth head wrap",
+      "bbox": [
+        71.1,
+        197.1,
+        144.5,
+        256.1
+      ],
+      "score": 0.328
+    },
+    {
+      "id": "obj_20",
+      "type": "material",
+      "label": "Minimal or no visible garment",
+      "bbox": [
+        536.3,
+        278.9,
+        823.9,
+        501.4
+      ],
+      "score": 0.407
+    },
+    {
+      "id": "obj_21",
+      "type": "material",
+      "label": "Linen or cotton (white garment)",
+      "bbox": [
+        263.1,
+        309.8,
+        484.1,
+        667.2
+      ],
+      "score": 0.303
+    },
+    {
+      "id": "obj_22",
+      "type": "material",
+      "label": "Wool or linen (blue jacket)",
+      "bbox": [
+        545.9,
+        278.1,
+        823.4,
+        500.8
+      ],
+      "score": 0.429
+    },
+    {
+      "id": "obj_23",
+      "type": "material",
+      "label": "Wool or linen (blue jacket)",
+      "bbox": [
+        546.3,
+        279.7,
+        823.4,
+        501.2
+      ],
+      "score": 0.388
+    },
+    {
+      "id": "obj_24",
+      "type": "material",
+      "label": "Wool or linen (orange/red breeches)",
+      "bbox": [
+        2.1,
+        411.6,
+        202.9,
+        719.3
+      ],
+      "score": 0.307
+    },
+    {
+      "id": "obj_25",
+      "type": "accessory",
+      "label": "Staff or stick (held in hand)",
+      "bbox": [
+        471.5,
+        361.6,
+        641.2,
+        573.3
+      ],
+      "score": 0.539
+    },
+    {
+      "id": "obj_26",
+      "type": "accessory",
+      "label": "Staff or stick (held in hand)",
+      "bbox": [
+        474.0,
+        364.3,
+        639.0,
+        572.3
+      ],
+      "score": 0.369
+    },
+    {
+      "id": "obj_27",
+      "type": "material",
+      "label": "Wool or linen (orange/red garment)",
+      "bbox": [
+        2.1,
+        411.7,
+        204.2,
+        719.7
+      ],
+      "score": 0.341
+    },
+    {
+      "id": "obj_28",
+      "type": "material",
+      "label": "Wool or linen (orange/red garment)",
+      "bbox": [
+        1.9,
+        413.1,
+        204.2,
+        720.5
+      ],
+      "score": 0.33
+    },
+    {
+      "id": "obj_29",
+      "type": "material",
+      "label": "Wool or felt (black hat)",
+      "bbox": [
+        846.7,
+        295.3,
+        975.2,
+        339.1
+      ],
+      "score": 0.416
+    },
+    {
+      "id": "obj_30",
+      "type": "material",
+      "label": "Wool or felt (black hat)",
+      "bbox": [
+        847.2,
+        297.2,
+        975.0,
+        338.7
+      ],
+      "score": 0.305
+    },
+    {
+      "id": "obj_31",
+      "type": "material",
+      "label": "Wool or linen (yellow/green undergarment)",
+      "bbox": [
+        163.6,
+        351.4,
+        328.6,
+        671.4
+      ],
+      "score": 0.404
+    },
+    {
+      "id": "obj_32",
+      "type": "material",
+      "label": "Wool or linen (yellow/green undergarment)",
+      "bbox": [
+        164.1,
+        352.2,
+        327.9,
+        671.1
+      ],
+      "score": 0.315
+    },
+    {
+      "id": "obj_33",
+      "type": "accessory",
+      "label": "Black hat",
+      "bbox": [
+        847.1,
+        298.4,
+        974.9,
+        338.0
+      ],
+      "score": 0.738
+    },
+    {
+      "id": "obj_34",
+      "type": "accessory",
+      "label": "Banjo or gourd-bodied stringed instrument (held in hand)",
+      "bbox": [
+        863.1,
+        295.1,
+        1054.8,
+        543.7
+      ],
+      "score": 0.459
+    },
+    {
+      "id": "obj_35",
+      "type": "accessory",
+      "label": "Banjo or gourd-bodied stringed instrument (held in hand)",
+      "bbox": [
+        864.8,
+        296.6,
+        1054.5,
+        543.4
+      ],
+      "score": 0.33
+    }
+  ],
+  "edges": [
+    {
+      "source": "obj_01",
+      "target": "fig_12",
+      "relation": "associated_with"
+    },
+    {
+      "source": "obj_02",
+      "target": "fig_12",
+      "relation": "associated_with"
+    },
+    {
+      "source": "obj_03",
+      "target": "fig_12",
+      "relation": "associated_with"
+    },
+    {
+      "source": "obj_04",
+      "target": "fig_12",
+      "relation": "associated_with"
+    },
+    {
+      "source": "obj_05",
+      "target": "fig_12",
+      "relation": "associated_with"
+    },
+    {
+      "source": "obj_06",
+      "target": "fig_12",
+      "relation": "associated_with"
+    },
+    {
+      "source": "obj_07",
+      "target": "fig_12",
+      "relation": "associated_with"
+    },
+    {
+      "source": "obj_08",
+      "target": "fig_12",
+      "relation": "associated_with"
+    },
+    {
+      "source": "obj_09",
+      "target": "fig_12",
+      "relation": "associated_with"
+    },
+    {
+      "source": "obj_10",
+      "target": "fig_09",
+      "relation": "associated_with"
+    },
+    {
+      "source": "obj_11",
+      "target": "fig_09",
+      "relation": "associated_with"
+    },
+    {
+      "source": "obj_12",
+      "target": "fig_01",
+      "relation": "associated_with"
+    },
+    {
+      "source": "obj_12",
+      "target": "fig_10",
+      "relation": "associated_with"
+    },
+    {
+      "source": "obj_13",
+      "target": "fig_01",
+      "relation": "associated_with"
+    },
+    {
+      "source": "obj_13",
+      "target": "fig_08",
+      "relation": "associated_with"
+    },
+    {
+      "source": "obj_13",
+      "target": "fig_09",
+      "relation": "associated_with"
+    },
+    {
+      "source": "obj_13",
+      "target": "fig_02",
+      "relation": "associated_with"
+    },
+    {
+      "source": "obj_13",
+      "target": "fig_04",
+      "relation": "associated_with"
+    },
+    {
+      "source": "obj_13",
+      "target": "fig_13",
+      "relation": "associated_with"
+    },
+    {
+      "source": "obj_13",
+      "target": "fig_06",
+      "relation": "associated_with"
+    },
+    {
+      "source": "obj_13",
+      "target": "fig_07",
+      "relation": "associated_with"
+    },
+    {
+      "source": "obj_13",
+      "target": "fig_10",
+      "relation": "associated_with"
+    },
+    {
+      "source": "obj_14",
+      "target": "fig_01",
+      "relation": "associated_with"
+    },
+    {
+      "source": "obj_14",
+      "target": "fig_12",
+      "relation": "associated_with"
+    },
+    {
+      "source": "obj_14",
+      "target": "fig_02",
+      "relation": "associated_with"
+    },
+    {
+      "source": "obj_14",
+      "target": "fig_11",
+      "relation": "associated_with"
+    },
+    {
+      "source": "obj_14",
+      "target": "fig_13",
+      "relation": "associated_with"
+    },
+    {
+      "source": "obj_15",
+      "target": "fig_01",
+      "relation": "associated_with"
+    },
+    {
+      "source": "obj_15",
+      "target": "fig_12",
+      "relation": "associated_with"
+    },
+    {
+      "source": "obj_15",
+      "target": "fig_02",
+      "relation": "associated_with"
+    },
+    {
+      "source": "obj_15",
+      "target": "fig_11",
+      "relation": "associated_with"
+    },
+    {
+      "source": "obj_15",
+      "target": "fig_13",
+      "relation": "associated_with"
+    },
+    {
+      "source": "obj_16",
+      "target": "fig_01",
+      "relation": "associated_with"
+    },
+    {
+      "source": "obj_16",
+      "target": "fig_02",
+      "relation": "associated_with"
+    },
+    {
+      "source": "obj_17",
+      "target": "fig_01",
+      "relation": "associated_with"
+    },
+    {
+      "source": "obj_17",
+      "target": "fig_02",
+      "relation": "associated_with"
+    },
+    {
+      "source": "obj_18",
+      "target": "fig_01",
+      "relation": "associated_with"
+    },
+    {
+      "source": "obj_18",
+      "target": "fig_08",
+      "relation": "associated_with"
+    },
+    {
+      "source": "obj_18",
+      "target": "fig_09",
+      "relation": "associated_with"
+    },
+    {
+      "source": "obj_18",
+      "target": "fig_02",
+      "relation": "associated_with"
+    },
+    {
+      "source": "obj_18",
+      "target": "fig_04",
+      "relation": "associated_with"
+    },
+    {
+      "source": "obj_18",
+      "target": "fig_13",
+      "relation": "associated_with"
+    },
+    {
+      "source": "obj_18",
+      "target": "fig_06",
+      "relation": "associated_with"
+    },
+    {
+      "source": "obj_18",
+      "target": "fig_07",
+      "relation": "associated_with"
+    },
+    {
+      "source": "obj_18",
+      "target": "fig_10",
+      "relation": "associated_with"
+    },
+    {
+      "source": "obj_19",
+      "target": "fig_01",
+      "relation": "associated_with"
+    },
+    {
+      "source": "obj_19",
+      "target": "fig_08",
+      "relation": "associated_with"
+    },
+    {
+      "source": "obj_19",
+      "target": "fig_09",
+      "relation": "associated_with"
+    },
+    {
+      "source": "obj_19",
+      "target": "fig_02",
+      "relation": "associated_with"
+    },
+    {
+      "source": "obj_19",
+      "target": "fig_04",
+      "relation": "associated_with"
+    },
+    {
+      "source": "obj_19",
+      "target": "fig_13",
+      "relation": "associated_with"
+    },
+    {
+      "source": "obj_19",
+      "target": "fig_06",
+      "relation": "associated_with"
+    },
+    {
+      "source": "obj_19",
+      "target": "fig_07",
+      "relation": "associated_with"
+    },
+    {
+      "source": "obj_19",
+      "target": "fig_10",
+      "relation": "associated_with"
+    },
+    {
+      "source": "obj_20",
+      "target": "fig_05",
+      "relation": "associated_with"
+    },
+    {
+      "source": "obj_20",
+      "target": "fig_03",
+      "relation": "associated_with"
+    },
+    {
+      "source": "obj_21",
+      "target": "fig_06",
+      "relation": "associated_with"
+    },
+    {
+      "source": "obj_21",
+      "target": "fig_07",
+      "relation": "associated_with"
+    },
+    {
+      "source": "obj_21",
+      "target": "fig_04",
+      "relation": "associated_with"
+    },
+    {
+      "source": "obj_21",
+      "target": "fig_08",
+      "relation": "associated_with"
+    },
+    {
+      "source": "obj_22",
+      "target": "fig_09",
+      "relation": "associated_with"
+    },
+    {
+      "source": "obj_23",
+      "target": "fig_09",
+      "relation": "associated_with"
+    },
+    {
+      "source": "obj_24",
+      "target": "fig_09",
+      "relation": "associated_with"
+    },
+    {
+      "source": "obj_25",
+      "target": "fig_09",
+      "relation": "associated_with"
+    },
+    {
+      "source": "obj_26",
+      "target": "fig_09",
+      "relation": "associated_with"
+    },
+    {
+      "source": "obj_27",
+      "target": "fig_10",
+      "relation": "associated_with"
+    },
+    {
+      "source": "obj_28",
+      "target": "fig_10",
+      "relation": "associated_with"
+    },
+    {
+      "source": "obj_29",
+      "target": "fig_11",
+      "relation": "associated_with"
+    },
+    {
+      "source": "obj_30",
+      "target": "fig_11",
+      "relation": "associated_with"
+    },
+    {
+      "source": "obj_31",
+      "target": "fig_11",
+      "relation": "associated_with"
+    },
+    {
+      "source": "obj_32",
+      "target": "fig_11",
+      "relation": "associated_with"
+    },
+    {
+      "source": "obj_33",
+      "target": "fig_11",
+      "relation": "associated_with"
+    },
+    {
+      "source": "obj_34",
+      "target": "fig_12",
+      "relation": "associated_with"
+    },
+    {
+      "source": "obj_35",
+      "target": "fig_12",
+      "relation": "associated_with"
+    }
+  ]
+}

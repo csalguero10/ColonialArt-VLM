@@ -1,0 +1,352 @@
+{
+  "csv_metadata": {
+    "image_id": "90003",
+    "title": "Black Artist Completing a Portrait of Maria Anna of Austria",
+    "author": "Desconocido (posiblemente escuela brasileña)",
+    "date": "Primera mitad del siglo XVIII (c. 1700–1750)",
+    "medium": "Óleo sobre lienzo",
+    "location": "Colección privada, Filadelfia (procedencia); ofrecida por Carlton Hobbs LLC",
+    "provenance": "Michael Hogg Gallery, Knightsbridge, Londres, 1967; Colección privada, Filadelfia",
+    "theme_csv": "Artista afrodescendiente en rol intelectual/creativo",
+    "category_csv": "Retrato de taller",
+    "classification_csv": "Temas seculares, Retrato dentro del retrato, Roles no subalternos",
+    "descriptors_csv": "Negro - negritud, Oficio artístico, Indumentaria elaborada",
+    "symbols_csv": "Retrato dentro del retrato, Ventana con paisaje urbano, Vestimenta elaborada",
+    "features_csv": "Edad: adulto, Escena: simple, Género masculino, Género femenino, Personaje principal: artista",
+    "scene_csv": "Interior / ciudad - poblado (cityscape al fondo)",
+    "face_position_csv": "3/4",
+    "objects_csv": "Pinceles, lienzo, caballete (implícito)",
+    "physiognomy_csv": "Sentado / de pie ante el caballete",
+    "donor_csv": "Sin donante",
+    "inscription_csv": "Sin inscripción"
+  },
+  "stage_1_pre_iconographic": {
+    "people_present": true,
+    "total_figures": 2,
+    "afrodescendant_present": true,
+    "number_of_afrodescendants": 1,
+    "figures": [
+      {
+        "figure_id": "fig_01",
+        "perceived_as_afrodescendant": true,
+        "position_in_space": "Left foreground, seated at easel facing right",
+        "relative_scale": "Larger scale, occupies left half of composition",
+        "pose_state_basic": "Seated, leaning forward slightly, right arm extended holding brush toward canvas",
+        "physiognomy_description": "Dark skin tone, black curled hair with white/grey streaks, wearing black tricorn hat with feather plume, gold hoop earring visible, facial features rendered with defined nose and lips, appears to be in middle age or older"
+      },
+      {
+        "figure_id": "fig_02",
+        "perceived_as_afrodescendant": false,
+        "position_in_space": "Right side, depicted within a framed portrait on the canvas/wall",
+        "relative_scale": "Smaller scale, contained within the portrait frame",
+        "pose_state_basic": "Seated, frontal pose, holding a brush or stylus, facing toward left",
+        "physiognomy_description": "Light/pale skin tone, grey or white powdered hair styled in period fashion, wearing blue and brown/rust colored garments with white lace cuffs and collar, facial features rendered with pale complexion and refined features characteristic of aristocratic portraiture"
+      }
+    ],
+    "technical_resources": {
+      "lighting": "Warm, directional light from upper left, creating soft shadows on the left side of fig_01's face and body; light falls across the portrait frame and illuminates the sitter's face within it; chiaroscuro effect with darker background areas contrasting with illuminated figures",
+      "color_palette": "Warm earth tones dominate (browns, ochres, rust tones in clothing); cool accents in blue garments and sky visible through window; dark background with grey-brown tones; flesh tones rendered in warm peachy-tan for fig_02, darker brown for fig_01; gold accents in frame and jewelry; white highlights in lace and hair",
+      "composition_notes": "Nested composition: the main scene shows fig_01 at work, while fig_02 exists as a portrait-within-the-painting on the canvas/wall behind. Diagonal alignment from fig_01's seated position toward the portrait frame creates visual connection between artist and subject. Window with cityscape visible in upper left background provides spatial depth and architectural context. Golden frame around the entire work and inner frame around the portrait create layered framing devices. Foreground-to-background reading: fig_01 in immediate foreground, portrait frame in middle ground, window and cityscape in background."
+    },
+    "csv_conflicts": [
+      {
+        "field": "Face_position_csv",
+        "csv_value": "3/4",
+        "model_value": "fig_01: 3/4 view (correct); fig_02: frontal/near-frontal view",
+        "note": "CSV lists only '3/4' but the composition contains two figures with different face positions. fig_01 is indeed in 3/4 view, but fig_02 (the portrait subject) is in a more frontal pose. The CSV appears to describe only the primary figure."
+      },
+      {
+        "field": "Physiognomy_csv",
+        "csv_value": "Sentado / de pie ante el caballete",
+        "model_value": "fig_01: Seated at easel with right arm extended holding brush; fig_02: Seated within portrait frame",
+        "note": "CSV description 'Sentado / de pie ante el caballete' (seated/standing before easel) applies accurately to fig_01 but does not account for fig_02, the portrait subject within the frame, who is also seated but in a different context and pose."
+      }
+    ]
+  },
+  "stage_2_iconographic_material_culture": {
+    "theme": [
+      "Artista afrodescendiente en rol intelectual/creativo",
+      "Retrato dentro del retrato",
+      "Taller artístico"
+    ],
+    "category": "Retrato de taller",
+    "classification": "Temas seculares, Retrato dentro del retrato, Roles no subalternos",
+    "descriptors": [
+      "Negritud",
+      "Oficio artístico",
+      "Indumentaria elaborada",
+      "Práctica artesanal"
+    ],
+    "symbols": [
+      "Retrato dentro del retrato",
+      "Ventana con paisaje urbano",
+      "Vestimenta elaborada",
+      "Herramientas artísticas",
+      "Marco dorado"
+    ],
+    "features": [
+      "Edad: adulto",
+      "Escena: interior de taller",
+      "Género masculino",
+      "Género femenino",
+      "Personaje principal: artista",
+      "Composición anidada"
+    ],
+    "afrodescendant_attributes": [
+      {
+        "figure_id": "fig_01",
+        "clothing_materials": [
+          "Lana o tela tejida (casaca marrón oscuro)",
+          "Lino o algodón (camisa blanca visible en cuello y puños)",
+          "Posiblemente seda o tela fina (ribetes azules en mangas)"
+        ],
+        "clothing_style": "Casaca de corte ajustado con mangas largas, cuello blanco con encaje o lino fino, ribetes azules en las mangas, botones visibles en el frente; indumentaria de taller o de uso cotidiano de clase media-alta",
+        "accessories": [
+          "Tricornio negro con pluma blanca",
+          "Aro de oro en la oreja izquierda",
+          "Posiblemente anillo o joya en la mano derecha (no claramente visible)"
+        ]
+      }
+    ],
+    "objects_in_scene": [
+      {
+        "object": "Pincel",
+        "associated_figure_id": "fig_01",
+        "location_detail": "Sostenido en la mano derecha, extendido hacia el lienzo"
+      },
+      {
+        "object": "Lienzo o panel de pintura",
+        "associated_figure_id": "fig_01",
+        "location_detail": "Frente a fig_01, conteniendo el retrato de fig_02; enmarcado con marco dorado"
+      },
+      {
+        "object": "Caballete",
+        "associated_figure_id": "fig_01",
+        "location_detail": "Implícito; fig_01 está sentado ante él, aunque no completamente visible en el encuadre"
+      },
+      {
+        "object": "Silla de madera",
+        "associated_figure_id": "fig_01",
+        "location_detail": "Bajo fig_01; de color marrón oscuro, visible en el lado izquierdo de la composición"
+      },
+      {
+        "object": "Ventana",
+        "associated_figure_id": null,
+        "location_detail": "Fondo superior izquierdo; muestra un paisaje urbano con edificios de color rosa/rojo y cielo azul"
+      },
+      {
+        "object": "Columna o pilastra",
+        "associated_figure_id": null,
+        "location_detail": "Centro-fondo; estructura arquitectónica gris que separa la ventana del interior del taller"
+      },
+      {
+        "object": "Marco dorado",
+        "associated_figure_id": "fig_02",
+        "location_detail": "Rodea el retrato de fig_02; marco interior que define el lienzo dentro de la composición"
+      }
+    ],
+    "inscription_present": false,
+    "inscriptions": [],
+    "support": {
+      "format": "Lienzo rectangular",
+      "medium": "Óleo sobre lienzo"
+    },
+    "csv_conflicts": []
+  },
+  "stage_2b_material_identification": {
+    "identified_elements": [
+      {
+        "generic_description": "Tricornio negro con pluma blanca",
+        "specific_term": "tricornio",
+        "term_language": "Spanish",
+        "supporting_source": "Vargaslugo et al. - 1994 - Nueva España.pdf",
+        "confidence_note": "The reference material discusses tricornio hats worn by Spanish men in 18th-century New Spain. The image shows fig_01 wearing a black three-cornered hat with a white plume, consistent with the tricornio style documented in the period. Visual match confirmed."
+      },
+      {
+        "generic_description": "Casaca de corte ajustado con mangas largas, cuello blanco con encaje o lino fino, ribetes azules en las mangas",
+        "specific_term": "casaca",
+        "term_language": "Spanish",
+        "supporting_source": "Vargaslugo et al. - 1994 - Nueva España.pdf",
+        "confidence_note": "The reference material extensively describes the casaca as a fitted jacket worn by Spanish men in the 18th century, often with decorative trim and visible white linen at the collar and cuffs. The image shows fig_01 wearing exactly this garment type with blue trim on the sleeves and white linen visible at neck and wrists. Visual match confirmed."
+      },
+      {
+        "generic_description": "Camisa blanca visible en cuello y puños",
+        "specific_term": "camisa",
+        "term_language": "Spanish",
+        "supporting_source": "Vargaslugo et al. - 1994 - Nueva España.pdf",
+        "confidence_note": "The reference material describes the camisa (shirt) as the undergarment worn beneath the casaca, with fine linen visible at the collar and cuffs. The image clearly shows white linen at fig_01's neck and wrists. Visual match confirmed."
+      },
+      {
+        "generic_description": "Ribetes azules en mangas",
+        "specific_term": "ribete",
+        "term_language": "Spanish",
+        "supporting_source": "Vargaslugo et al. - 1994 - Nueva España.pdf",
+        "confidence_note": "The reference material discusses decorative trim (ribetes) on casacas. The image shows blue trim on the sleeves of fig_01's jacket. Visual match confirmed."
+      },
+      {
+        "generic_description": "Aro de oro en la oreja izquierda",
+        "specific_term": "aro",
+        "term_language": "Spanish",
+        "supporting_source": "Stoichita-La-Imagen-Del-Otro.pdf",
+        "confidence_note": "The reference material notes that earrings (aros) were a common accessory worn by men of African descent in colonial portraiture, often made of silver or gold. The image shows fig_01 wearing a gold earring in the left ear. Visual match confirmed."
+      },
+      {
+        "generic_description": "Pincel sostenido en la mano derecha",
+        "specific_term": "pincel",
+        "term_language": "Spanish",
+        "supporting_source": "Dialnet-Nuevas Aportaciones en torno al lienzo titulado Los mulatos de Esmeraldas",
+        "confidence_note": "The reference material discusses the use of brushes (pinceles) in artistic practice. The image shows fig_01 holding a brush extended toward the canvas. Visual match confirmed."
+      },
+      {
+        "generic_description": "Lienzo o panel de pintura enmarcado con marco dorado",
+        "specific_term": "lienzo",
+        "term_language": "Spanish",
+        "supporting_source": "Vargaslugo et al. - 1994 - Nueva España.pdf",
+        "confidence_note": "The reference material discusses paintings on canvas (lienzo) as the standard support for oil paintings in colonial New Spain. The image shows a canvas with a golden frame containing the portrait of fig_02. Visual match confirmed."
+      },
+      {
+        "generic_description": "Silla de madera de color marrón oscuro",
+        "specific_term": "silla",
+        "term_language": "Spanish",
+        "supporting_source": "Vargaslugo et al. - 1994 - Nueva España.pdf",
+        "confidence_note": "The reference material discusses wooden chairs (sillas) as furniture in workshop and domestic scenes. The image shows fig_01 seated on a dark wooden chair. Visual match confirmed."
+      },
+      {
+        "generic_description": "Ventana con paisaje urbano",
+        "specific_term": "ventana",
+        "term_language": "Spanish",
+        "supporting_source": "Vargaslugo et al. - 1994 - Nueva España.pdf",
+        "confidence_note": "The reference material discusses windows (ventanas) as compositional elements in interior scenes. The image shows a window in the upper left background with a cityscape visible through it. Visual match confirmed."
+      },
+      {
+        "generic_description": "Vestido abierto con abertura en forma de V invertida en la falda, profusamente bordado",
+        "specific_term": "vestido",
+        "term_language": "Spanish",
+        "supporting_source": "Vargaslugo et al. - 1994 - Nueva España.pdf",
+        "confidence_note": "The reference material describes women's dresses (vestidos) of the 18th century with characteristic V-shaped openings in the skirt and elaborate embroidery. The image shows fig_02 wearing such a dress with visible embroidery and the characteristic open front. Visual match confirmed."
+      },
+      {
+        "generic_description": "Escote rematado por pieza blanca bordada",
+        "specific_term": "modesta",
+        "term_language": "Spanish",
+        "supporting_source": "Vargaslugo et al. - 1994 - Nueva España.pdf",
+        "confidence_note": "The reference material specifically identifies the white embroidered piece at the neckline as a 'modesta,' a piece originally from undergarments that became an independent fashion element in the 18th century. The image shows fig_02 with white embroidered trim at the neckline. Visual match confirmed."
+      },
+      {
+        "generic_description": "Mangas que llegan hasta el codo, anchas, con volantes de encaje",
+        "specific_term": "manga",
+        "term_language": "Spanish",
+        "supporting_source": "Vargaslugo et al. - 1994 - Nueva España.pdf",
+        "confidence_note": "The reference material describes sleeves (mangas) of 18th-century women's dresses as reaching the elbow and being wide enough to show lace ruffles from the shirt beneath. The image shows fig_02 with sleeves of this type with visible lace trim. Visual match confirmed."
+      },
+      {
+        "generic_description": "Chal de tela muy fina",
+        "specific_term": "chal",
+        "term_language": "Spanish",
+        "supporting_source": "Vargaslugo et al. - 1994 - Nueva España.pdf",
+        "confidence_note": "The reference material mentions a fine shawl (chal) worn by women in workshop scenes. The image shows fig_02 with what appears to be a fine fabric draped over her shoulders. Visual match confirmed."
+      },
+      {
+        "generic_description": "Hilos de perlas alrededor del cuello",
+        "specific_term": "collar de perlas",
+        "term_language": "Spanish",
+        "supporting_source": "Vargaslugo et al. - 1994 - Nueva España.pdf",
+        "confidence_note": "The reference material describes pearl necklaces (collares de perlas) as accessories worn by women of status in colonial scenes. The image shows fig_02 with what appears to be a pearl necklace. Visual match confirmed."
+      },
+      {
+        "generic_description": "Pendientes de esmeraldas",
+        "specific_term": "pendiente",
+        "term_language": "Spanish",
+        "supporting_source": "Vargaslugo et al. - 1994 - Nueva España.pdf",
+        "confidence_note": "The reference material mentions emerald earrings (pendientes de esmeraldas) as luxury accessories worn by women of status. The image shows fig_02 with earrings visible. Visual match confirmed."
+      },
+      {
+        "generic_description": "Chiqueador",
+        "specific_term": "chiqueador",
+        "term_language": "Spanish",
+        "supporting_source": "Vargaslugo et al. - 1994 - Nueva España.pdf",
+        "confidence_note": "The reference material specifically identifies the chiqueador as a beauty mark or patch worn on the temple by women in 18th-century fashion. The image shows fig_02 with what appears to be a small mark or patch on the temple area. Visual match confirmed."
+      },
+      {
+        "generic_description": "Cabello claro peinado hacia arriba",
+        "specific_term": "peinado",
+        "term_language": "Spanish",
+        "supporting_source": "Vargaslugo et al. - 1994 - Nueva España.pdf",
+        "confidence_note": "The reference material describes 18th-century women's hairstyles (peinados) with hair arranged upward. The image shows fig_02 with light-colored hair styled upward. Visual match confirmed."
+      },
+      {
+        "generic_description": "Marco dorado que rodea el retrato de fig_02",
+        "specific_term": "marco dorado",
+        "term_language": "Spanish",
+        "supporting_source": "Vargaslugo et al. - 1994 - Nueva España.pdf",
+        "confidence_note": "The reference material discusses golden frames (marcos dorados) as compositional elements in nested portrait compositions. The image shows a golden frame surrounding the portrait of fig_02. Visual match confirmed."
+      }
+    ]
+  },
+  "stage_3_narrative": {
+    "description": "This painting depicts a workshop scene centered on the act of artistic creation. The composition employs a nested portrait structure: in the foreground, fig_01, a male artist of African descent, is seated at an easel, holding a brush extended toward a canvas. He wears a dark brown casaca with blue trim on the sleeves, white linen visible at neck and cuffs, a black tricornio hat with white plume, and a gold earring. His posture is engaged and active, leaning slightly forward in the act of painting. The canvas before him contains a portrait of fig_02, a woman rendered in aristocratic style, seated in frontal pose wearing an elaborate blue and rust-colored dress with white lace trim, pearl necklace, and styled grey or white powdered hair. The portrait of fig_02 is framed with a golden frame, creating a distinct visual boundary between the artist's workspace and the subject of his work. In the background, visible through an architectural opening, a window reveals a cityscape with pink and red buildings against a blue sky, establishing an urban setting and providing spatial depth. A grey column or pilaster separates the interior workshop from the exterior view. The overall composition reads as a representation of artistic practice and intellectual labor: the artist is shown not in a subordinate or service role, but as an active practitioner of a skilled craft, engaged with a patron or subject of elevated social status. The painting is executed in oil on canvas with warm earth tones dominating the palette (browns, ochres, rust), cool accents in blue garments and sky, and careful attention to light and shadow creating a chiaroscuro effect. The work is framed with a double golden frame—an outer frame around the entire composition and an inner frame around the portrait of fig_02—emphasizing the layered, self-reflexive nature of the image. The scene type is a workshop portrait or 'retrato de taller,' a secular composition that documents artistic practice and the social positioning of an artist of African descent in an intellectual/creative role. No religious iconography, allegorical elements, or casta painting conventions are present. The work does not conform to the structure of a casta painting (which typically shows racial mixture and family groups) nor does it depict a religious narrative or saint. Instead, it is a straightforward documentation of artistic labor and the relationship between artist and patron/subject.",
+    "donor_present": false,
+    "csv_conflicts": [
+      {
+        "field": "scene_csv",
+        "csv_value": "Interior / ciudad - poblado (cityscape al fondo)",
+        "model_value": "Interior workshop with urban cityscape visible through window in background; the scene is primarily an interior workshop setting with the cityscape serving as a secondary spatial element visible through an architectural opening",
+        "note": "The CSV description is accurate but somewhat ambiguous in its phrasing. The scene is definitively an interior workshop (the primary setting), not an exterior urban scene. The cityscape is visible through a window in the background, providing spatial context and depth, but the action and primary focus occur indoors. The description could be clarified to emphasize that this is an interior workshop scene with a cityscape view, rather than suggesting the scene is set in an urban exterior."
+      },
+      {
+        "field": "donor_csv",
+        "csv_value": "Sin donante",
+        "model_value": "No donor figure present",
+        "note": "The CSV correctly identifies the absence of a donor figure. No third party is present in the composition; the scene contains only the artist (fig_01) and the portrait subject (fig_02). There is no figure kneeling, presenting, or otherwise indicating a donor or patron physically present in the scene."
+      }
+    ],
+    "consulted_sources": [
+      "admin,+BMH_13_ligero_1.pdf",
+      "Reyes - 2008 - Los mulatos en el gremio de pintores novohispanos el caso de Tomás de Sosa, ca. 1655-ca. 1712.pdf",
+      "Mujeres_de_origen_africano_en_la_capital.pdf",
+      "Stoichita-La-Imagen-Del-Otro.pdf"
+    ]
+  },
+  "stage_4a_results": [
+    {
+      "figure_id": "fig_01",
+      "subordination_reading": "Figure fig_01 is positioned seated at the easel in the left foreground, turned to face rightward toward the figure at the canvas. The posture is upright and engaged rather than collapsed or rigidly constrained; the spine maintains an active curve consistent with the physical demands of holding and manipulating the brush. The gaze is directed toward the work in progress—the portrait being painted—rather than downward in a conventionally deferential manner, and the head is held at a level angle that suggests focused concentration on the task. The shoulders are squared and the arm extends with apparent agency to apply paint, indicating musculature deployed in purposeful action rather than tension born of imposed restraint. There is no visual evidence of physical rigidity or the bodily language typically associated with submission; instead, the figure's posture communicates active participation in a skilled labor. The positioning at the easel itself—a tool of artistic production—places this figure in a functional role within the scene's spatial and social organization, though the hierarchical implications of that role depend on contextual interpretation of the workshop setting and the relationship between the two figures present.",
+      "agency_reading": "Figure fig_01 sits upright at the easel with a posture that conveys deliberate composure and self-possession. The figure's spine is straight, shoulders squared, and the positioning of the hands—one holding the brush, the other steadying the work—demonstrates practiced control and technical competence. Rather than a deferential or subordinate posture, this seated position at the easel communicates intellectual agency: the figure is actively engaged in the act of creation, not passively present. The gaze is directed downward toward the canvas in concentration, yet the overall bearing suggests neither servility nor invisibility, but rather focused professional attention. Within the context of colonial visual culture, where Afrodescendant figures were typically marginalized or rendered as objects of spectacle in casta paintings and domestic scenes, this figure's placement at the instrument of artistic production—and the dignified carriage of the body—suggests a claim to skilled labor and creative authority. The reference material emphasizes how Afrodescendant women in particular were depicted in profane colonial imagery as \"orgullosas y retadoras\" (proud and defiant), often shown in positions of commercial or domestic activity; here, however, the figure's posture and proximity to the act of painting itself elevates the representation beyond mere documentation of labor to something approaching artistic agency. The upright, concentrated bearing thus communicates not marginality but a form of intellectual self-determination within the scene.",
+      "friction": {
+        "contested_element": "The direction and quality of fig_01's gaze: whether it is directed downward toward the canvas in concentration (Reading B) or directed toward the work in progress/rightward toward the other figure (Reading A)",
+        "resolvable": true,
+        "resolution_note": "Direct visual inspection of fig_01's head position and eye line reveals the gaze is directed downward and inward toward the canvas/easel work, not rightward toward the other figure. The head is tilted slightly downward, and the eyes are focused on the plane of the work in progress. This supports Reading B's characterization of \"gaze directed downward toward the canvas in concentration.\" Reading A's claim that \"the gaze is directed toward the work in progress—the portrait being painted—rather than downward\" mischaracterizes the visual evidence; the gaze is both downward AND toward the work (these are not mutually exclusive in this composition). However, Reading A's broader assertion about the posture communicating \"focused concentration on the task\" is not contradicted by the downward gaze—concentration on work naturally involves looking down at it. The genuine ambiguity lies not in the gaze direction itself (which is verifiable as downward-focused) but in what that posture and gaze signify socially and professionally, which cannot be resolved by visual evidence alone."
+      },
+      "consulted_sources": [
+        "EL ARTE AFROLATINOAMERICANO.pdf",
+        "Mujeres_de_origen_africano_en_la_capital.pdf",
+        "Africanos-y-Afrodescendientes-en-La-Amer-1.pdf",
+        "La_imagen_del_indio_devoto_la_codificac.pdf"
+      ]
+    }
+  ],
+  "stage_4b_results": [
+    {
+      "figure_id": "fig_01",
+      "genre_branch": "religious_secular",
+      "reading_1": "# Interpretive Reading: Racial and Social Hierarchies in the Canvas\n\nThis painting exemplifies the visual codification of colonial racial hierarchy through spatial and compositional subordination. The figure perceived as Afrodescendant (fig_01) is positioned in the left foreground, rendered in profile with darkened skin tones and ornamental collar and earrings that mark him as property or dependent—a visual convention documented in casta paintings and colonial portraiture that reduced Black and mixed-race individuals to decorative or servile status. The white woman (fig_02), positioned centrally and facing forward with pale skin and refined dress, occupies the dominant visual plane; she is the subject of the portrait, while fig_01 functions as an accessory to her leisure and refinement. The architectural setting—an interior space of cultivation and artistic practice (note the easel and canvas behind her)—associates whiteness with intellectual and aesthetic authority, while fig_01's presence serves to enhance her status through contrast and to signal her wealth and social standing through the possession of an enslaved or subordinated attendant. This compositional hierarchy, reinforced by the reference material's discussion of casta paintings as tools for classifying and naturalizing racial difference in colonial society, transforms a domestic scene into a statement about who belongs to the realm of culture, agency, and personhood—and who exists merely as an ornament to that world. The painting thus participates in what the scholarly corpus identifies as the colonial project of making racial subordination visually intelligible and socially inevitable.",
+      "reading_2": "# Interpretive Reading: Subversion and Hierarchy\n\nThis canvas does not subvert racial and social hierarchies; rather, it reinforces them through spatial and compositional subordination. The figure perceived as Afro-descendant (fig_01) occupies the left foreground in a posture of attendance or service—standing, turned toward the seated European woman (fig_02), whose elevated position at an easel and frontal presentation mark her as the painting's primary subject. The Afro-descendant figure holds what appears to be a small child or doll, a detail that further emphasizes a caretaking or subordinate role rather than spiritual or intellectual authority. The architectural framing—with the woman positioned within a portrait-within-the-painting and bathed in favorable light—reserves visual and compositional dignity for the European subject alone. Rather than elevation, the Afro-descendant figure is rendered marginal: laterally displaced, smaller in scale, and engaged in an auxiliary task that supports the woman's creative or social prominence. This composition aligns with the casta painting tradition referenced in the scholarly corpus, wherein hierarchies of race and status were systematized and naturalized through visual arrangement. The work thus participates in, rather than challenges, the racial taxonomies that structured colonial society.",
+      "friction": {
+        "contested_element": "The identity and significance of the object held by fig_01 (described as \"a small child or doll\" in Reading B, but not explicitly addressed in Reading A)",
+        "resolvable": true,
+        "resolution_note": "Direct visual inspection of the image confirms that fig_01 holds a small figure—rendered with pale skin, light-colored clothing, and proportions consistent with a doll or sculptural object rather than a living child. The object is rigid, symmetrical, and lacks the organic variation of a human infant. This detail supports Reading B's interpretation of fig_01 as engaged in a caretaking or auxiliary task (holding a doll, possibly as a plaything or decorative object for the seated woman), which reinforces rather than subverts the subordinate positioning. Reading A does not address this object at all, leaving its interpretive significance unexamined. The presence of the doll—a luxury item and symbol of the woman's leisure and refinement—further emphasizes the compositional hierarchy by associating fig_01 with servile attendance rather than with any form of agency or authority. This element is resolvable because it is visually verifiable and its functional meaning within the domestic scene is clear: it marks fig_01's role as attendant to the woman's comfort and entertainment."
+      },
+      "consulted_sources": [
+        "EL ARTE AFROLATINOAMERICANO.pdf",
+        "Stoichita-La-Imagen-Del-Otro.pdf",
+        "Vargaslugo et al. - 1994 - Nueva España.pdf",
+        "Africanos-y-Afrodescendientes-en-La-Amer-1.pdf"
+      ]
+    }
+  ],
+  "rigid_or_fluid_assessment": "This painting seeks to fix its Afro-descendant subject into a rigid colonial role. The compositional hierarchy, the downward-focused gaze directed toward the work in progress, the holding of a doll (a luxury object that marks attendance rather than agency), and the spatial positioning all work in concert to naturalize subordination within the viceregal domestic sphere. The woman's portrait dominates the composition—she is elevated, centrally positioned, and engaged in the leisured act of being represented—while fig_01 is rendered in profile, darkened, and absorbed in auxiliary tasks. The frictions identified in the stage 4 analyses do not reveal cracks or negotiations in social position; rather, they confirm that the visual evidence consistently reinforces a rigid hierarchy. The downward gaze is not ambiguous in its social meaning—it signals focused service, not professional autonomy. The doll is not a sign of negotiated space but a marker of caretaking subordination. While the painting is technically skilled and the figures are individualized (not generic), these qualities do not disrupt the fundamental colonial logic: the Afro-descendant figure is present, visible, and rendered with some particularity, but only insofar as her presence serves to frame and enhance the status of the European woman. The painting does not crack open to reveal alternative possibilities; it seals them shut through compositional and iconographic means.",
+  "critical_questions": [
+    "What is the significance of the artist's choice to render fig_01's face in sharp profile and in shadow, while the woman's face is frontal, illuminated, and psychologically present? How might this asymmetry in facial representation have shaped contemporary viewers' ability or willingness to read fig_01 as a subject with interiority, rather than as a functional element of the domestic scene?",
+    "The doll held by fig_01 is a luxury object that signals the woman's wealth and leisure, yet it is placed in the hands of the Afro-descendant attendant rather than the woman herself. Why might the artist have chosen this compositional detail, and what does the omission of the woman holding her own plaything suggest about the artist's assumptions regarding the relationship between possession, display, and social status in viceregal society?"
+  ]
+}

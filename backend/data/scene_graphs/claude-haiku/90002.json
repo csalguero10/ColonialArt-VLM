@@ -1,0 +1,508 @@
+{
+  "image_id": "90002",
+  "nodes": [
+    {
+      "id": "fig_01",
+      "type": "figure",
+      "label": "Dark brown skin tone; rounded facial features; small gold circular earrings; white ruffled collar; wearing teal/blue-green tunic with decorative embroidery and gold trim over brown undergarment; pearl necklace; holding black hat with white plume in left hand",
+      "bbox": [
+        2.0,
+        167.8,
+        924.3,
+        1539.6
+      ],
+      "score": 0.769
+    },
+    {
+      "id": "fig_02",
+      "type": "figure",
+      "label": "Dark brown skin tone; rounded facial features; small gold circular earrings; white ruffled collar; wearing tan/brown tunic with decorative embroidery and blue trim over brown undergarment; pearl necklace; holding black hat with white plume in left hand",
+      "bbox": [
+        655.6,
+        148.9,
+        2258.4,
+        1539.8
+      ],
+      "score": 0.83
+    },
+    {
+      "id": "fig_03",
+      "type": "figure",
+      "label": "Dark brown skin tone; rounded facial features; small gold circular earrings; white ruffled collar; wearing orange/yellow tunic with decorative embroidery and green trim over brown undergarment; pearl necklace; holding black hat with white plume in left hand",
+      "bbox": [
+        1940.7,
+        202.0,
+        2904.5,
+        1539.2
+      ],
+      "score": 0.73
+    },
+    {
+      "id": "obj_01",
+      "type": "object",
+      "label": "Long spear or lance with dark shaft and metal point",
+      "bbox": [
+        880.5,
+        2.7,
+        1045.8,
+        1538.7
+      ],
+      "score": 0.385
+    },
+    {
+      "id": "obj_02",
+      "type": "object",
+      "label": "Long spear or lance with dark shaft and metal point",
+      "bbox": [
+        1902.1,
+        6.4,
+        2325.6,
+        1534.0
+      ],
+      "score": 0.402
+    },
+    {
+      "id": "obj_03",
+      "type": "object",
+      "label": "Long spear or lance with dark shaft and metal point",
+      "bbox": [
+        71.6,
+        14.0,
+        272.6,
+        1534.4
+      ],
+      "score": 0.301
+    },
+    {
+      "id": "obj_04",
+      "type": "object",
+      "label": "Black hat with white plume",
+      "bbox": [
+        1513.1,
+        1106.6,
+        2064.4,
+        1534.3
+      ],
+      "score": 0.441
+    },
+    {
+      "id": "obj_05",
+      "type": "object",
+      "label": "Black hat with white plume",
+      "bbox": [
+        1511.3,
+        864.4,
+        2076.6,
+        1533.9
+      ],
+      "score": 0.342
+    },
+    {
+      "id": "obj_06",
+      "type": "object",
+      "label": "Decorative cartouche with inscription",
+      "bbox": [
+        1511.6,
+        1098.4,
+        2069.4,
+        1531.9
+      ],
+      "score": 0.376
+    },
+    {
+      "id": "obj_07",
+      "type": "material",
+      "label": "Silk or silk-like fabric (teal/blue-green tunic)",
+      "bbox": [
+        5.7,
+        549.6,
+        920.1,
+        1532.1
+      ],
+      "score": 0.408
+    },
+    {
+      "id": "obj_08",
+      "type": "material",
+      "label": "Wool or wool-like fabric (brown undergarment)",
+      "bbox": [
+        682.1,
+        568.1,
+        2252.4,
+        1532.4
+      ],
+      "score": 0.427
+    },
+    {
+      "id": "obj_09",
+      "type": "material",
+      "label": "Decorative embroidery thread (gold and darker tones)",
+      "bbox": [
+        1260.0,
+        587.2,
+        1703.6,
+        952.6
+      ],
+      "score": 0.333
+    },
+    {
+      "id": "obj_10",
+      "type": "accessory",
+      "label": "White ruffled collar (European linen)",
+      "bbox": [
+        1275.2,
+        345.7,
+        1750.8,
+        661.1
+      ],
+      "score": 0.433
+    },
+    {
+      "id": "obj_11",
+      "type": "accessory",
+      "label": "Pearl necklace (multiple strands)",
+      "bbox": [
+        1257.9,
+        584.5,
+        1705.9,
+        953.2
+      ],
+      "score": 0.348
+    },
+    {
+      "id": "obj_12",
+      "type": "accessory",
+      "label": "Small gold circular earrings",
+      "bbox": [
+        1606.8,
+        367.6,
+        1672.3,
+        421.4
+      ],
+      "score": 0.358
+    },
+    {
+      "id": "obj_13",
+      "type": "accessory",
+      "label": "Small gold circular earrings",
+      "bbox": [
+        1575.8,
+        366.5,
+        1674.5,
+        541.8
+      ],
+      "score": 0.316
+    },
+    {
+      "id": "obj_14",
+      "type": "accessory",
+      "label": "Long spear/lance with dark shaft and metal point (held in right hand)",
+      "bbox": [
+        880.0,
+        1.7,
+        1044.2,
+        1538.5
+      ],
+      "score": 0.37
+    },
+    {
+      "id": "obj_15",
+      "type": "accessory",
+      "label": "Long spear/lance with dark shaft and metal point (held in right hand)",
+      "bbox": [
+        1901.5,
+        5.9,
+        2325.1,
+        1533.4
+      ],
+      "score": 0.425
+    },
+    {
+      "id": "obj_16",
+      "type": "accessory",
+      "label": "Black hat with white plume (held in left hand)",
+      "bbox": [
+        1514.3,
+        1110.3,
+        2063.3,
+        1534.6
+      ],
+      "score": 0.499
+    },
+    {
+      "id": "obj_17",
+      "type": "material",
+      "label": "Silk or silk-like fabric (tan/brown tunic)",
+      "bbox": [
+        661.3,
+        568.5,
+        2245.9,
+        1533.3
+      ],
+      "score": 0.501
+    },
+    {
+      "id": "obj_18",
+      "type": "material",
+      "label": "Decorative embroidery thread (blue and gold tones)",
+      "bbox": [
+        2359.4,
+        552.6,
+        2891.3,
+        1334.8
+      ],
+      "score": 0.408
+    },
+    {
+      "id": "obj_19",
+      "type": "material",
+      "label": "Silk or silk-like fabric (orange/yellow tunic)",
+      "bbox": [
+        659.5,
+        568.3,
+        2246.1,
+        1533.2
+      ],
+      "score": 0.498
+    },
+    {
+      "id": "obj_20",
+      "type": "material",
+      "label": "Wool or wool-like fabric (brown undergarment, green outer layer visible at right side)",
+      "bbox": [
+        678.8,
+        569.1,
+        2252.6,
+        1533.8
+      ],
+      "score": 0.422
+    }
+  ],
+  "edges": [
+    {
+      "source": "obj_01",
+      "target": "fig_01",
+      "relation": "associated_with"
+    },
+    {
+      "source": "obj_01",
+      "target": "fig_02",
+      "relation": "associated_with"
+    },
+    {
+      "source": "obj_01",
+      "target": "fig_03",
+      "relation": "associated_with"
+    },
+    {
+      "source": "obj_02",
+      "target": "fig_01",
+      "relation": "associated_with"
+    },
+    {
+      "source": "obj_02",
+      "target": "fig_02",
+      "relation": "associated_with"
+    },
+    {
+      "source": "obj_02",
+      "target": "fig_03",
+      "relation": "associated_with"
+    },
+    {
+      "source": "obj_03",
+      "target": "fig_01",
+      "relation": "associated_with"
+    },
+    {
+      "source": "obj_03",
+      "target": "fig_02",
+      "relation": "associated_with"
+    },
+    {
+      "source": "obj_03",
+      "target": "fig_03",
+      "relation": "associated_with"
+    },
+    {
+      "source": "obj_04",
+      "target": "fig_01",
+      "relation": "associated_with"
+    },
+    {
+      "source": "obj_04",
+      "target": "fig_02",
+      "relation": "associated_with"
+    },
+    {
+      "source": "obj_04",
+      "target": "fig_03",
+      "relation": "associated_with"
+    },
+    {
+      "source": "obj_05",
+      "target": "fig_01",
+      "relation": "associated_with"
+    },
+    {
+      "source": "obj_05",
+      "target": "fig_02",
+      "relation": "associated_with"
+    },
+    {
+      "source": "obj_05",
+      "target": "fig_03",
+      "relation": "associated_with"
+    },
+    {
+      "source": "obj_07",
+      "target": "fig_01",
+      "relation": "associated_with"
+    },
+    {
+      "source": "obj_08",
+      "target": "fig_01",
+      "relation": "associated_with"
+    },
+    {
+      "source": "obj_08",
+      "target": "fig_02",
+      "relation": "associated_with"
+    },
+    {
+      "source": "obj_09",
+      "target": "fig_01",
+      "relation": "associated_with"
+    },
+    {
+      "source": "obj_09",
+      "target": "fig_03",
+      "relation": "associated_with"
+    },
+    {
+      "source": "obj_10",
+      "target": "fig_01",
+      "relation": "associated_with"
+    },
+    {
+      "source": "obj_10",
+      "target": "fig_02",
+      "relation": "associated_with"
+    },
+    {
+      "source": "obj_10",
+      "target": "fig_03",
+      "relation": "associated_with"
+    },
+    {
+      "source": "obj_11",
+      "target": "fig_01",
+      "relation": "associated_with"
+    },
+    {
+      "source": "obj_11",
+      "target": "fig_02",
+      "relation": "associated_with"
+    },
+    {
+      "source": "obj_11",
+      "target": "fig_03",
+      "relation": "associated_with"
+    },
+    {
+      "source": "obj_12",
+      "target": "fig_01",
+      "relation": "associated_with"
+    },
+    {
+      "source": "obj_12",
+      "target": "fig_02",
+      "relation": "associated_with"
+    },
+    {
+      "source": "obj_12",
+      "target": "fig_03",
+      "relation": "associated_with"
+    },
+    {
+      "source": "obj_13",
+      "target": "fig_01",
+      "relation": "associated_with"
+    },
+    {
+      "source": "obj_13",
+      "target": "fig_02",
+      "relation": "associated_with"
+    },
+    {
+      "source": "obj_13",
+      "target": "fig_03",
+      "relation": "associated_with"
+    },
+    {
+      "source": "obj_14",
+      "target": "fig_01",
+      "relation": "associated_with"
+    },
+    {
+      "source": "obj_14",
+      "target": "fig_02",
+      "relation": "associated_with"
+    },
+    {
+      "source": "obj_14",
+      "target": "fig_03",
+      "relation": "associated_with"
+    },
+    {
+      "source": "obj_15",
+      "target": "fig_01",
+      "relation": "associated_with"
+    },
+    {
+      "source": "obj_15",
+      "target": "fig_02",
+      "relation": "associated_with"
+    },
+    {
+      "source": "obj_15",
+      "target": "fig_03",
+      "relation": "associated_with"
+    },
+    {
+      "source": "obj_16",
+      "target": "fig_01",
+      "relation": "associated_with"
+    },
+    {
+      "source": "obj_16",
+      "target": "fig_02",
+      "relation": "associated_with"
+    },
+    {
+      "source": "obj_16",
+      "target": "fig_03",
+      "relation": "associated_with"
+    },
+    {
+      "source": "obj_17",
+      "target": "fig_02",
+      "relation": "associated_with"
+    },
+    {
+      "source": "obj_18",
+      "target": "fig_02",
+      "relation": "associated_with"
+    },
+    {
+      "source": "obj_19",
+      "target": "fig_03",
+      "relation": "associated_with"
+    },
+    {
+      "source": "obj_20",
+      "target": "fig_03",
+      "relation": "associated_with"
+    }
+  ]
+}

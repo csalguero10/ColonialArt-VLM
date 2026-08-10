@@ -1,0 +1,246 @@
+{
+  "csv_metadata": {
+    "image_id": "24392",
+    "title": "San Benito de Palermo",
+    "author": "Anónimo",
+    "date": "1700–1799",
+    "medium": "Óleo sobre tela",
+    "location": "Colección particular (Barcelona), Barcelona, España",
+    "provenance": "Ciudad de México, México",
+    "theme_csv": "Santoral franciscano",
+    "category_csv": "Devoción",
+    "classification_csv": "Santos, Santos Masculinos, Santos de órdenes y tradiciones, Santos Franciscanos, Benito de Palermo",
+    "descriptors_csv": "Negro - negritud, Retrato simple",
+    "symbols_csv": "Aureola, Corazón flameante, Cruz / crucifijo",
+    "features_csv": "Edad: adulto, Escena: simple, Género masculino, Personaje individual, Personajes: sagrados",
+    "scene_csv": "Terrestre / interior casa-habitación",
+    "face_position_csv": "Rostro 3/4",
+    "objects_csv": "Cruz",
+    "physiognomy_csv": "De pie",
+    "donor_csv": "Sin donante",
+    "inscription_csv": "Ninguna"
+  },
+  "stage_1_pre_iconographic": {
+    "people_present": true,
+    "total_figures": 2,
+    "afrodescendant_present": true,
+    "number_of_afrodescendants": 1,
+    "figures": [
+      {
+        "figure_id": "fig_01",
+        "perceived_as_afrodescendant": true,
+        "position_in_space": "Center-right of composition, occupying most of the pictorial field; turned three-quarter to the viewer's right",
+        "relative_scale": "Dominant; fills approximately 70% of the canvas",
+        "pose_state_basic": "Standing, frontal-facing with torso turned slightly; arms raised and crossed at chest level, hands grasping a wooden cross",
+        "physiognomy_description": "Dark skin tone; full lips rendered in red; broad nose; dark curled hair; mature adult male; wearing a brown Franciscan habit with rope belt and beaded rosary; a luminous halo rendered in gold leaf or light pigment encircles the head"
+      },
+      {
+        "figure_id": "fig_02",
+        "perceived_as_afrodescendant": false,
+        "position_in_space": "Background left, recessed in depth; small scale; appears to be a sculptural or painted relief figure",
+        "relative_scale": "Minimal; approximately 5–10% of the canvas height",
+        "pose_state_basic": "Standing or kneeling; indistinct due to small scale and background placement",
+        "physiognomy_description": "Light-colored or pale rendering; appears to be a putto or cherub figure; rendered in white or cream tones; positioned against a darker architectural or interior background"
+      }
+    ],
+    "technical_resources": {
+      "lighting": "Strong directional light from upper left, creating a dramatic halo effect around the main figure's head; the halo is rendered as a bright golden-white radiance that contrasts sharply with the darker background. The light models the figure's face and torso, creating warm highlights on the skin and fabric. Background remains in shadow, emphasizing the saint's prominence.",
+      "color_palette": "Warm earth tones dominate: browns and ochres in the habit and background; deep dark browns and blacks in the shadows and background; bright gold and cream in the halo; red accents in the lips and the wooden cross; pale cream or white in the secondary putto figure. The overall palette is restricted and harmonious, with high contrast between the illuminated saint and the shadowed background.",
+      "composition_notes": "Oval format (tondo or oval panel). The main figure is centered and frontal, with the cross held prominently at chest height. The composition is vertically oriented and symmetrical around the central axis of the saint's body. The secondary putto is positioned in the upper left background, creating a secondary focal point but remaining subordinate in scale and emphasis. The dark background serves to isolate and elevate the saint, creating a devotional focus. The halo functions as a compositional device, drawing the eye upward and reinforcing the sacred status of the figure."
+    },
+    "csv_conflicts": [
+      {
+        "field": "Physiognomy_Image",
+        "csv_value": "Cuerpo medio",
+        "model_value": "Full-length standing figure from approximately mid-thigh upward; upper body and head dominate the composition",
+        "note": "CSV lists 'Cuerpo medio' (mid-body), but the figure is shown from approximately mid-thigh upward, with the head and torso occupying the majority of the visible composition. This is closer to a three-quarter or upper-body length portrait than a strict mid-body crop."
+      }
+    ]
+  },
+  "stage_2_iconographic_material_culture": {
+    "theme": [
+      "Santoral franciscano"
+    ],
+    "category": "Devoción",
+    "classification": "Santos, Santos Masculinos, Santos de órdenes y tradiciones, Santos Franciscanos, Benito de Palermo",
+    "descriptors": [
+      "Negro - negritud",
+      "Retrato simple"
+    ],
+    "symbols": [
+      "Aureola",
+      "Corazón flameante",
+      "Cruz / crucifijo"
+    ],
+    "features": [
+      "Edad: adulto",
+      "Escena: simple",
+      "Género masculino",
+      "Personaje individual",
+      "Personajes: sagrados"
+    ],
+    "afrodescendant_attributes": [
+      {
+        "figure_id": "fig_01",
+        "clothing_materials": [
+          "wool",
+          "linen",
+          "plant fiber"
+        ],
+        "clothing_style": "Long-sleeved tunic-like robe with full-length sleeves; fastened at the waist with a cord or rope belt; brown earth-toned fabric with visible weave texture; simple, unadorned cut characteristic of monastic or mendicant habit",
+        "accessories": [
+          "rope belt with knots or fasteners",
+          "beaded rosary suspended from the belt",
+          "wooden cross held in both hands at chest level"
+        ]
+      }
+    ],
+    "objects_in_scene": [
+      {
+        "object": "wooden cross",
+        "associated_figure_id": "fig_01",
+        "location_detail": "held in both hands at chest level, arms raised and crossed; the cross is rendered in reddish-brown wood tones with a simple geometric form"
+      },
+      {
+        "object": "beaded rosary",
+        "associated_figure_id": "fig_01",
+        "location_detail": "suspended from the rope belt at the waist; visible as a string of dark beads hanging downward"
+      },
+      {
+        "object": "rope belt",
+        "associated_figure_id": "fig_01",
+        "location_detail": "encircling the waist, fastening the habit; rendered in tan or light brown fiber with visible knots or fastening points"
+      },
+      {
+        "object": "halo",
+        "associated_figure_id": "fig_01",
+        "location_detail": "encircling the head; rendered as a luminous golden-white radiance with radiating lines suggesting divine light"
+      },
+      {
+        "object": "putto or cherub figure",
+        "associated_figure_id": "fig_02",
+        "location_detail": "background left, recessed in depth; appears to be a sculptural relief or painted figure in pale cream or white tones against a darker architectural background"
+      }
+    ],
+    "inscription_present": false,
+    "inscriptions": [],
+    "support": {
+      "format": "oval panel (tondo)",
+      "medium": "oil on canvas"
+    },
+    "csv_conflicts": [
+      {
+        "field": "Objects",
+        "csv_value": "Cruz",
+        "model_value": "Cruz, Rosario de cuentas, Cinturón de cuerda, Aureola",
+        "note": "CSV lists only 'Cruz' (cross), but Stage 2 visual analysis identifies four distinct objects: wooden cross, beaded rosary, rope belt, and halo. The CSV Objects field is incomplete and does not capture the full material culture visible in the composition."
+      }
+    ]
+  },
+  "stage_2b_material_identification": {
+    "identified_elements": [
+      {
+        "generic_description": "Long-sleeved tunic-like robe with full-length sleeves; fastened at the waist with a cord or rope belt; brown earth-toned fabric with visible weave texture; simple, unadorned cut characteristic of monastic or mendicant habit",
+        "specific_term": "hábito franciscano",
+        "term_language": "Spanish",
+        "supporting_source": "San Benito de Palermo.pdf",
+        "confidence_note": "The reference material explicitly identifies the garment as 'hábito franciscano pardo' (brown Franciscan habit) worn by San Benito de Palermo. The visual evidence matches: the figure wears a simple, full-length brown robe with long sleeves, characteristic of mendicant orders. The earth-toned brown fabric and monastic cut are consistent with Franciscan dress conventions documented in the source."
+      },
+      {
+        "generic_description": "rope belt with knots or fasteners encircling the waist, fastening the habit; rendered in tan or light brown fiber with visible knots or fastening points",
+        "specific_term": "cordón",
+        "term_language": "Spanish",
+        "supporting_source": "San Benito de Palermo.pdf",
+        "confidence_note": "The reference material states that San Benito de Palermo was 'caracterizado por vestir hábito franciscano pardo y un cordón que ceñía su vestimenta' (characterized by wearing a brown Franciscan habit and a cord that girded his clothing). The visual evidence shows a knotted rope or cord at the waist, consistent with the Franciscan cordón used to cinch the habit."
+      },
+      {
+        "generic_description": "beaded rosary suspended from the rope belt at the waist; visible as a string of dark beads hanging downward",
+        "specific_term": "rosario",
+        "term_language": "Spanish",
+        "supporting_source": "San Benito de Palermo.pdf",
+        "confidence_note": "While the reference material does not explicitly mention a rosary for San Benito de Palermo specifically, rosaries are standard iconographic attributes of Franciscan saints and are visually evident in the image as a string of dark beads suspended from the belt. The visual detail is clear and consistent with Franciscan devotional practice, though the specific term is inferred from general iconographic convention rather than explicit textual confirmation for this saint."
+      },
+      {
+        "generic_description": "wooden cross held in both hands at chest level, arms raised and crossed; the cross is rendered in reddish-brown wood tones with a simple geometric form",
+        "specific_term": "crucifijo",
+        "term_language": "Spanish",
+        "supporting_source": "San Benito de Palermo.pdf",
+        "confidence_note": "The reference material explicitly states that San Benito de Palermo 'aparecía generalmente sosteniendo un crucifijo' (generally appeared holding a crucifix). The visual evidence shows a wooden cross held prominently in both hands at chest level, rendered in reddish-brown tones. This matches the documented iconographic attribute perfectly."
+      },
+      {
+        "generic_description": "encircling the head; rendered as a luminous golden-white radiance with radiating lines suggesting divine light",
+        "specific_term": "aureola",
+        "term_language": "Spanish",
+        "supporting_source": "Stage 2 generic description (symbols field)",
+        "confidence_note": "The generic description from Stage 2 identifies this as 'Aureola' (halo). The visual evidence clearly shows a luminous golden-white radiance with radiating lines encircling the head, a standard iconographic symbol of sanctity in Christian art. The term is confirmed in the Stage 2 symbols field."
+      },
+      {
+        "generic_description": "putto or cherub figure in background left, recessed in depth; appears to be a sculptural relief or painted figure in pale cream or white tones against a darker architectural background",
+        "specific_term": "",
+        "term_language": "",
+        "supporting_source": "",
+        "confidence_note": "The reference material provided does not contain specific terminology for the putto/cherub figure visible in the background. While putti are common in Christian iconography, the reference corpus does not offer a specific historical or cultural term that would apply to this particular representation. The visual detail is clear (a pale, winged or angelic figure in the background), but without supporting textual identification, no specific term can be assigned."
+      }
+    ]
+  },
+  "stage_3_narrative": {
+    "description": "This is a devotional portrait of San Benito de Palermo, an Afrodescendant Franciscan saint venerated in colonial Latin America. The composition is an oval-format oil painting (tondo) dating to the 18th century, executed in a simple, frontal devotional mode characteristic of colonial santoral imagery. The work originates from Mexico City and is now held in a private collection in Barcelona.\n\nThe central figure (fig_01) is a standing adult male, perceived as Afrodescendant, positioned three-quarter to the viewer's right and occupying approximately 70% of the pictorial field. He is dressed in a brown Franciscan habit (hábito franciscano pardo) with long sleeves, fastened at the waist by a knotted rope cord (cordón). A beaded rosary hangs from the belt. The figure's most prominent attribute is a wooden cross (crucifijo) held in both hands at chest level, with arms raised and crossed—a documented iconographic marker of San Benito de Palermo. The head is encircled by a luminous golden-white halo (aureola) rendered with radiating lines, signifying sanctity. The face is rendered with dark skin tone, full red lips, broad nose, and dark curled hair, consistent with colonial pictorial conventions for representing Afrodescendant subjects.\n\nStrong directional lighting from the upper left creates dramatic modeling of the figure's face and torso, with warm highlights on the skin and fabric. The halo functions as both a devotional symbol and a compositional device, drawing the eye upward and reinforcing the sacred status of the saint. The background remains in deep shadow, isolating the saint and emphasizing his prominence.\n\nA secondary figure (fig_02) appears in the background left, recessed in depth and rendered at minimal scale (approximately 5–10% of the canvas height). This appears to be a putto or cherub figure, rendered in pale cream or white tones against a darker architectural or interior background. The function of this secondary figure is to reinforce the heavenly or divine context of the saint's veneration, a common convention in colonial devotional imagery.\n\nThe scene is classified as a simple individual portrait (retrato simple) within the category of devotional imagery (Devoción) and the theme of Franciscan santoral (Santoral franciscano). There is no narrative action, no donor figure, and no inscription visible. The work exemplifies the colonial practice of venerating Afrodescendant saints through portraiture, particularly within the context of Franciscan spirituality and the cofradías (confraternities) dedicated to San Benito de Palermo that flourished in colonial Spanish America.",
+    "donor_present": false,
+    "csv_conflicts": [
+      {
+        "field": "Scene",
+        "csv_value": "Terrestre / interior casa-habitación",
+        "model_value": "Devotional portrait; interior setting with architectural background (recessed putto figure suggests interior space), but the primary focus is the isolated saint figure against a neutral dark background rather than a domestic interior scene",
+        "note": "The CSV classifies the scene as 'Terrestre / interior casa-habitación' (terrestrial / domestic interior), but the composition is fundamentally a devotional portrait with a neutral, shadowed background. While the secondary putto and architectural elements suggest an interior setting, the scene is not a domestic narrative or genre scene; it is a sacred portrait designed for devotional contemplation. The classification is imprecise and does not capture the primary function and iconographic type of the work."
+      }
+    ],
+    "consulted_sources": [
+      "Escalera - Santo Domingo y la familia Bayona.pdf",
+      "El_culto_a_San_Benito_de_Palermo_elementos_de_la_h.pdf",
+      "El_culto_a_San_Benito_de_Palermo_elementos_de_la_h.pdf",
+      "The composite pardo of seventeenth-century Lima  blackness  whiteness  and Creole self-fashioning in the earliest portraits of Mart n de Porres.pdf"
+    ]
+  },
+  "stage_4a_results": [
+    {
+      "figure_id": "fig_01",
+      "subordination_reading": "Figure fig_01 displays a posture of devotional engagement rather than physical constraint. The body is turned toward the wooden cross held in both hands, with the torso angled forward in a gesture of active veneration rather than passive submission. The shoulders are relaxed and the musculature appears natural rather than rigid or tensed, suggesting voluntary participation in the act of prayer or contemplation rather than enforced discipline. The gaze is directed downward and inward toward the cross itself, a conventional posture of Christian piety that emphasizes spiritual focus rather than deference to an external authority or hierarchical superior within the composition. The hands grip the cross firmly but without visible strain, and the overall bodily alignment—kneeling or seated, facing the sacred object—conforms to established iconographic conventions for saints in prayer or ecstatic vision. The luminous halo encircling the head reinforces this reading as one of sanctity and spiritual elevation rather than subjugation. The posture thus communicates acceptance of a religious vocation and inward spiritual devotion, positioning fig_01 within a framework of Christian virtue rather than social subordination.",
+      "agency_reading": "Figure fig_01 displays a posture of composed dignity and spiritual authority despite occupying the center-right of the composition. The figure stands upright with shoulders squared, holding the wooden cross at a deliberate angle that suggests both reverence and pedagogical intent—as if presenting or teaching rather than merely venerating the object. The gaze is directed outward toward the viewer with a directness that establishes eye contact and presence, rather than a downward or averted look that might suggest subordination or humility. This frontal engagement, combined with the luminous halo rendered in gold leaf, visually asserts a claim to sanctity and moral authority that transcends the figure's material circumstances—the brown Franciscan habit and beaded rosary mark a vow of poverty, yet the posture and gaze refuse any visual language of deference or marginality. The reference material on Afrodescendant representation in colonial Mexican religious and secular imagery suggests that such direct, commanding presence in a devotional context was uncommon; the figure's bodily comportment here—upright, self-possessed, and gazing outward—communicates not submission but rather a position of spiritual knowledge and authority, positioning the figure as a saint or holy exemplar rather than as a subordinate witness to faith. The cross held at mid-body height, neither lowered nor raised in supplication, reinforces this reading of active spiritual agency rather than passive devotion.",
+      "friction": {
+        "contested_element": "The direction and quality of the figure's gaze: whether it is directed downward/inward toward the cross (Reading A) or outward toward the viewer with direct eye contact (Reading B)",
+        "resolvable": true,
+        "resolution_note": "Direct visual inspection of the image shows that fig_01's gaze is directed downward and inward toward the wooden cross being held, not outward toward the viewer. The eyes are cast down in the direction of the sacred object, and there is no direct eye contact or frontal engagement with the viewer. This visual fact supports Reading A's interpretation of devotional engagement and inward spiritual focus, and contradicts Reading B's claim of outward gaze and eye contact that would establish presence and authority. Reading B's assertion of \"directness that establishes eye contact\" is not supported by the actual painted image."
+      },
+      "consulted_sources": [
+        "Africanos-y-Afrodescendientes-en-La-Amer-1.pdf",
+        "EL ARTE AFROLATINOAMERICANO.pdf",
+        "Dialnet-NuevasAportacionesEnTornoAlLienzoTituladoLosMulato-4378968.pdf",
+        "Mujeres_de_origen_africano_en_la_capital.pdf"
+      ]
+    }
+  ],
+  "stage_4b_results": [
+    {
+      "figure_id": "fig_01",
+      "genre_branch": "religious_secular",
+      "reading_1": "# Interpretive Reading: Racial and Social Hierarchy\n\nThis canvas depicts a Black saint—likely San Benito or another Afrodescendant holy figure—rendered with darkened skin, exaggerated red lips, and wide eyes in a style that emphasizes racial difference rather than spiritual transcendence. The halo, while marking sanctity, sits atop a figure whose physiognomy has been caricatured in ways consistent with colonial visual conventions that simultaneously elevated and othered Black bodies within Christian devotion. The saint holds a wooden cross and gestures toward a small putto (cherub) in the upper left, positioning him as a conduit of Christian salvation—yet the compositional isolation and the exaggerated rendering of his features suggest that his sanctity is contingent on his visual difference and subordination to European iconographic norms. The reference material on San Baltazar's cult indicates that while enslaved and colonized populations were encouraged to venerate Black saints, these devotions were \"impuestas\" (imposed) by Spanish clergy and crown, meaning the saint's image functioned as a tool of religious control rather than autonomous spiritual agency. By rendering Blackness as visually distinct and marked—even within a sacred context—the painting reinforces the colonial logic that positioned Afrodescendant peoples as perpetually subordinate subjects of conversion and spiritual discipline, their sanctity legible only through their submission to European Christian iconography and their visual marking as racially other.",
+      "reading_2": "# Interpretive Reading: Spiritual Elevation and Hierarchical Subversion\n\nThis canvas presents a striking inversion of colonial racial hierarchies through compositional and iconographic means. The figure perceived as Afro-descendant (fig_01) occupies the dominant spatial and spiritual position: he is centrally placed, monumentally scaled, and crowned with a luminous halo that signals sanctity and divine favor. His dark skin, rendered with painterly precision, is not obscured or marginalized but rather becomes the visual anchor of the entire composition. The wooden cross he holds and venerates positions him as an active agent of Christian devotion rather than a passive object of evangelization—a reversal of the typical colonial dynamic wherein Afro-descended peoples were targets of forced conversion. The small figure of the Christ Child (fig_02) visible in the background architectural niche appears diminished by comparison, suggesting that the Afro-descendant saint mediates or even supersedes conventional hierarchies of spiritual authority. Given the reference material on Pedro Claver and the cult of San Baltazar, this image likely depicts a Black saint whose veneration was promoted by the Jesuits yet simultaneously appropriated by Afro-American communities as a site of cultural and spiritual agency. The painting thus performs a visual argument: that Blackness and sanctity are not mutually exclusive, and that an Afro-descendant figure can occupy the apex of a devotional hierarchy—a radical claim in the context of colonial visual culture.",
+      "friction": {
+        "contested_element": "The halo and its relationship to the figure's sanctity and agency: whether it signals spiritual elevation and autonomous devotion (Reading B) or marks the figure as subordinated within an imposed European iconographic system (Reading A).",
+        "resolvable": false,
+        "resolution_note": "Both readings invoke the halo as visual evidence, but they interpret its meaning in opposite directions. Reading A argues the halo \"sits atop\" a caricatured figure, marking sanctity as contingent on visual othering and submission to European norms. Reading B argues the halo signals \"divine favor\" and positions the figure at the apex of spiritual authority. The halo itself—a luminous gold circle rendered with technical precision—is visually present and unambiguous as an object. However, the halo's iconographic meaning (does it represent autonomous spiritual agency or imposed religious control?) cannot be resolved by visual inspection alone. The halo is a conventional Christian symbol whose deployment in colonial contexts is historically contested: it could simultaneously mark both sanctity and subordination depending on the institutional context of the image's production and use. Without documentary evidence of the painting's commission, intended audience, or the specific saint depicted, the halo remains genuinely ambiguous as a marker of the figure's social and spiritual position. The visual element is clear; its historical meaning is not."
+      },
+      "consulted_sources": [
+        "Dialnet-ElEspirituBarrocoEnElArteColonial-203574.pdf",
+        "Pedro Claver lo demoniaco como persuación y resistencia afro.pdf",
+        "Pedro Claver lo demoniaco como persuación y resistencia afro.pdf",
+        "Vistiendo_las_ropas_del_santo_Atributos.pdf"
+      ]
+    }
+  ],
+  "rigid_or_fluid_assessment": "This painting presents a fundamentally rigid colonial framework that seeks to fix the Afro-descendant figure into a predetermined ecclesiastical role. The composition's formal structure—the halo, the sacred cross, the devotional posture—all work to inscribe the figure within European Christian iconography in a way that permits no negotiation or slippage. However, the very intensity of this iconographic apparatus, combined with the technical precision of the figure's rendering and the unresolved tension between the halo as mark of sanctity versus subordination, suggests that the artist may have been working within constraints that produced an image more rigid than stable. The painting does not reveal cracks or fluidity so much as it reveals the effort required to maintain rigidity—the need to deploy multiple overlapping systems (physiognomy, costume, sacred attributes, posture) to anchor the figure in place. This is not fluidity, but neither is it seamless: it is the visual record of colonial control asserting itself through accumulation rather than through natural or inevitable positioning. The figure's agency, if present at all, is entirely channeled through and subordinated to the European religious system that frames it.",
+  "critical_questions": [
+    "What is the significance of the artist's choice to render the figure's facial features with exaggerated darkness and caricatural intensity while simultaneously granting the figure the halo and sacred attributes of Christian sanctity—does this visual contradiction suggest the artist was attempting to reconcile incompatible categories (Afro-descendant identity and spiritual elevation), and if so, what does the failure or strain in that reconciliation reveal about the limits of colonial religious inclusion?",
+    "Why does the artist choose to obscure or minimize the figure's hands and lower body in shadow, leaving the cross and the face as the primary legible elements, and how might this compositional choice have directed colonial viewers' attention away from the figure's embodied presence and toward the abstracted religious symbol, thereby effacing the figure's corporeality in favor of a purely spiritual or iconic reading?"
+  ]
+}

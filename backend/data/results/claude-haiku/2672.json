@@ -1,0 +1,371 @@
+{
+  "csv_metadata": {
+    "image_id": "2672",
+    "title": "Alegoría de Africa",
+    "author": "Anónimo",
+    "date": "1700–1799",
+    "medium": "Óleo sobre tela",
+    "location": "Museo Soumaya, Ciudad de México, México",
+    "provenance": "Ciudad de México",
+    "theme_csv": "Estaciones, continentes y países",
+    "category_csv": "Alegoría/moral",
+    "classification_csv": "Alegorías y Emblemas; Alegorías académicas y seculares; Estaciones, continentes y países",
+    "descriptors_csv": "África, Alegoría, Carruaje / carreta, Paisaje",
+    "symbols_csv": "Elefante, Serpiente",
+    "features_csv": "Edad: adulto, Escena: simple, Género femenino, Personaje colectivo, Personajes: profanos, Presencia: animales",
+    "scene_csv": "Terrestre otro",
+    "face_position_csv": "Rostro 3/4",
+    "objects_csv": "Animal otros",
+    "physiognomy_csv": "Sentado",
+    "donor_csv": "Sin donante",
+    "inscription_csv": "Inscripción"
+  },
+  "stage_1_pre_iconographic": {
+    "people_present": true,
+    "total_figures": 3,
+    "afrodescendant_present": true,
+    "number_of_afrodescendants": 3,
+    "figures": [
+      {
+        "figure_id": "fig_01",
+        "perceived_as_afrodescendant": true,
+        "position_in_space": "Foreground, left-center, seated on a wheeled platform labeled 'ARICA'",
+        "relative_scale": "Dominant; largest figure in composition",
+        "pose_state_basic": "Seated, torso upright, left arm raised and extended forward holding a serpent, right arm at side",
+        "physiognomy_description": "Dark skin tone as painted; black curled hair with red ribbon or band; facial features rendered with full lips, broad nose; wearing pearl necklace, red and gold draped garments with gold patterning; red fabric drapes across lap and legs"
+      },
+      {
+        "figure_id": "fig_02",
+        "perceived_as_afrodescendant": true,
+        "position_in_space": "Foreground, left side, partially visible behind fig_01, standing or crouching",
+        "relative_scale": "Smaller than fig_01; partially obscured",
+        "pose_state_basic": "Standing or crouching, body turned toward left edge of composition",
+        "physiognomy_description": "Dark skin tone as painted; head visible in profile or three-quarter view; minimal facial detail due to partial obscuration and distance"
+      },
+      {
+        "figure_id": "fig_03",
+        "perceived_as_afrodescendant": true,
+        "position_in_space": "Foreground, right-center, standing beside the wheeled platform, partially visible",
+        "relative_scale": "Smaller than fig_01; partially obscured by the platform and its decorative cloth",
+        "pose_state_basic": "Standing, body oriented toward the platform",
+        "physiognomy_description": "Dark skin tone as painted; head and upper body visible; facial features rendered with dark coloring; minimal detail due to partial obscuration by the platform's red and gold patterned cloth"
+      }
+    ],
+    "technical_resources": {
+      "lighting": "Diffuse, warm golden light emanating from the background landscape (sky and water); light falls across the foreground figures and platform, creating soft shadows; no harsh directional light source",
+      "color_palette": "Warm earth tones dominate: deep reds, golds, ochres, and browns in the figures' garments and the wheeled platform; dark browns and blacks in the figures' skin and hair; cool grays and whites in the distant landscape (water, sky, stone structure); dark green foliage on right edge; overall warm-toned composition with cool background recession",
+      "composition_notes": "Horizontal frieze-like arrangement with the main allegorical figure (fig_01) positioned left-center on a wheeled platform, dominating the foreground; two smaller figures flank the platform (fig_02 left, fig_03 right); deep landscape recedes to background with a river, distant stone structure, and trees; the platform's wheels and the inscription 'ARICA' anchor the composition in the lower foreground; the serpent held aloft by fig_01 creates a vertical accent and draws the eye upward; the composition balances the monumental seated figure against the expansive landscape behind"
+    },
+    "csv_conflicts": [
+      {
+        "field": "Physiognomy",
+        "csv_value": "Sentado",
+        "model_value": "Seated (fig_01); Standing or crouching (fig_02); Standing (fig_03)",
+        "note": "CSV records only 'Sentado' (seated), which applies to the primary allegorical figure (fig_01). However, the image contains three human figures total, and only fig_01 is seated. The CSV appears to describe only the main figure, not all figures present. This is a partial rather than contradictory record."
+      },
+      {
+        "field": "Face_position",
+        "csv_value": "Rostro 3/4",
+        "model_value": "Fig_01 displays a three-quarter view; fig_02 and fig_03 are partially obscured with minimal facial detail visible",
+        "note": "CSV records 'Rostro 3/4' (three-quarter face), which accurately describes fig_01. However, the CSV does not account for the other two figures whose faces are not clearly visible in three-quarter view. This is a partial rather than contradictory record."
+      }
+    ]
+  },
+  "stage_2_iconographic_material_culture": {
+    "theme": [
+      "Continents and countries",
+      "Allegorical representation"
+    ],
+    "category": "Allegory/moral",
+    "classification": "Allegorical and emblematic works; Academic and secular allegories; Continents, countries, and regions",
+    "descriptors": [
+      "Africa",
+      "Allegory",
+      "Wheeled platform/cart",
+      "Landscape",
+      "Personification"
+    ],
+    "symbols": [
+      "Elephant",
+      "Serpent",
+      "Wheeled platform labeled 'ARICA'",
+      "Landscape with river and distant architecture"
+    ],
+    "features": [
+      "Adult age",
+      "Simple scene",
+      "Female gender (fig_01)",
+      "Collective personage",
+      "Secular characters",
+      "Presence of animals",
+      "Terrestrial setting"
+    ],
+    "afrodescendant_attributes": [
+      {
+        "figure_id": "fig_01",
+        "clothing_materials": [
+          "Silk or silk-like fabric (red and gold draped garment)",
+          "Gold thread or gold-colored embroidery/patterning",
+          "Fabric with woven or embroidered decoration"
+        ],
+        "clothing_style": "Draped garment in red and gold; fabric arranged across torso and legs with voluminous folds; red fabric drapes across lap and lower body; gold patterning visible throughout",
+        "accessories": [
+          "Pearl necklace (worn at neck)",
+          "Red ribbon or band (worn in hair)",
+          "Serpent (held in raised left hand)"
+        ]
+      },
+      {
+        "figure_id": "fig_02",
+        "clothing_materials": [
+          "Dark-colored fabric (color and material indeterminate due to obscuration)"
+        ],
+        "clothing_style": "Minimal visible detail; dark garment visible on partially obscured figure",
+        "accessories": []
+      },
+      {
+        "figure_id": "fig_03",
+        "clothing_materials": [
+          "Dark-colored fabric (color and material indeterminate due to obscuration)"
+        ],
+        "clothing_style": "Minimal visible detail; dark garment visible on partially obscured figure",
+        "accessories": []
+      }
+    ],
+    "objects_in_scene": [
+      {
+        "object": "Wheeled platform/cart",
+        "associated_figure_id": "fig_01",
+        "location_detail": "Beneath fig_01; fig_01 is seated upon it; platform has two large wooden wheels visible on left and right sides; platform is decorated with red and gold patterned cloth"
+      },
+      {
+        "object": "Inscription 'ARICA'",
+        "associated_figure_id": "fig_01",
+        "location_detail": "Painted on the wooden platform beneath fig_01, visible on the lower front edge of the platform"
+      },
+      {
+        "object": "Serpent",
+        "associated_figure_id": "fig_01",
+        "location_detail": "Held aloft in fig_01's raised left hand; serpent is rendered in orange/reddish tones with visible scales and head detail"
+      },
+      {
+        "object": "Elephant",
+        "associated_figure_id": "fig_03",
+        "location_detail": "Standing to the right of the platform, partially visible; decorated with red and gold patterned cloth draped across its body; fig_03 appears to be positioned near or holding the elephant's reins or lead"
+      },
+      {
+        "object": "River or body of water",
+        "associated_figure_id": "",
+        "location_detail": "Visible in the middle distance of the landscape, behind the wheeled platform; rendered in light blue-white tones"
+      },
+      {
+        "object": "Distant stone structure or tower",
+        "associated_figure_id": "",
+        "location_detail": "Visible in the background landscape, center-right; rendered in gray tones; appears to be an architectural element in the distant landscape"
+      },
+      {
+        "object": "Trees and foliage",
+        "associated_figure_id": "",
+        "location_detail": "Right edge of composition; dark green foliage visible; also present in background landscape"
+      }
+    ],
+    "inscription_present": true,
+    "inscriptions": [
+      {
+        "type": "Label/place name",
+        "text": "ARICA"
+      }
+    ],
+    "support": {
+      "format": "Canvas",
+      "medium": "Oil on canvas"
+    },
+    "csv_conflicts": []
+  },
+  "stage_2b_material_identification": {
+    "identified_elements": [
+      {
+        "generic_description": "Red and gold draped garment worn by fig_01",
+        "specific_term": "saya",
+        "term_language": "Spanish",
+        "supporting_source": "Mujeres_de_origen_africano_en_la_capital.pdf; Pinturas de castas, una interpretación.pdf",
+        "confidence_note": "The reference material describes sayas as skirts with decorative elements, often in red or similar colors, worn by women of African descent and mixed-race women in colonial contexts. The visual evidence shows fig_01 wearing a voluminous red and gold garment draped across the lower body with gold patterning, consistent with descriptions of sayas in the corpus. The garment's construction and decoration match the documented style."
+      },
+      {
+        "generic_description": "Pearl necklace worn at neck of fig_01",
+        "specific_term": "collar de perlas",
+        "term_language": "Spanish",
+        "supporting_source": "Mujeres_de_origen_africano_en_la_capital.pdf",
+        "confidence_note": "The reference material repeatedly documents pearl necklaces (collares de perlas) as markers of wealth and status worn by women of African descent in colonial portraiture. The visual evidence clearly shows a white/pearl-colored necklace at fig_01's neck, matching this documented accessory type."
+      },
+      {
+        "generic_description": "Red ribbon or band worn in hair of fig_01",
+        "specific_term": "chiqueador",
+        "term_language": "Spanish",
+        "supporting_source": "Mujeres_de_origen_africano_en_la_capital.pdf; Vargaslugo et al. - 1994 - Nueva España.pdf",
+        "confidence_note": "The reference material identifies the chiqueador as a fashionable hair ornament worn in the temple/sien area, particularly by women of African descent in the 18th century. The visual evidence shows a red band or ribbon positioned in fig_01's hair at the temple area, consistent with documented chiqueador placement and appearance."
+      },
+      {
+        "generic_description": "Serpent held aloft in fig_01's raised left hand",
+        "specific_term": "",
+        "term_language": "",
+        "supporting_source": "30_Jose_Miguel_Morales_Folguera.pdf; allegory-of-africa.txt",
+        "confidence_note": "The reference material on allegorical representations of Africa (Ripa's Iconologia and related sources) documents various symbolic animals associated with Africa, including serpents, scorpions, and snakes. However, the specific serpent held in hand is not consistently identified with a single historical term across the sources. The visual evidence shows an orange/reddish serpent with visible scales and head detail, but no specific cultural or historical term is definitively supported by the corpus for this particular object as a named item."
+      },
+      {
+        "generic_description": "Wheeled platform/cart beneath fig_01",
+        "specific_term": "carro",
+        "term_language": "Spanish",
+        "supporting_source": "30_Jose_Miguel_Morales_Folguera.pdf",
+        "confidence_note": "The reference material documents carros (triumphal carts) as vehicles used in allegorical representations of continents, particularly in the context of Petrarchan triumphs and continental allegories. The visual evidence shows a wheeled platform with two large wooden wheels and decorative cloth, consistent with the documented carro used in allegorical processions and representations."
+      },
+      {
+        "generic_description": "Elephant standing to the right, decorated with red and gold patterned cloth",
+        "specific_term": "",
+        "term_language": "",
+        "supporting_source": "30_Jose_Miguel_Morales_Folguera.pdf; allegory-of-africa.txt",
+        "confidence_note": "The reference material identifies the elephant as the characteristic animal of Africa in allegorical representations (following Ripa's Iconologia). However, no specific historical or cultural term for the decorated elephant itself is provided in the corpus. The visual evidence confirms an elephant with decorative cloth draping, but this is a symbolic attribute rather than a named object with a specific term."
+      },
+      {
+        "generic_description": "Gold thread or gold-colored embroidery/patterning on fig_01's garment",
+        "specific_term": "oro bordado",
+        "term_language": "Spanish",
+        "supporting_source": "Mujeres_de_origen_africano_en_la_capital.pdf; Dialnet-NuevasAportacionesEnTornoAlLienzoTituladoLosMulato-4378968.pdf",
+        "confidence_note": "The reference material documents oro bordado (gold embroidery) as a luxury textile technique used on garments worn by women of African descent and high-status individuals in colonial portraiture. The visual evidence shows extensive gold-colored patterning and embroidery throughout fig_01's garment, consistent with documented oro bordado techniques."
+      },
+      {
+        "generic_description": "Silk or silk-like fabric (red and gold draped garment) worn by fig_01",
+        "specific_term": "seda",
+        "term_language": "Spanish",
+        "supporting_source": "Dialnet-NuevasAportacionesEnTornoAlLienzoTituladoLosMulato-4378968.pdf; Mujeres_de_origen_africano_en_la_capital.pdf",
+        "confidence_note": "The reference material documents seda (silk) as a luxury fabric used in garments worn by women of African descent and high-status individuals in colonial contexts. The visual evidence shows a lustrous, richly draped red and gold garment consistent with silk fabric properties and the documented use of seda in colonial portraiture."
+      }
+    ]
+  },
+  "stage_3_narrative": {
+    "description": "This is an allegorical representation of the continent of Africa, dated to the 18th century (1700–1799) and executed in oil on canvas. The work is housed in the Museo Soumaya in Mexico City and is attributed to an anonymous artist working in the colonial Mexican tradition. The composition follows the established iconographic type of continental allegory, specifically the personification of Africa as a richly dressed female figure seated upon a wheeled triumphal cart (carro) labeled 'ARICA' in the foreground. The primary allegorical figure (fig_01) is rendered with dark skin tone, black curled hair adorned with a red ribbon (chiqueador), and wears a pearl necklace (collar de perlas), a red and gold silk saya with gold embroidery (oro bordado), and red draped fabric across the lap. She holds aloft an orange serpent in her raised left hand, a symbolic attribute associated with Africa in the allegorical tradition. Two additional figures of African descent (fig_02 and fig_03) are positioned flanking the wheeled platform—one partially visible on the left side and one standing near the right side of the platform. Fig_03 appears to be positioned near or attending to an elephant decorated with red and gold patterned cloth, which stands to the right of the platform. The elephant is the characteristic animal of Africa according to Ripa's Iconologia and related allegorical conventions. The setting is a terrestrial landscape with a river visible in the middle distance, a distant stone structure or tower in the background, and trees framing the right edge of the composition. The warm golden light and expansive landscape create a sense of continental vastness and natural abundance. The inscription 'ARICA' on the platform identifies the subject as a representation of Africa (likely referring to the port city of Arica in what is now Chile, a significant colonial trading center). This work exemplifies the academic allegorical tradition of representing the four continents or parts of the world, a genre that flourished in colonial Latin America during the 17th and 18th centuries, particularly in Mexico. The iconography draws directly from Cesare Ripa's Iconologia and contemporary European allegorical models, adapted to the colonial Mexican context with the inclusion of figures of African descent as attendants and symbolic markers of the continent's identity. The scene is a simple allegorical composition without narrative action, focused on the symbolic presentation of Africa through personification, characteristic animals, and landscape setting.",
+    "donor_present": false,
+    "csv_conflicts": [
+      {
+        "field": "Scene_csv",
+        "csv_value": "Terrestre otro",
+        "model_value": "Allegorical representation of a continent (Africa); terrestrial landscape setting with river, distant architecture, and trees",
+        "note": "The CSV records 'Terrestre otro' (terrestrial other), which is accurate but generic. The scene is more specifically an allegorical representation of a continent following the iconographic type established by Ripa's Iconologia and the tradition of continental personifications in colonial art. The CSV value is not contradicted but is less precise than the actual iconographic classification."
+      }
+    ],
+    "consulted_sources": [
+      "allegory-of-africa.txt",
+      "30_Jose_Miguel_Morales_Folguera.pdf",
+      "30_Jose_Miguel_Morales_Folguera.pdf",
+      "30_Jose_Miguel_Morales_Folguera.pdf"
+    ]
+  },
+  "stage_4a_results": [
+    {
+      "figure_id": "fig_01",
+      "subordination_reading": "Figure fig_01 is seated upright on the wheeled platform, with the torso held in an erect, frontal orientation toward the viewer rather than in a posture of physical collapse or extreme deference. The musculature and posture do not read as rigidly constrained or tensioned by external force; instead, the figure maintains an open, composed bearing. The gaze is directed outward and upward—toward the serpent or dragon-like creature held aloft in the raised right hand—rather than downward in a conventionally submissive or penitential manner. This upward and outward gaze, combined with the elevated arm and the act of displaying the creature, suggests active agency in the presentation of an object or symbol rather than passive acceptance of a subordinate position. The figure's left hand rests on the lap in a gesture that could be read as either repose or restraint, but the overall bodily configuration—frontal, elevated on a platform, and engaged with an object of apparent significance—communicates authority or prominence within the scene's spatial and hierarchical arrangement rather than submission or religious piety. The posture thus resists a straightforward reading of imposed discipline or deferential acceptance.",
+      "agency_reading": "Figure fig_01 sits upright on the wheeled platform labeled 'ARICA', maintaining an erect posture that conveys composure and self-possession despite the mobile, potentially subordinate nature of the conveyance itself. The figure's gaze is directed outward toward the viewer with a direct, frontal orientation, establishing visual authority and presence rather than deference or averted eyes. The raised arm holding the serpent or lizard creature demonstrates an active, commanding gesture—not a passive or receptive pose—suggesting agency in the presentation of this object to the viewer's attention. This upright bearing and outward gaze, combined with the elaborate gold-patterned garments and pearl necklace, construct a figure of visual dignity and self-awareness, one who appears to be displaying or narrating rather than being displayed upon. Within the allegorical framework of continental personification (as referenced in the scholarly material on the construction of discourse about bodies in continental allegories), this posture and direct engagement resist a purely marginal or subordinate reading; instead, the figure claims intellectual authority through the act of presentation itself. The bodily comportment thus communicates a paradox central to colonial visual culture: a figure rendered as \"Africa\" through physiognomic and sartorial markers, yet positioned through posture and gaze as an active agent of knowledge and display rather than a passive object of European observation.",
+      "friction": {
+        "contested_element": "The direction and meaning of the figure's gaze and the posture of the raised right arm holding the serpent/lizard creature",
+        "resolvable": false,
+        "resolution_note": "Both readings correctly identify the same visual elements: fig_01's upright, frontal posture; the outward-directed gaze; and the raised right arm displaying the creature. However, these elements are genuinely ambiguous in their interpretive valence. An upright posture on a wheeled platform can signify either prominence/authority or display-as-object; an outward gaze can convey either agency/authority or the performative self-awareness of one being observed; a raised arm displaying an object can indicate either active presentation or the prescribed gesture of an allegorical figure. The image itself does not contain a visual element that would definitively resolve whether the figure's comportment communicates subordination or agency. The ambiguity is not a failure of visual analysis but rather a genuine feature of colonial allegorical representation, where bodily dignity and visual prominence could coexist with—or be instrumentalized by—systems of hierarchical ordering. No additional visual evidence (facial expression, hand gesture, spatial relationship to other figures, or symbolic attributes) present in the image provides sufficient grounds to rule out either reading."
+      },
+      "consulted_sources": [
+        "Alegoria_e_visualidade_um_estudo_da_cons.pdf",
+        "EL ARTE AFROLATINOAMERICANO.pdf",
+        "Dos+03+REV+HUM+49+Fuentes.pdf",
+        "Pintores criollos, pintura de castas  y colonialismo interno.pdf"
+      ]
+    },
+    {
+      "figure_id": "fig_02",
+      "subordination_reading": "Figure fig_02, positioned in the left foreground and partially obscured behind the central figure, displays a posture that reads as compressed and subordinate within the compositional hierarchy. The figure's body appears bent or crouched, with the torso angled downward in a manner that suggests physical constraint rather than relaxed stance—the musculature, insofar as it is visible, conveys tension consistent with imposed posture rather than voluntary positioning. The head is rendered in profile or three-quarter view with minimal facial articulation, and the gaze appears directed downward or inward rather than meeting the eye of the central allegorical figure, a visual convention that historically communicated deference and acceptance of hierarchical subordination. The overall bodily configuration—compressed, turned inward, with the visual weight of the composition pressing downward upon this figure—aligns with pictorial conventions used in colonial allegory to signal acceptance of a designated place within a divinely or socially ordained order. The restraint evident in the posture, combined with the averted or lowered gaze, constructs a visual language of submission that does not require explicit chains or instruments of coercion to communicate the figure's subordinate status. This bodily grammar was a standard rhetorical device in allegorical representations of the continents and their peoples, where physical posture itself became a marker of cosmological and social rank.",
+      "agency_reading": "# Stage 4 Analysis: Figure fig_02 Posture and Agency\n\nFigure fig_02, positioned in the left background and partially obscured by the monumental figure of fig_01, displays a posture that is neither submissive nor passive despite the spatial marginalization. The figure stands upright with visible musculature and bearing, the body angled slightly forward in a stance that suggests alertness rather than deference or collapse. The gaze, though rendered with minimal facial detail due to distance and partial obscuration, appears directed toward the scene unfolding before them—neither averted downward in a conventional gesture of subordination nor locked in supplication toward fig_01. This positioning and bodily comportment create a visual tension: while the figure occupies a spatially secondary plane, the upright posture and forward orientation resist the interpretive pull toward passivity that background placement alone might suggest. Read against the reference material on visual markers of social construction and the colonial discourse on alterity, this figure's self-possessed bearing could be interpreted as a deliberate assertion of presence and awareness within a hierarchical compositional scheme—a body that maintains its own axis and attention rather than being entirely absorbed into the gravitational field of the allegorical personification in the foreground. Alternatively, the same upright posture and forward gaze might be read as attentiveness to duty or service, a figure positioned to observe and respond to the needs of the primary allegorical figure, their bodily control demonstrating reliability and readiness rather than autonomous agency. The ambiguity itself—whether this posture signals self-determination or disciplined service—reflects the interpretive instability that colonial visual culture often maintained regarding bodies marked as African-descended.",
+      "friction": {
+        "contested_element": "The posture and bodily orientation of fig_02: whether the figure's torso and stance convey compression/downward tension (subordination) or upright bearing with forward alertness (agency/attentiveness)",
+        "resolvable": false,
+        "resolution_note": "Direct visual inspection of fig_02 confirms the source of interpretive tension: the figure is rendered with minimal detail due to partial obscuration behind fig_01 and distance from the viewer. The torso is visible but not fully articulated; the degree of forward lean versus downward compression cannot be definitively determined from the painted surface. The figure's head is in profile with very limited facial detail, making gaze direction ambiguous—it could plausibly be read as directed downward (supporting Reading A's subordination interpretation) or as directed toward the scene/fig_01 (supporting Reading B's agency/attentiveness interpretation). The musculature is suggested rather than clearly rendered, leaving the distinction between \"tension of constraint\" and \"tension of alertness\" unresolvable from visual evidence alone. Both readings are grounded in legitimate visual ambiguity rather than in misreading of a clear formal element. The ambiguity appears intentional or at minimum inherent to the painting's execution at this compositional depth."
+      },
+      "consulted_sources": [
+        "Alegoria_e_visualidade_um_estudo_da_cons.pdf",
+        "EL ARTE AFROLATINOAMERICANO.pdf",
+        "Dos+03+REV+HUM+49+Fuentes.pdf",
+        "Pintores criollos, pintura de castas  y colonialismo interno.pdf"
+      ]
+    },
+    {
+      "figure_id": "fig_03",
+      "subordination_reading": "Figure fig_03, positioned at the right-center of the foreground beside the wheeled platform, presents a posture that reads as constrained and subordinate within the compositional hierarchy. The figure's body appears compressed and darkened by the shadow cast by the platform's ornate cloth, with the upper torso and head rendered in a manner that suggests physical confinement rather than ease of movement. The gaze, insofar as it is discernible through the partial obscuration, does not meet the elevated gaze of fig_01 (the central allegorical figure holding the serpent), but rather appears directed downward or inward, a visual convention in colonial allegory that signals deference and acceptance of a lower station. The musculature, rendered in dark tones without the articulation or prominence given to fig_01's limbs, conveys a sense of passivity or restraint rather than active agency. The positioning of fig_03 in shadow, literally beneath the platform and its symbolic cargo, reinforces a visual grammar of subordination—the figure occupies the margins of the scene's action and authority. This bodily arrangement, combined with the figure's minimal visual prominence compared to the allegorical personification above, communicates acceptance of a hierarchical order in which fig_03 occupies a peripheral and dependent role within the spatial and social logic of the composition.",
+      "agency_reading": "Figure fig_03, positioned at the right-center margin of the composition beside the wheeled platform, displays a posture that is notably upright and composed despite occupying a spatially subordinate position. The figure's body is oriented toward the central action of the scene—the seated fig_01 holding the serpent—yet maintains an independent vertical alignment that suggests neither deference nor collapse into the background. The gaze appears directed inward toward the tableau rather than averted downward or away, which in the visual grammar of allegorical representation often signals awareness and engagement rather than passivity or subjection. This bodily comportment—upright, attentive, positioned as witness—contrasts sharply with the marginal placement that colonial visual hierarchies typically reserved for figures of African descent in European and colonial American art. The reference material on visual markers and the construction of alterity in colonial discourse suggests that such postures were not accidental: the artist's choice to render fig_03 with an erect, observant stance, rather than bent, servile, or averted, introduces a tension between spatial marginalization and bodily self-possession. This tension may reflect either an artist's deliberate assertion of dignity within an allegorical framework, or conversely, a visual strategy that renders the figure's presence as a knowing participant in the scene's symbolic order rather than as an object of representation alone. The upright posture thus communicates a form of intellectual or moral presence that resists complete subordination, even as the figure's placement at the platform's edge maintains their structural distance from the central allegorical figure.",
+      "friction": {
+        "contested_element": "The direction and quality of fig_03's gaze and the vertical alignment/posture of the figure's torso and head",
+        "resolvable": false,
+        "resolution_note": "Both readings pivot on the interpretation of fig_03's gaze direction and bodily posture, but the visual evidence is genuinely ambiguous. The figure's head and upper body are partially obscured by the platform's red and gold patterned cloth, which creates shadow and occlusion that prevents definitive determination of gaze direction. The head appears to be tilted or angled, but whether this represents downward deference (Reading A) or inward attentiveness toward the central scene (Reading B) cannot be conclusively verified from the visible portion. The torso's vertical alignment is similarly difficult to assess with certainty due to the overlapping drapery and shadow. The ambiguity is not a failure of visual analysis but rather an inherent property of the painting's composition: the artist has rendered fig_03 in a zone of partial obscuration that permits both interpretations. No single visual element—no clearly visible downturned eyes, no unambiguous forward gaze, no fully exposed posture—exists that would definitively rule out either reading. The tension between the two readings reflects a genuine compositional ambiguity rather than a resolvable factual dispute."
+      },
+      "consulted_sources": [
+        "Alegoria_e_visualidade_um_estudo_da_cons.pdf",
+        "EL ARTE AFROLATINOAMERICANO.pdf",
+        "Dos+03+REV+HUM+49+Fuentes.pdf",
+        "Pintores criollos, pintura de castas  y colonialismo interno.pdf"
+      ]
+    }
+  ],
+  "stage_4b_results": [
+    {
+      "figure_id": "fig_01",
+      "genre_branch": "religious_secular",
+      "reading_1": "# Interpretive Reading: Racial and Social Hierarchies in the Canvas\n\nThis canvas deploys the allegorical figure of Africa as a personified continent—a convention inherited from European Renaissance emblem books—to encode colonial power relations. The figure labeled \"ARICA\" is rendered with darkened skin tones and positioned in a posture of display and subordination: seated, holding aloft an exotic animal (likely a lizard or serpent) as though presenting tribute or curiosity to an unseen viewer. The rich textiles and jeweled ornaments adorning this figure do not signal agency or authority; rather, they function as markers of exoticism and wealth available for appropriation—visual language that justified colonial extraction. The landscape background, with its distant architectural forms and cultivated terrain, suggests European territorial mastery over the African continent itself. Critically, this image operates within the same visual economy as the reference material describes: the codification of identity through dress, ornament, and posture. Yet where the Inca noble in the Copacabana painting is shown accepting Christian conversion and spiritual reward, Africa here is presented as an object of knowledge and possession rather than as a subject capable of conversion or Christian virtue. The painting thus visualizes the colonial hierarchy in which indigenous American nobility could be incorporated into Christian society (albeit subordinately), while Africa remained categorized as a source of exotic resources and labor—a distinction that would have profound consequences for the racialization of slavery and servitude in the Americas.",
+      "reading_2": "# Interpretive Reading: Subversion and Hierarchy\n\nThis canvas presents a striking inversion of colonial racial hierarchies through its central figure—fig_01, rendered with dark skin tones and positioned as the dominant, elevated subject of the composition. Rather than occupying a marginal or subordinate space, this figure commands the foreground, seated in a position of authority and adorned with luxurious textiles (red and gold garments), jewelry, and regalia that conventionally signaled elite status in colonial visual culture. The figure holds aloft what appears to be a serpent or dragon—a creature of power and cosmological significance—gesturing toward a landscape that recedes into the background, suggesting territorial or spiritual dominion over the depicted world. The inscription \"ARICA\" anchors this figure to a specific geography, potentially asserting indigenous or African-descended authority over place itself. By contrast, the other figures in the composition (fig_02, fig_03) appear diminished, silhouetted, or relegated to the margins and background. This compositional strategy—placing an Afro-descendant or indigenous figure in the apex position typically reserved for European authority in colonial art—directly contradicts the racial hierarchies embedded in most contemporary portraiture and allegorical works. The painting thus functions as a visual argument for spiritual, social, or territorial elevation of the central figure, using the very language of colonial prestige (luxury goods, commanding pose, landscape dominion) to assert a counter-hierarchical claim.",
+      "friction": {
+        "contested_element": "The meaning and function of the luxurious textiles (red and gold garments with patterning) and jewelry adorning fig_01, and whether these markers signal elite authority or exotic display available for appropriation",
+        "resolvable": false,
+        "resolution_note": "Both readings correctly identify the same visual elements—the red and gold draped garments with gold patterning, the pearl necklace, and the seated position on the wheeled platform labeled \"ARICA\"—but interpret their social meaning in opposite directions. Reading A treats luxury ornament as a marker of exoticism and appropriable wealth (justifying extraction), while Reading B treats the same ornament as a marker of elite status and authority. The image itself does not disambiguate between these interpretations. The seated posture on a wheeled platform could signify either display/subordination (as in a triumphal procession where the conquered are shown) or elevation/authority (as in a throne or seat of power). The holding aloft of the creature could signal either tribute/presentation or dominion/power. The landscape recession could suggest either European territorial mastery (Reading A) or the figure's dominion over depicted territory (Reading B). Without external evidence—such as the painting's original context, patron, intended audience, or explicit textual commentary—the visual evidence alone cannot resolve whether the ornament and posture encode subordination or authority. The ambiguity is genuine and structural to the image itself."
+      },
+      "consulted_sources": [
+        "La_imagen_del_indio_devoto_la_codificac.pdf",
+        "EL ARTE AFROLATINOAMERICANO.pdf",
+        "Dos+03+REV+HUM+49+Fuentes.pdf",
+        "EL ARTE AFROLATINOAMERICANO.pdf"
+      ]
+    },
+    {
+      "figure_id": "fig_02",
+      "genre_branch": "religious_secular",
+      "reading_1": "# Interpretive Reading: Racial and Social Hierarchies in the Canvas\n\nThis canvas deploys the allegorical figure of Africa as a personified continent—a convention inherited from European Renaissance emblem books—to encode colonial power relations. The figure labeled \"ARICA\" is rendered with darkened skin tones and positioned in a posture of display and subordination: seated, holding aloft an exotic animal (likely a lizard or serpent) as though presenting tribute or curiosity to an unseen viewer. The rich textiles and jeweled ornaments adorning this figure do not signal agency or authority; rather, they function as markers of exoticism and wealth available for appropriation—visual language that justified colonial extraction. The landscape background, with its distant architectural forms and cultivated terrain, suggests European territorial mastery over the African continent itself. Critically, this image operates within the same visual economy as the reference material describes: the codification of identity through dress, ornament, and posture. Yet where the Inca noble in the Copacabana painting is shown accepting Christian conversion and spiritual reward, Africa here is presented as an object of knowledge and possession rather than as a subject capable of conversion or Christian virtue. The painting thus visualizes the colonial hierarchy in which indigenous American nobility could be incorporated into Christian society (albeit subordinately), while Africa remained categorized as a source of exotic resources and labor—a distinction that would have profound consequences for the racialization of slavery and servitude in the Americas.",
+      "reading_2": "# Interpretive Reading: Subversion and Hierarchy\n\nThis canvas presents a striking inversion of colonial racial hierarchies through its central figure—fig_01, rendered with dark skin tones and positioned as the dominant, elevated subject of the composition. Rather than occupying a marginal or subordinate space, this figure commands the foreground, seated in a position of authority and adorned with luxurious textiles (red and gold garments), jewelry, and regalia that conventionally signaled elite status in colonial visual culture. The figure holds aloft what appears to be a serpent or dragon—a creature of power and cosmological significance—gesturing toward a landscape that recedes into the background, suggesting territorial or spiritual dominion over the depicted world. The inscription \"ARICA\" anchors this figure to a specific geography, potentially asserting indigenous or African-descended authority over place itself. By contrast, the other figures in the composition (fig_02, fig_03) appear diminished, silhouetted, or relegated to the margins and background. This compositional strategy—placing an Afro-descendant or indigenous figure in the apex position typically reserved for European authority in colonial art—directly contradicts the racial hierarchies embedded in most contemporary portraiture and allegorical works. The painting thus functions as a visual argument for spiritual, social, or territorial elevation of the central figure, using the very language of colonial prestige (luxury goods, commanding pose, landscape dominion) to assert a counter-hierarchical claim.",
+      "friction": {
+        "contested_element": "The social and hierarchical meaning of fig_01's central position, elevated seating, luxurious garments (red and gold textiles), jewelry, and the act of holding aloft the serpent/lizard creature in relation to the background landscape and the positioning of fig_02 and other figures.",
+        "resolvable": false,
+        "resolution_note": "Both readings accurately identify the same visual facts: fig_01 occupies the foreground center, is seated in an elevated position, wears rich red and gold textiles with ornamental detail, displays jewelry (pearl necklace visible), and holds aloft a creature toward a receding landscape with architectural forms. Fig_02 is partially obscured, silhouetted, and positioned behind and to the side of fig_01. The contested element is not the visual evidence itself but its semantic interpretation. Reading A interprets these markers (luxury dress, elevated pose, display of exotic creature) as signifiers of exoticism and subordination—visual language that frames Africa as an object of possession and appropriation. Reading B interprets the identical markers as signifiers of authority, dominion, and elite status—a reversal of colonial hierarchies. The ambiguity is genuine because colonial visual conventions were polysemous: the same iconographic language (rich textiles, commanding pose, landscape dominion) could encode either subordination (the exotic other available for consumption) or authority (the elevated ruler commanding territory and resources). The inscription \"ARICA\" and the allegorical tradition of personified continents do not resolve this tension—personification itself was a convention that could serve both to exoticize and to elevate. Without external historical documentation specifying the patron's intent, the artist's stated purpose, or the original viewing context, the visual evidence alone cannot definitively rule out either reading. The painting's meaning depends on whether one reads the luxury and pose as markers of incorporation into a colonial visual economy of exoticism, or as assertions of indigenous/African authority using the visual language of power available within that same economy."
+      },
+      "consulted_sources": [
+        "La_imagen_del_indio_devoto_la_codificac.pdf",
+        "EL ARTE AFROLATINOAMERICANO.pdf",
+        "Dos+03+REV+HUM+49+Fuentes.pdf",
+        "EL ARTE AFROLATINOAMERICANO.pdf"
+      ]
+    },
+    {
+      "figure_id": "fig_03",
+      "genre_branch": "religious_secular",
+      "reading_1": "# Interpretive Reading: Racial and Social Hierarchies in the Canvas\n\nThis canvas deploys the allegorical figure of Africa as a personified continent—a convention inherited from European Renaissance emblem books—to encode colonial power relations. The figure labeled \"ARICA\" is rendered with darkened skin tones and positioned in a posture of display and subordination: seated, holding aloft an exotic animal (likely a lizard or serpent) as though presenting tribute or curiosity to an unseen viewer. The rich textiles and jeweled ornaments adorning this figure do not signal agency or authority; rather, they function as markers of exoticism and wealth available for appropriation—visual language that justified colonial extraction. The landscape background, with its distant architectural forms and cultivated terrain, suggests European territorial mastery over the African continent itself. Critically, this image operates within the same visual economy as the reference material describes: the codification of identity through dress, ornament, and posture. Yet where the Inca noble in the Copacabana painting is shown accepting Christian conversion and spiritual reward, Africa here is presented as an object of knowledge and possession rather than as a subject capable of conversion or Christian virtue. The painting thus visualizes the colonial hierarchy in which indigenous American nobility could be incorporated into Christian society (albeit subordinately), while Africa remained categorized as a source of exotic resources and labor—a distinction that would have profound consequences for the racialization of slavery and servitude in the Americas.",
+      "reading_2": "# Interpretive Reading: Subversion and Hierarchy\n\nThis canvas presents a striking inversion of colonial racial hierarchies through its central figure—fig_01, rendered with dark skin tones and positioned as the dominant, elevated subject of the composition. Rather than occupying a marginal or subordinate space, this figure commands the foreground, seated in a position of authority and adorned with luxurious textiles (red and gold garments), jewelry, and regalia that conventionally signaled elite status in colonial visual culture. The figure holds aloft what appears to be a serpent or dragon—a creature of power and cosmological significance—gesturing toward a landscape that recedes into the background, suggesting territorial or spiritual dominion over the depicted world. The inscription \"ARICA\" anchors this figure to a specific geography, potentially asserting indigenous or African-descended authority over place itself. By contrast, the other figures in the composition (fig_02, fig_03) appear diminished, silhouetted, or relegated to the margins and background. This compositional strategy—placing an Afro-descendant or indigenous figure in the apex position typically reserved for European authority in colonial art—directly contradicts the racial hierarchies embedded in most contemporary portraiture and allegorical works. The painting thus functions as a visual argument for spiritual, social, or territorial elevation of the central figure, using the very language of colonial prestige (luxury goods, commanding pose, landscape dominion) to assert a counter-hierarchical claim.",
+      "friction": {
+        "contested_element": "The social and hierarchical meaning of the central figure's (fig_01) seated posture, luxurious garments (red and gold textiles), jewelry, and elevated position on the wheeled platform, combined with the figure's act of holding aloft a serpent/lizard creature and the landscape receding behind.",
+        "resolvable": false,
+        "resolution_note": "Both readings accurately identify the same visual elements: the figure's dark skin tone, seated position on an ornate wheeled platform, rich red and gold garments with gold patterning, pearl necklace, elaborate headdress with red fabric, the creature held aloft, and the landscape background with architectural forms. The ambiguity is genuine and cannot be resolved by visual evidence alone. Reading A interprets these markers of luxury and display as signs of exoticization and subordination—wealth available for appropriation, a figure presented as object rather than subject. Reading B interprets the identical visual elements as signs of authority and dominion—the commanding central position, the regalia, the gesture over landscape as assertions of elite status and territorial control. The crux is whether luxury goods and elevated compositional position in a colonial-era painting conventionally signal the figure's own authority or the viewer's access to exotic wealth. The inscription \"ARICA\" and the wheeled platform's label anchor the figure to geography and allegorical convention, but do not disambiguate whether that anchoring asserts the figure's dominion or marks the figure as an object of European knowledge. The painting's date, artist attribution, and original context (patronage, display location, intended audience) would be necessary to determine which interpretive framework the work was designed to support. The visual evidence alone sustains both readings."
+      },
+      "consulted_sources": [
+        "La_imagen_del_indio_devoto_la_codificac.pdf",
+        "EL ARTE AFROLATINOAMERICANO.pdf",
+        "Dos+03+REV+HUM+49+Fuentes.pdf",
+        "EL ARTE AFROLATINOAMERICANO.pdf"
+      ]
+    }
+  ],
+  "rigid_or_fluid_assessment": "This painting presents a genuinely fluid and contested visual field rather than a rigidly fixed colonial role. The ambiguities documented in the friction analysis—particularly the polysemous nature of luxury dress, elevated seating, and commanding gesture—indicate that the work does not unambiguously subordinate its Afro-descendant figures. Instead, it deploys the visual language of authority (rich textiles, central position, landscape dominion, the act of display) in ways that could be read as either exoticization or assertion of elite status. The presence of fig_02 and fig_03, rendered with less detail and in positions of partial obscuration, might suggest hierarchical ordering; yet their exact postures and gazes remain visually ambiguous—neither clearly deferential nor clearly subordinate. The wheeled platform labeled \"ARICA\" anchors the figure to allegorical convention and geographic specificity, but this very specificity (naming the place, not erasing it) could support either a reading of territorial appropriation or territorial assertion. The painting's refusal to render unambiguous markers of submission—no chains, no explicit gestures of obeisance, no degrading postures—combined with the insistent visual prominence and ornamental richness of fig_01, suggests that the work contains cracks in colonial ideology rather than seamlessly enforcing it. The fluidity lies in the coexistence of markers that could support multiple hierarchical readings simultaneously, leaving room for negotiation, reinterpretation, and contestation by viewers positioned differently within the viceregal world.",
+  "critical_questions": [
+    "What is the significance of the artist's choice to render fig_02 and fig_03 in silhouette and partial obscuration, with minimal facial detail and ambiguous gaze direction, rather than depicting them with the same ornamental richness and frontal clarity as fig_01? Does this compositional choice reinforce a visual hierarchy of prominence and detail that encodes subordination, or does it instead protect these figures from the full exposure and exoticization directed at the central figure, thereby preserving a zone of visual opacity and agency?",
+    "Why does the artist include the serpent/lizard creature held aloft by fig_01, and what does the choice to render it with such anatomical specificity and visual prominence—rather than omitting it or rendering it as a generic exotic attribute—suggest about the painting's engagement with indigenous or African knowledge systems? Does the creature's detailed rendering assert its value as an object of European scientific curiosity and appropriation, or does it instead honor a specific zoological or symbolic knowledge that the figure possesses and displays as a marker of authority?"
+  ]
+}

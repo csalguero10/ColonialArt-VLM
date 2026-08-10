@@ -47,14 +47,18 @@ contradicts the CSV value, including the field, the CSV value, your reading, and
 Missing values: missing text = "", missing numbers = null, empty lists = []. Never invent a value \
 to fill a field.
 
-Output: respond with ONLY a valid JSON object matching the provided schema. No explanatory text \
-before or after, no markdown code blocks, no comments inside the JSON. Text values must be in \
-English, except literal inscriptions transcribed from the artwork and any historically specific \
-terminology identified via corpus lookup (e.g., "huipil"), which must stay in its original \
-language/spelling rather than being translated. If you need to quote a title, phrase, or \
-inscription inside a text value, use single quotes ('like this') rather than double quotes — \
-double quotes inside a JSON string must otherwise be escaped and are a common source of \
-formatting errors.
+Output: some tasks in this project provide a JSON schema; others (Stage 4's paired readings) ask \
+for a free-text answer instead. Match whichever format that specific task asks for — don't default \
+to JSON when none was requested. When a schema IS provided, respond with ONLY a valid JSON object \
+matching it: no explanatory text before or after, no markdown code blocks, no comments inside the \
+JSON. When no schema is provided and the task asks for prose instead, write plain paragraphs: no \
+JSON, no markdown code fences, no field labels or headings — just the prose itself, exactly as \
+that task's own instructions specify (e.g. sentence count). Text values must be in English, except \
+literal inscriptions transcribed from the artwork and any historically specific terminology \
+identified via corpus lookup (e.g., "huipil"), which must stay in its original language/spelling \
+rather than being translated. If you need to quote a title, phrase, or inscription inside a JSON \
+text value, use single quotes ('like this') rather than double quotes — double quotes inside a \
+JSON string must otherwise be escaped and are a common source of formatting errors.
 
 When reference material from the scholarly corpus is provided alongside a question, treat it as \
 supporting context that may help you identify iconographic types, historical conventions, or \
@@ -418,26 +422,40 @@ STAGE4A_CALL1_TEMPLATE = """Reference material retrieved from the scholarly corp
 
 {reference_material}
 
+Figure {figure_id} was identified in the prior stage of this analysis as the figure positioned \
+{position_in_space}, described there as: {physiognomy_description}. Use that identification to \
+find the same figure again — do not re-identify, renumber, or substitute a different figure.
+
 Analyze the posture, gaze, and gestures of figure {figure_id} in this \
 artwork. In what way does this bodily posture communicate submission, religious piety, or \
 acceptance of their place within the scene's hierarchy? Specifically consider: is their \
 musculature and posture rigid or tense, suggesting imposed restraint or discipline? Is their gaze \
-directed downward or toward another figure in a deferential manner? Answer in 5-8 sentences"""
+directed downward or toward another figure in a deferential manner? Answer in plain prose, \
+5-8 sentences, no headings or lists."""
 
 STAGE4A_CALL2_TEMPLATE = """Reference material retrieved from the scholarly corpus:
 
 {reference_material}
+
+Figure {figure_id} was identified in the prior stage of this analysis as the figure positioned \
+{position_in_space}, described there as: {physiognomy_description}. Use that identification to \
+find the same figure again — do not re-identify, renumber, or substitute a different figure.
 
 Analyze the posture, gaze, and gestures of figure {figure_id} in this \
 artwork. In what way does this same bodily posture communicate self-control, self-awareness, or a \
 position of intellectual or moral authority within the scene? Specifically consider: is the \
 posture upright, relaxed, or commanding despite the figure's placement at the margin or \
 background of the canvas? Is their gaze directed straight at the viewer, or do they share an \
-affectionate gaze with another figure? Drawing on the reference material above, \
-offer an interpretation — not just a \
-literal description of what is visible. Answer in 5-8 sentences."""
+affectionate gaze with another figure? Drawing on the reference material above, offer an \
+interpretation — not just a literal description of what is visible. Answer in plain prose, \
+5-8 sentences, no headings or lists."""
 
-STAGE4A_CALL3_TEMPLATE = """Below are two different readings of the same bodily posture of figure \
+STAGE4A_CALL3_TEMPLATE = """Figure {figure_id} was identified in the prior stage of this analysis \
+as the figure positioned {position_in_space}, described there as: {physiognomy_description}. Use \
+that identification to find the same figure again — do not re-identify or substitute a different \
+figure.
+
+Below are two different readings of the same bodily posture of figure \
 {figure_id}:
 
 Reading A (subordination): {reading_a}
@@ -504,7 +522,12 @@ social elevation above other figures in the scene? Consider the reference materi
 offer an interpretation — not just a \
 literal description of what is visible. Answer in 5-8 sentences."""
 
-STAGE4B_CALL3_TEMPLATE = """Below are two different readings of the degree of fixity or fluidity \
+STAGE4B_CALL3_TEMPLATE = """Figure {figure_id} was identified in the prior stage of this analysis \
+as the figure positioned {position_in_space}, described there as: {physiognomy_description}. Use \
+that identification to find the same figure again — do not re-identify or substitute a different \
+figure.
+
+Below are two different readings of the degree of fixity or fluidity \
 in the social role of figure {figure_id}:
 
 Reading A: {reading_a}

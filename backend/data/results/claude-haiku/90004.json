@@ -1,0 +1,352 @@
+{
+  "csv_metadata": {
+    "image_id": "90004",
+    "title": "Francis Williams, the Scholar of Jamaica",
+    "author": "Desconocido (posiblemente autorretrato; se ha propuesto a William Williams, 1721–1791)",
+    "date": "c. 1760",
+    "medium": "Óleo sobre lienzo",
+    "location": "Victoria and Albert Museum, Londres, Reino Unido (Galería George Levy, sala 52)",
+    "provenance": "Colección de Major H. Howard de Hampton Lodge (descendiente directo de Edward Long); adquirida por Spink and Son Ltd. en 1928 y donada al V&A",
+    "theme_csv": "Retrato de erudito; logros intelectuales y científicos de un hombre negro libre",
+    "category_csv": "Retrato",
+    "classification_csv": "Temas seculares, Retrato de erudito, Roles no subalternos, Astronomía, Escuela británica",
+    "descriptors_csv": "Negro - negritud, Erudición, Ciencia, Biblioteca, Indumentaria de élite",
+    "symbols_csv": "Globo terráqueo, Globo celeste, Compás y instrumentos de dibujo, Libros (incluye Principia de Newton y el Diccionario de Johnson de 1755), Paisaje de Spanish Town al fondo",
+    "features_csv": "Edad: adulto, Escena: simple, Género masculino, Personaje principal: erudito",
+    "scene_csv": "Interior (estudio/biblioteca) con paisaje exterior de Jamaica visible por la ventana",
+    "face_position_csv": "3/4 (cuerpo girado a la derecha, cabeza a la izquierda)",
+    "objects_csv": "Globo terráqueo, globo celeste, libros, compás, instrumentos de dibujo, mesa",
+    "physiognomy_csv": "De pie",
+    "inscription_csv": "Sin inscripción",
+    "donor_csv": "Posiblemente autorretrato o encargo del propio retratado (Francis Williams)"
+  },
+  "stage_1_pre_iconographic": {
+    "people_present": true,
+    "total_figures": 1,
+    "afrodescendant_present": true,
+    "number_of_afrodescendants": 1,
+    "figures": [
+      {
+        "figure_id": "fig_01",
+        "perceived_as_afrodescendant": true,
+        "position_in_space": "Center of composition, standing upright in the middle ground of the interior space, positioned between the red chair (left) and the table with globe and instruments (right)",
+        "relative_scale": "Life-scale; dominates the composition as the sole human figure",
+        "pose_state_basic": "Standing, weight distributed evenly on both legs; right arm extended toward the bookshelf behind; left arm resting on or near an open book on the table; torso slightly turned to the right, head turned to the left in a 3/4 view",
+        "physiognomy_description": "Dark skin tone as rendered; facial features include a broad nose, full lips, and dark eyes with a direct gaze toward the viewer; white curled wig covering the head; clean-shaven face"
+      }
+    ],
+    "technical_resources": {
+      "lighting": "Warm, directional light from the upper left, creating soft modeling on the figure's face and clothing; the background bookshelf is rendered in darker tones, creating atmospheric depth; light catches the white wig and the pale stockings, drawing attention to the figure",
+      "color_palette": "Warm earth tones dominate: deep browns and ochres in the wooden furniture and floor; rich reds in the ornate chair; deep navy blue and yellow in the figure's coat and waistcoat; white accents in the wig, shirt, and stockings; cool blues and greens in the landscape visible through the window; dark browns and reds in the book spines; gold tones in the rope and tassel at upper right",
+      "composition_notes": "Symmetrical interior setting with the figure positioned centrally; the bookshelf occupies the entire background wall, creating a vertical emphasis; the red chair on the left and the table with scientific instruments on the right frame the figure; the window with landscape view on the far left provides spatial recession and context; the floor is rendered in a checkerboard pattern of alternating light and dark tiles, emphasizing the interior space; the rope and tassel at the upper right corner add a decorative element and may reference academic or institutional insignia"
+    },
+    "csv_conflicts": [
+      {
+        "field": "face_position_csv",
+        "csv_value": "3/4 (cuerpo girado a la derecha, cabeza a la izquierda)",
+        "model_value": "3/4 view with body turned to the right and head turned to the left",
+        "note": "The CSV description is accurate; the figure's torso is angled to the right while the head is turned leftward, creating a dynamic 3/4 pose. No contradiction detected."
+      }
+    ]
+  },
+  "stage_2_iconographic_material_culture": {
+    "theme": [
+      "Intellectual achievement",
+      "Scientific knowledge",
+      "Scholarly authority",
+      "Free Black intellectual"
+    ],
+    "category": "Portrait",
+    "classification": "Secular portrait; scholarly portrait; non-subaltern role; scientific and astronomical knowledge; British school",
+    "descriptors": [
+      "Blackness/negritude",
+      "Erudition",
+      "Science",
+      "Library",
+      "Elite dress",
+      "Intellectual authority"
+    ],
+    "symbols": [
+      "Terrestrial globe",
+      "Celestial globe",
+      "Compass and drawing instruments",
+      "Books (including Newton's Principia and Johnson's Dictionary of 1755)",
+      "Landscape of Spanish Town visible through window",
+      "Rope and tassel (upper right)",
+      "Checkerboard floor",
+      "Red ornate chair",
+      "Open book on table"
+    ],
+    "features": [
+      "Adult male",
+      "Standing pose",
+      "Interior setting (study/library)",
+      "Single figure composition",
+      "Direct gaze toward viewer",
+      "3/4 body position with head turned left",
+      "Centrally positioned"
+    ],
+    "afrodescendant_attributes": [
+      {
+        "figure_id": "fig_01",
+        "clothing_materials": [
+          "Wool or wool-blend fabric (coat)",
+          "Linen or linen-blend fabric (shirt, waistcoat)",
+          "Wool or wool-blend fabric (breeches)",
+          "Linen or cotton (stockings)",
+          "Leather (shoes)",
+          "Wool or synthetic fiber (wig)"
+        ],
+        "clothing_style": "Formal 18th-century European gentleman's dress: dark navy blue coat with gold buttons and gold trim; yellow or gold waistcoat with gold buttons and decorative trim; white linen shirt with ruffled cuffs visible at wrists; pale gray or white linen breeches; white stockings; black leather shoes with buckles; white curled wig in formal style",
+        "accessories": [
+          "White curled wig",
+          "Gold-trimmed coat",
+          "Gold-buttoned waistcoat",
+          "White ruffled shirt cuffs",
+          "White stockings",
+          "Black leather shoes with buckles"
+        ]
+      }
+    ],
+    "objects_in_scene": [
+      {
+        "object": "Red ornate wooden chair with curved back and decorative carved details",
+        "associated_figure_id": "fig_01",
+        "location_detail": "Left side of composition, immediately adjacent to the figure; appears to be positioned for the figure to sit, but the figure stands instead"
+      },
+      {
+        "object": "Wooden table with turned legs and decorative base",
+        "associated_figure_id": "fig_01",
+        "location_detail": "Right side of composition, at waist height to the figure; the figure's left arm rests on or near this table"
+      },
+      {
+        "object": "Open book with visible pages",
+        "associated_figure_id": "fig_01",
+        "location_detail": "On the wooden table to the right of the figure; appears to be a reference or scholarly text"
+      },
+      {
+        "object": "Terrestrial globe (spherical map of Earth)",
+        "associated_figure_id": "fig_01",
+        "location_detail": "On the floor in the foreground, left side of the composition, near the red chair; rendered with visible latitude and longitude lines"
+      },
+      {
+        "object": "Celestial globe (spherical map of stars and constellations)",
+        "associated_figure_id": "fig_01",
+        "location_detail": "On the wooden table to the right of the figure, positioned near the open book and drawing instruments"
+      },
+      {
+        "object": "Compass and drawing instruments (including dividers, ruler, or similar tools)",
+        "associated_figure_id": "fig_01",
+        "location_detail": "On the wooden table to the right of the figure, scattered near the celestial globe and open book"
+      },
+      {
+        "object": "Bookshelf with multiple shelves containing numerous bound volumes",
+        "associated_figure_id": "fig_01",
+        "location_detail": "Entire background wall behind the figure; books have dark leather spines with gold lettering and decorative elements; occupies the full height and width of the interior space"
+      },
+      {
+        "object": "Window with landscape view",
+        "associated_figure_id": "fig_01",
+        "location_detail": "Far left side of the composition, showing a distant landscape with palm trees, water, buildings, and sky; depicts Spanish Town, Jamaica"
+      },
+      {
+        "object": "Rope with tassel",
+        "associated_figure_id": "fig_01",
+        "location_detail": "Upper right corner of the composition, hanging or suspended in the dark background; rendered in gold or yellow color with a decorative knot or loop at the top"
+      },
+      {
+        "object": "Checkerboard floor",
+        "associated_figure_id": "fig_01",
+        "location_detail": "Foreground and middle ground of the composition; alternating light and dark tiles creating a geometric pattern beneath the figure's feet"
+      },
+      {
+        "object": "Wooden pedestal or small table base",
+        "associated_figure_id": "fig_01",
+        "location_detail": "Right foreground, supporting or positioned near the terrestrial globe; rendered in red-brown wood with decorative turned legs"
+      }
+    ],
+    "inscription_present": false,
+    "inscriptions": [],
+    "support": {
+      "format": "Canvas",
+      "medium": "Oil on canvas"
+    },
+    "csv_conflicts": []
+  },
+  "stage_2b_material_identification": {
+    "identified_elements": [
+      {
+        "generic_description": "Dark navy blue coat with gold buttons and gold trim",
+        "specific_term": "casaca",
+        "term_language": "Spanish",
+        "supporting_source": "Vargaslugo et al. - 1994 - Nueva España.pdf",
+        "confidence_note": "The reference material describes 'casaca' as a formal coat 'muy adornada con stalón de oro' (adorned with gold trim) and 'botones' (buttons), matching the visual evidence of the figure's navy coat with gold buttons and decorative gold trim along the front and edges. This is consistent with 18th-century formal European gentleman's dress as worn in colonial contexts."
+      },
+      {
+        "generic_description": "Yellow or gold waistcoat with gold buttons and decorative trim",
+        "specific_term": "chaleco",
+        "term_language": "Spanish",
+        "supporting_source": "Vargaslugo et al. - 1994 - Nueva España.pdf",
+        "confidence_note": "The reference describes 'chaleco' as a vest 'tan largo como la casaca y adornado con una hilera de botones' (as long as the coat and adorned with a row of buttons), with the lower buttons left unfastened. The visual evidence shows a yellow/gold waistcoat with multiple gold buttons running down the front, matching this description exactly."
+      },
+      {
+        "generic_description": "White linen shirt with ruffled cuffs visible at wrists",
+        "specific_term": "camisa",
+        "term_language": "Spanish",
+        "supporting_source": "Vargaslugo et al. - 1994 - Nueva España.pdf",
+        "confidence_note": "The reference describes 'camisa' with 'chorrera de encaje' (lace ruffle) visible at the cuffs ('puños de la camisa que asoman'). The painting clearly shows white ruffled cuffs at both wrists, consistent with 18th-century formal dress conventions."
+      },
+      {
+        "generic_description": "Pale gray or white linen breeches",
+        "specific_term": "calzones",
+        "term_language": "Spanish",
+        "supporting_source": "Vargaslugo et al. - 1994 - Nueva España.pdf",
+        "confidence_note": "The reference describes 'calzones' that 'se ajustaban encima de las caderas' (fit above the hips) and 'se cerraban encima de las rodillas con tres o cuatro botones' (closed above the knees with three or four buttons), worn 'sobre las medias blancas' (over white stockings). The visual evidence shows pale breeches closing at the knee, consistent with this description."
+      },
+      {
+        "generic_description": "White stockings",
+        "specific_term": "medias",
+        "term_language": "Spanish",
+        "supporting_source": "Vargaslugo et al. - 1994 - Nueva España.pdf",
+        "confidence_note": "The reference explicitly mentions 'medias blancas' (white stockings) worn under the breeches. The painting shows white stockings covering the lower leg between the breeches and shoes, matching this convention."
+      },
+      {
+        "generic_description": "Black leather shoes with buckles",
+        "specific_term": "zapatos",
+        "term_language": "Spanish",
+        "supporting_source": "Vargaslugo et al. - 1994 - Nueva España.pdf",
+        "confidence_note": "The reference describes shoes worn 'con hebillas' (with buckles). The painting shows black leather shoes with visible buckles at the instep, consistent with 18th-century formal footwear."
+      },
+      {
+        "generic_description": "White curled wig in formal style",
+        "specific_term": "peluca",
+        "term_language": "Spanish",
+        "supporting_source": "Vargaslugo et al. - 1994 - Nueva España.pdf",
+        "confidence_note": "The reference notes that wigs ('pelucas') were often made from horsehair, goat hair, or vegetable fibers, covered with gray or white powder. The painting shows a formal white curled wig typical of 18th-century elite dress. The reference material confirms this was standard formal attire for gentlemen of the period."
+      },
+      {
+        "generic_description": "Rope with tassel in upper right corner",
+        "specific_term": "",
+        "term_language": "",
+        "supporting_source": "",
+        "confidence_note": "The reference material provided does not contain any specific historical or cultural term for this object. It appears to be a decorative element (possibly a curtain cord or ceremonial rope with tassel), but no supporting terminology is found in the corpus."
+      },
+      {
+        "generic_description": "Terrestrial globe (spherical map of Earth)",
+        "specific_term": "globo terráqueo",
+        "term_language": "Spanish",
+        "supporting_source": "30_Jose_Miguel_Morales_Folguera.pdf",
+        "confidence_note": "The reference material discusses 'mapamundi' and 'bola del mundo' (world ball/globe) in the context of allegorical representations and scientific instruments. The painting shows a spherical globe with visible latitude and longitude lines on the floor, consistent with 18th-century scientific instruments used to represent Earth."
+      },
+      {
+        "generic_description": "Celestial globe (spherical map of stars and constellations)",
+        "specific_term": "globo celeste",
+        "term_language": "Spanish",
+        "supporting_source": "30_Jose_Miguel_Morales_Folguera.pdf",
+        "confidence_note": "The reference material discusses globes in scientific and cartographic contexts. The painting shows a second spherical globe on the table with different markings than the terrestrial globe, consistent with a celestial globe used for astronomical study."
+      },
+      {
+        "generic_description": "Compass and drawing instruments (including dividers, ruler, or similar tools)",
+        "specific_term": "compás",
+        "term_language": "Spanish",
+        "supporting_source": "Dialnet-NuevasAportacionesEnTornoAlLienzoTituladoLosMulato-4378968.pdf",
+        "confidence_note": "While the reference material does not directly address compasses in this context, the term 'compás' is the standard Spanish term for compass. The painting shows what appear to be drawing instruments (dividers, ruler) scattered on the table near the globes and open book, consistent with mathematical and scientific practice."
+      },
+      {
+        "generic_description": "Open book on table (appears to be a reference or scholarly text)",
+        "specific_term": "libro",
+        "term_language": "Spanish",
+        "supporting_source": "Vargaslugo et al. - 1994 - Nueva España.pdf",
+        "confidence_note": "The generic description from Stage 2 identifies this as possibly Newton's Principia or Johnson's Dictionary of 1755. The painting shows an open book with visible pages on the table, consistent with scholarly reference materials of the 18th century. The specific title cannot be confirmed from visual evidence alone."
+      },
+      {
+        "generic_description": "Bookshelf with multiple shelves containing numerous bound volumes with dark leather spines and gold lettering",
+        "specific_term": "librería",
+        "term_language": "Spanish",
+        "supporting_source": "Dialnet-NuevasAportacionesEnTornoAlLienzoTituladoLosMulato-4378968.pdf",
+        "confidence_note": "The reference material mentions 'librería' (library/bookshelf) in the context of palace inventories and scholarly spaces. The painting shows an extensive bookshelf occupying the entire background wall, with books displaying leather spines and gold lettering, consistent with an 18th-century scholarly library."
+      },
+      {
+        "generic_description": "Red ornate wooden chair with curved back and decorative carved details",
+        "specific_term": "silla",
+        "term_language": "Spanish",
+        "supporting_source": "9897 figure 1.pdf",
+        "confidence_note": "The reference material discusses 'Frailero' chairs and 'Renaissance Folding Chair' designs. The painting shows a red wooden chair with curved back and ornate carved details on the left side. While the specific style cannot be definitively identified from the reference material, it is consistent with 18th-century formal furniture."
+      },
+      {
+        "generic_description": "Wooden table with turned legs and decorative base",
+        "specific_term": "mesa",
+        "term_language": "Spanish",
+        "supporting_source": "",
+        "confidence_note": "No specific historical term or supporting reference is found in the corpus for this generic wooden table. The painting shows a table with turned legs and decorative base on the right side, but the reference material does not provide specific terminology for this type of furniture."
+      },
+      {
+        "generic_description": "Checkerboard floor with alternating light and dark tiles",
+        "specific_term": "piso de ajedrez",
+        "term_language": "Spanish",
+        "supporting_source": "francis-williams-a-portrait-of-a-writer.txt",
+        "confidence_note": "The reference material notes that 'projection lines can be seen under the checkerboard floor which were possibly drawn with a ruler,' indicating this is a deliberate compositional device. The painting shows a geometric checkerboard pattern in the foreground and middle ground, consistent with 18th-century perspectival conventions in formal portraiture."
+      },
+      {
+        "generic_description": "Window with landscape view showing palm trees, water, buildings, and sky; depicts Spanish Town, Jamaica",
+        "specific_term": "ventana",
+        "term_language": "Spanish",
+        "supporting_source": "Vargaslugo et al. - 1994 - Nueva España.pdf",
+        "confidence_note": "The reference material discusses windows ('ventana') as compositional elements in colonial paintings. The painting shows a window on the left side with a distant landscape view including palm trees, water, and buildings, consistent with the documented view of Spanish Town, Jamaica."
+      }
+    ]
+  },
+  "stage_3_narrative": {
+    "description": "This is a formal portrait of a single male figure, identified in the CSV metadata as Francis Williams, a free Black scholar of Jamaica, dated c. 1760 and attributed to an unknown artist (possibly William Williams, 1721–1791, or a self-portrait). The work is oil on canvas, currently held in the Victoria and Albert Museum, London (George Levy Gallery, Room 52), and derives from the collection of Major H. Howard of Hampton Lodge, a direct descendant of Edward Long, the historian of Jamaica.\n\nThe composition presents a life-scale figure standing centrally in an interior study or library, positioned between a red ornate wooden chair (left) and a table with scientific instruments (right). The figure is rendered in formal 18th-century European gentleman's dress: a dark navy blue coat (casaca) with gold buttons and trim, a yellow or gold waistcoat (chaleco) with gold buttons, a white linen shirt (camisa) with ruffled cuffs visible at the wrists, pale gray or white linen breeches (calzones), white stockings (medias), and black leather shoes with buckles (zapatos). A formal white curled wig (peluca) covers the head. The figure's skin tone is rendered as dark, with facial features including a broad nose, full lips, and dark eyes directed toward the viewer in a direct gaze. The body is positioned with weight distributed evenly on both legs; the torso is angled slightly to the right while the head is turned to the left, creating a dynamic 3/4 view.\n\nThe setting is a scholarly interior dominated by an extensive bookshelf occupying the entire background wall, with multiple shelves containing numerous bound volumes displaying dark leather spines and gold lettering. The floor is rendered in a geometric checkerboard pattern of alternating light and dark tiles, emphasizing perspectival recession. A window on the far left side of the composition opens onto a distant landscape depicting Spanish Town, Jamaica, with palm trees, water, buildings, and sky visible in cool blues and greens, providing geographical and contextual specificity.\n\nScattered throughout the interior are objects signifying intellectual and scientific authority: a terrestrial globe (globo terráqueo) positioned on the floor in the foreground near the red chair, rendered with visible latitude and longitude lines; a celestial globe (globo celeste) on the table to the right, near an open book and drawing instruments; a compass (compás) and other drawing instruments (dividers, ruler) scattered on the table; and an open book with visible pages, likely a reference text such as Newton's Principia or Johnson's Dictionary of 1755, as noted in the CSV. A decorative rope with tassel (rendered in gold or yellow) hangs in the upper right corner of the composition, possibly referencing academic or institutional insignia.\n\nThe lighting is warm and directional, emanating from the upper left, creating soft modeling on the figure's face and clothing while rendering the background bookshelf in darker tones to create atmospheric depth. Light catches the white wig and pale stockings, drawing visual attention to the figure. The color palette is dominated by warm earth tones—deep browns and ochres in the wooden furniture and floor, rich reds in the ornate chair, deep navy blue and yellow in the figure's coat and waistcoat, white accents in the wig and shirt, and cool blues and greens in the landscape.\n\nIconographically, this is a secular scholarly portrait depicting intellectual achievement, scientific knowledge, and scholarly authority. The figure is presented in a non-subaltern role, surrounded by the material apparatus of learning and scientific inquiry. The specific iconographic type is that of the learned gentleman or natural philosopher, a convention well established in 18th-century European portraiture but here applied to a free Black intellectual in a colonial Caribbean context. The CSV metadata identifies the theme as 'Retrato de erudito; logros intelectuales y científicos de un hombre negro libre' (Portrait of a scholar; intellectual and scientific achievements of a free Black man), and the classification includes 'Temas seculares, Retrato de erudito, Roles no subalternos, Astronomía, Escuela británica' (Secular themes, Scholarly portrait, Non-subaltern roles, Astronomy, British school).",
+    "donor_present": false,
+    "csv_conflicts": [],
+    "consulted_sources": [
+      "Africanos-y-Afrodescendientes-en-La-Amer-1.pdf",
+      "Africanos-y-Afrodescendientes-en-La-Amer-1.pdf",
+      "EL ARTE AFROLATINOAMERICANO.pdf",
+      "Dos+03+REV+HUM+49+Fuentes.pdf"
+    ]
+  },
+  "stage_4a_results": [
+    {
+      "figure_id": "fig_01",
+      "subordination_reading": "Figure fig_01 stands in an upright, frontal posture with shoulders squared and legs positioned in a stable stance, displaying neither the collapse nor the tension one might associate with physical coercion or imposed restraint. The musculature appears neither rigidly contracted nor visibly strained; instead, the body occupies the space with a composed, self-possessed bearing. The gaze is directed outward toward the viewer rather than downward or toward another figure in deference—the eyes meet the viewer's gaze directly and steadily, establishing a confrontational rather than submissive ocular relationship. The hands are positioned with one arm extended in a gesture that appears to indicate or present the objects on the table, a posture associated with agency and demonstration rather than passivity. The elaborate dress—the white curled wig, the navy coat with yellow waistcoat and decorative buttons, the white stockings—situates this figure within a visual language of Enlightenment-era gentility and intellectual authority, not subordination. While the composition places fig_01 within an interior of learning and refinement, the bodily comportment communicates self-assurance and command of the space rather than acceptance of a subordinate place within a hierarchy.",
+      "agency_reading": "Figure fig_01 stands in a posture of deliberate verticality and composure, with shoulders squared and spine erect, occupying the central axis of the composition despite the surrounding apparatus of learning. The figure's gaze is direct and unflinching, meeting the viewer's eye with a steady, frontal regard that refuses subordination or deference; there is no downward cast, no sideways glance toward another figure, and no gesture of service or attendance. The hands are positioned with quiet authority—one resting near the body, the other gesturing subtly toward the intellectual instruments and texts that surround the figure—suggesting ownership or mastery of the knowledge domain rather than mere proximity to it. This bodily comportment, combined with the formal dress (the blue coat with yellow waistcoat, the white wig, the stockings and shoes), constructs a visual claim to gentility and learned status that was historically exceptional for an Afrodescendant subject in colonial or early modern European portraiture. The reference corpus on Afro-Latin American art and the visual conventions of intellectual portraiture suggest that such a direct, commanding posture—particularly when paired with the symbols of the Enlightenment (globes, books, instruments)—was a deliberate assertion of intellectual capacity and social standing, a visual argument against the racial hierarchies that the colonial period sought to naturalize. The figure's self-possession and the painter's choice to render this posture without irony or diminishment constitute a form of visual resistance embedded in the portrait's formal language.",
+      "friction": {
+        "contested_element": "The directness and meaning of fig_01's frontal gaze toward the viewer, and whether this gaze constitutes a claim to intellectual authority and social standing (Reading B) or merely a composed, self-possessed bearing without necessarily implying resistance to racial hierarchy (Reading A).",
+        "resolvable": false,
+        "resolution_note": "Both readings accurately describe the same visual fact: fig_01's eyes are open, unflinching, and directed toward the viewer in a direct frontal gaze without downward cast or deference. The image itself does not contain visual evidence that would distinguish between these two interpretations. A direct gaze in portraiture can signify composed self-possession (Reading A's interpretation) or deliberate assertion of intellectual authority and resistance to racial hierarchy (Reading B's interpretation) depending on the historical and social context in which the portrait was created and received—information external to the image itself. The posture, dress, and gaze are visually identical in both readings; the difference lies entirely in how those elements are contextualized within colonial racial hierarchies and Enlightenment visual conventions. No additional visual element within the composition (such as a gesture of service, a downward gaze, a position of physical constraint, or symbolic markers of subordination) exists that would allow one reading to be ruled out on purely visual grounds. The ambiguity is genuine and resides in interpretation, not in visual description."
+      },
+      "consulted_sources": [
+        "EL ARTE AFROLATINOAMERICANO.pdf",
+        "Dialnet-NuevasAportacionesEnTornoAlLienzoTituladoLosMulato-4378968.pdf",
+        "EL ARTE AFROLATINOAMERICANO.pdf",
+        "Africanos-y-Afrodescendientes-en-La-Amer-1.pdf"
+      ]
+    }
+  ],
+  "stage_4b_results": [
+    {
+      "figure_id": "fig_01",
+      "genre_branch": "religious_secular",
+      "reading_1": "# Interpretive Analysis\n\nThis portrait reinforces colonial racial hierarchies through a deliberate visual paradox: fig_01 is rendered with dark skin and facial features marked as Afrodescendant by the artist's pictorial conventions, yet is dressed in the refined attire of an educated European gentleman—blue coat with yellow waistcoat, white wig, silk stockings—and positioned as the intellectual master of a study lined with leather-bound books, globes, and navigational instruments. The composition stages a contradiction that was central to colonial ideology: the figure's body is marked as racially subordinate while his material surroundings and scholarly apparatus claim intellectual authority and social elevation. This visual tension does not resolve in favor of genuine equality; rather, it performs what the reference material on Afro-Latin American art and colonial eschatology suggests was a common rhetorical strategy—the display of an exceptional, \"civilized\" Afrodescendant subject whose very exceptionality reinforces the racial norm by which most Afrodescendants were excluded from such spaces and knowledge. The portrait thus uses the language of Enlightenment learning and sartorial refinement to contain and domesticate the threat of Black intellectual presence, transforming potential agency into a carefully curated spectacle of colonial benevolence. The window opening onto a distant landscape with architecture and water further situates this figure within a colonial geography of possession and oversight, suggesting that even intellectual achievement remains framed within the visual and spatial logic of European dominion.",
+      "reading_2": "# Interpretive Reading: Subversion of Racial and Social Hierarchies\n\nThis portrait inverts the visual grammar of colonial hierarchy by positioning the Afro-descendant figure (fig_01) as the sole occupant of intellectual and spiritual authority within the composition. Rather than appearing in a subordinate or marginal position—the typical placement of Black subjects in colonial portraiture—fig_01 stands centrally in a scholar's study, surrounded by the material markers of Enlightenment knowledge: leather-bound books, globes, navigational instruments, and an open manuscript. The figure's formal dress (blue coat with yellow waistcoat, white wig, stockings) mimics the sartorial codes of European learned men, yet the artist has rendered the face with dark skin tones that refuse to be erased or lightened, making the claim of intellectual capacity visually undeniable. The absence of other human figures in the scene—no European patron, no servant, no witness—removes the relational hierarchy that typically anchored colonial portraiture; this scholar exists in autonomous command of his own space and knowledge. The window opening onto a distant landscape with architectural monuments further suggests cosmopolitan reach and worldly understanding. By depicting an Afro-descendant subject as a solitary intellectual rather than as a dependent, laborer, or exotic curiosity, the painting asserts a radical claim to individual agency, learning, and social standing that directly contradicts the racial subordination encoded in colonial law and visual convention.",
+      "friction": {
+        "contested_element": "The scholarly apparatus and refined interior setting (books, globes, navigational instruments, formal study environment) and the figure's central, autonomous positioning within that space",
+        "resolvable": false,
+        "resolution_note": "Both readings correctly identify the same visual elements—the leather-bound books lining the shelves, the globes and navigational instruments on the table, the formal blue coat with yellow waistcoat and white wig, the central positioning of fig_01 in the study, and the absence of other human figures in the immediate interior space. These elements are visually verifiable and present in the image. However, they are genuinely ambiguous in their historical and ideological meaning. Reading A interprets the juxtaposition of dark skin with refined dress and scholarly surroundings as a controlled display of exceptionality that reinforces racial hierarchy through the very act of making the figure \"exceptional.\" Reading B interprets the same juxtaposition as a refusal to erase Afrodescendant identity while claiming intellectual authority, and reads the autonomous positioning as subversive. The visual evidence does not itself determine whether the portrait functions as containment or assertion, as spectacle of benevolence or claim to agency. That determination requires historical context about the patron, the artist's intent, the figure's actual social position, and the specific colonial moment in which the work was created—information that visual analysis alone cannot provide. The ambiguity is structural, not accidental."
+      },
+      "consulted_sources": [
+        "Pedro Claver lo demoniaco como persuación y resistencia afro.pdf",
+        "danicavalcante,+7+rosario+nava+82-110.pdf",
+        "EL ARTE AFROLATINOAMERICANO.pdf",
+        "EL ARTE AFROLATINOAMERICANO.pdf"
+      ]
+    }
+  ],
+  "rigid_or_fluid_assessment": "The painting presents a fundamentally ambiguous case that resists a single determination. Visually, the composition assembles elements that could support either reading: the figure's central, autonomous positioning within a space of intellectual authority (books, globes, instruments), combined with the direct frontal gaze and refined dress, suggests fluidity and negotiated agency. Yet the very isolation of this figure—the absence of peers, patrons, or social context; the theatrical quality of the setting; the conspicuous display of scholarly apparatus—could equally function as a rigid containment strategy, a controlled spectacle of exceptionality that paradoxically reinforces racial hierarchy by making the figure visually \"exceptional\" rather than normative. The painting does not resolve this tension. It may instead be deliberately constructed to hold both possibilities in suspension: to permit viewers invested in colonial order to read it as a portrait of refined exception (thus confirming hierarchy), while simultaneously offering viewers attuned to resistance and agency a portrait of intellectual claim and self-possession. The fluidity lies not in the figure's social position (which remains visually unspecified and historically contingent) but in the painting's own refusal to close meaning—a refusal that may itself be the most honest representation of how Afrodescendant intellectuals navigated the viceregal world: neither fully fixed nor fully free, but perpetually negotiating the gap between visual assertion and social reality.",
+  "critical_questions": [
+    "What is the significance of the figure's complete isolation within the study—the absence of any other human presence, patron, student, or servant—and does this solitude function to emphasize autonomous intellectual authority or to underscore social segregation and the impossibility of genuine intellectual community across racial lines?",
+    "Why does the artist render the landscape visible through the window in the background with such specificity and luminosity (palm trees, water, architecture suggesting a colonial settlement), and what does the viewer's ability to see this distant world through the study window suggest about the relationship between the figure's interior intellectual space and the colonial geography beyond it—is the landscape a reminder of the colonial context that frames this portrait, or a symbol of the broader world to which the figure's learning and instruments grant access?"
+  ]
+}
